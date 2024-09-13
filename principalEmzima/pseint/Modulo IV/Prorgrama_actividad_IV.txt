@@ -1,0 +1,17 @@
+Actividad 1:                       adivinarVocal
+Actividad 2:                       notaRango
+Actividad 3:                       limitePositivo
+Actividad 4:                       claveAcceso
+Actividad 5:                       codigoClave
+Actividad 6:                       enteroAcumulado
+noObligatorio 1:                   enteroPositivo
+noObligatorio 2:                   mayorDiez
+noObligatorio 3:                   mayorMenor
+noObligatorio 4:                   mayorIgualPrimero
+noObligatorio 5:                   adivinarVocalOtro
+noObligatorio 6:                   alumnosNotas
+noObligatorio 7:                   digitosSinConvertir
+noObligatorio 8:                   maxMinProm
+noObligatorio 9:                   parImparPromediodeDiez
+noObligatorio 9:                   parAcumulado
+noObligatorio 10:                  acertarConIndicaciones

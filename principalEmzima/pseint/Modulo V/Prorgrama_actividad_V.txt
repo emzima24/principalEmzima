@@ -1,0 +1,15 @@
+Actividad 1:                       cuadradoNueveNumeros
+Actividad 2:                       recorrerTextoComoDice
+Actividad 2otro:                   recorrerTextoComoMuestra
+Actividad 3:                       multiploDosTresDeCien
+Actividad 4:                       tablasMultiplicar
+Actividad 5:                       EscaleraAsteriscos
+Actividad 5Otro:                   EscaleraAsteriscosOtro
+Actividad 6:                       cuadradoAsteriscos
+noObligatorio 1:                   docenteInformes
+noObligatorio 2:                   sumaNnaturales
+noObligatorio 3:                   fraseInversa
+noObligatorio 3otro:               fraseInversaOtro
+noObligatorio 4:                   factorialNumeros
+noObligatorio 5:                   numeroPrimo
+noObligatorio 6:                   estudiantePromedioEdad

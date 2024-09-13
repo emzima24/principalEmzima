@@ -1,0 +1,16 @@
+Actividad 1:                       sumaFuncion
+Actividad 2:                       imparFuncion
+Actividad 3:                       multiploFuncion
+Actividad 4:                       fraseLetraFuncion
+Actividad 5:                       primoFuncion
+noObligatorio 1:                   sumaDivisoresN
+noObligatorio 2:                   userPassSincontrol (mal planteado)
+noObligatorio 3:                   sumaDigitosText
+noObligatorio 4:                   imparTodosDigitosNumero
+noObligatorio 5:                   fibonacciNumber 
+noObligatorio 6:                   esCapicuaNumero
+noObligatorio 7:                   jornalCalculo
+noObligatorio 8:                   conversionfahrenheit
+noObligatorio 9:                   promedioConArreglo (mal planteado se puede hacer con arreglos)
+noObligatorio 9:                   promedioRecursivo (mal planteado se puede hacer con recursivos)
+noObligatorio 10:                  areaPerimetro

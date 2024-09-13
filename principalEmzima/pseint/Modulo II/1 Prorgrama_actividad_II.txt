@@ -1,0 +1,18 @@
+Actividad calentando motores:      chatGPT
+Actividad 1:                       promedio
+Actividad 2:                       ingreso
+Actividad 3:                       reducirNumeroJugador
+Actividad 4:                       condicionalDobleCaracter
+Actividad 5:                       diaEntrenamiento
+Actividad 6:                       parImpar
+Actividad 7:                       longitudCadena
+noObligatorio 1:                   capicuaFutbol
+noObligatorio 2:                   cineReduccion
+noObligatorio 3:                   longitudCadenaCompetenciaConcatenar
+noObligatorio 4:                   validarResultados
+noObligatorio 5:                   equipoLetraA
+noObligatorio 6:                   equipoLetraIgual
+noObligatorio 7:                   notaPromedioArcaico
+noObligatorio 8:                   mesDescuento
+noObligatorio 9:                   paresOimpares
+noObligatorio 10:                  alquilerAutos

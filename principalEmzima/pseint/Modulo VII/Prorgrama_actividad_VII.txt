@@ -1,0 +1,16 @@
+Actividad 1:                       intercambioSubproceso
+Actividad 2:                       tempeMediaSubproceso
+Actividad 3:                       divisionSubproceso
+Actividad 4:                       codificarFrase
+Actividad 5:                       sumaRecursiva
+noObligatorio 1:                   convertirEspaciadoSubproceso
+noObligatorio 2:                   entreMyTsubproceso
+noObligatorio 3:                   escaleraSubproceso
+noObligatorio 3otro:               escaleraRecursivo
+noObligatorio 4:                   fechaAnteriorCompleto
+noObligatorio 5:                   cambioFrase 
+noObligatorio 6:                   fibonacciNumberRecursivo
+noObligatorio 7:                   invertirCadenaRecursivoaa
+noObligatorio 8:                   capicuaRecursivo
+             
+

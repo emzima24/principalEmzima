@@ -1,0 +1,14 @@
+Actividad 1:                       diaSemana
+Actividad 2:                       operacionesSeleccionMejor
+Actividad 3:                       bebidaSeleccion
+Actividad 4:                       GradoEficiencia
+noObligatorio 1:                   fechaSinBisiestos
+noObligatorio 1otro:               fechaConBisiestos (subprocesos)
+noObligatorio 2:                   tiene3digitos
+noObligatorio 2otro:               tiene3digitosOtro
+noObligatorio 3:                   anhoBisiesto
+noObligatorio 4:                   no se puede hacer porque no existe la tabla
+noObligatorio 5:                   eliminarNota
+noObligatorio 6:                   departamentoContabilidad
+noObligatorio 7:                   la misma que el no obligatorio 3  esta repetido, anhoBisiesto
+noObligatorio 8:                   edadCategoria

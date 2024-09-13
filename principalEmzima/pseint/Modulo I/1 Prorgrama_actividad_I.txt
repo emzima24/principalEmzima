@@ -1,0 +1,16 @@
+Actividad instrucciones:     Saludo
+Actividad variables:         SaludoNuevo
+Actividad 1:                 AreaPerimetro
+Actividad 2:                 producPromedioArcaico
+Actividad 2mejor:            producPromedioModerno
+Actividad 3:                 conversionUnidades
+Actividad 4:                 consumoAutomovil
+Actividad 5:                 intercambioVariable
+Actividad 5otro:             intercambioConDosAuxiliar
+noObligatorio 1:             remuneracionTotal
+noObligatorio 1otro:         remuneracionTotalSinCiclo
+noObligatorio 2:             numeroInvertidoDosCifras
+noObligatorio 2mejor:        numeroInvertido
+noObligatorio 3:             conversionDias
+noObligatorio 4:             consumoAutomovil (igual a actividad 4)
+noObligatorio 5:             conversionMeses
