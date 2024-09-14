@@ -1,4 +1,11 @@
+// Complementario 9
+// Realiza un algoritmo para calcular la media de los números pares e impares. Se 
+// ingresarán diez números. Utiliza la estructura repetitiva repetir-mientras para resolver esta actividad.
+
+
+
 Algoritmo parImparPromediodeDiez
+	// Se define real porque es menos probable que se rompa en ejecucion en el ingreso de la variable
 	Definir numeroIngresado,acumuladoImpar,cantidad, acumuladoPar,cantidadPar,cantidadImpar Como Real
 	cantidad = 10
 	acumuladoImpar = 0

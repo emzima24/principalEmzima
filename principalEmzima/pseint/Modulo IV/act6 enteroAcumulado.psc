@@ -1,4 +1,19 @@
+// Actividad 6
+// Escribe un programa que:
+//
+// Pida por teclado un número entero positivo.
+//
+// Pregunte al usuario si desea introducir otro número.
+//	
+// Repita los pasos anteriores mientras el usuario no responda "n" o "N" (no).
+//		
+// Muestre por pantalla la suma de los números introducidos por el usuario cuando determine NO ingresar más números. 
+
+
+
 Algoritmo enteroAcumulado
+	// Se define real porque es menos probable que se rompa en ejecucion en el ingreso del numero
+	// y el acumulado solo para economia de codigo
 	Definir acumulado,numeroEntry Como Real
 	Definir seleccionEntry Como Caracter
 	acumulado = 0

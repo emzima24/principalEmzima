@@ -1,3 +1,11 @@
+// Complementario 6
+// Continuando con el ejercicio anterior, ahora se solicitará el nombre del equipo y se validará 
+// si la primera letra del nombre es igual a la última letra del nombre. Si ambas letras son iguales, 
+// se imprimirá un mensaje que diga "CORRECTO"; de lo contrario, se imprimirá "INCORRECTO".
+// Se define real porque es menos probable que se rompa en ejecucion
+
+
+
 Algoritmo equipoLetraIgual
 	Definir equipoIngresado,equipoIngresado_comp Como Caracter
 	Escribir "Escribe, el nombre de un equipo "

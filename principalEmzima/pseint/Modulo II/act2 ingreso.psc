@@ -1,3 +1,10 @@
+// Actividad 2
+// Diseña un programa que solicite al usuario ingresar su nombre de usuario y contraseña. 
+// El programa debe verificar si el nombre de usuario es "admin" y si la contraseña es "1234". 
+// Si ambos son correctos, el programa debe imprimir un mensaje de bienvenida. Recuerda nombrar y guardar tu algoritmo.
+
+
+
 Algoritmo Ingreso
 	// se prueba porque es mas conveniente usar caracter que real o entero
 	Definir username,password Como Caracter //,password

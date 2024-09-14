@@ -1,4 +1,23 @@
+// Complementario 6
+// Escribe un programa que solicite al usuario ingresar números enteros hasta que se 
+// introduzca el número 0 (cero). Al finalizar, el programa deberá mostrar el 
+// número máximo ingresado, el mínimo y el promedio de todos ellos.
+// Para encontrar el número máximo, inicializa una variable llamada "numeroMaximo" en cero
+// y compara cada número ingresado con esta variable. Si el número ingresado es mayor que "
+// numeroMaximo", se actualiza el valor de "numeroMaximo" con el nuevo número.
+//
+// Para encontrar el número mínimo, puedes seguir una lógica similar. Inicializa 
+// la variable "numeroMinimo" con un valor muy alto o con el primer número ingresado 
+// por el usuario. Luego, compara cada número ingresado con "numeroMinimo" y actualiza 
+// su valor si el número ingresado es menor que "numeroMinimo".
+//		
+// Finalmente, calcula el promedio de todos los números ingresados dividiendo la suma
+// total de los números por la cantidad de números ingresados. Recuerda nombrar y guardar tu algoritmo.
+
+
+
 Algoritmo maxMinProm
+	// Se define real porque es menos probable que se rompa en ejecucion en el ingreso de la variable
 	Definir maximo,numeroIngresado,minimo,cantidad, acumulado Como Real
 	Escribir sin saltar "Escribe un numero "
 	Leer numeroIngresado

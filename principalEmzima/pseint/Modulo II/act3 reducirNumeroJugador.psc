@@ -1,4 +1,11 @@
+// Actividad 3
+// Crea un programa que permita ingresar un número de jugador, si el número es mayor de 10, 
+// se debe calcular y mostrar en pantalla el 18% de este. Recuerda nombrar y guardar tu algoritmo.
+
+
+
 Algoritmo reducirNumeroJugador
+	// Se define real porque tiene decimales al operar
 	Definir numeroJugador Como Real
 	Escribir "Escribe, tu numero de jugador "
 	Leer numeroJugador

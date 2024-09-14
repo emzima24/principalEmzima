@@ -1,18 +1,26 @@
+// Complementario 1
+// Lee tres números que representen una fecha (día, mes, año) y verifica si es una fecha válida. 
+// Si la fecha no es válida, muestra un mensaje de error en pantalla. Si la fecha es válida, 
+// imprime la fecha cambiando el número que representa el mes por su nombre. 
+// Por ejemplo, si se introduce 1 2 2006, se imprimirá "1 de febrero de 2006".
+
+
+
 Algoritmo fechaSinBisiestos
-	// considera a febrero de 29 dias
+	// considera a febrero de 29 dias para no entrar en el tema de bisiesto o no
+	// Se define el mes como caracter porque es menos probable que se rompa en ejecucion ademas el operador logico O en el segun responde bien no asi con numero
 	Definir dia, anho Como Real
 	Definir mes,mesLetra Como Caracter
 	
     Escribir sin saltar "Escribe la cantidad de dias "
-	//Leer dia
-	dia =1
+	Leer dia
+	//dia =1
 	Escribir sin saltar "Escribe el numero correspondiente al mes "
-	//Leer mes
-	mes = "1"
-	//mes = Mayusculas(mes)
+	Leer mes
+	//mes = "1"
 	Escribir sin saltar "Escribe el numero año "
-	//Leer anho
-	anho = 2024
+	Leer anho
+	//anho = 2024
 	Segun mes Hacer
 		"1":
 			mesLetra = "enero"

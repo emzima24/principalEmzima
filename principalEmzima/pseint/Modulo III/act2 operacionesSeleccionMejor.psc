@@ -1,5 +1,15 @@
+// Actividad 2
+// Desarrolla un programa que simule un menú de opciones para realizar las cuatro 
+// operaciones aritméticas básicas (suma, resta, multiplicación y división) con dos 
+// valores numéricos enteros. El usuario deberá especificar la operación deseada 
+// utilizando el primer carácter de la operación: 'S' para suma, 'R' para resta, 
+// 'M' para multiplicación, y 'D'  para división. Recuerda nombrar y guardar tu algoritmo.
+
+
+
 Algoritmo operacionesSeleccionMejor
 	Definir operacionSeleccion Como Caracter
+	// Se define real porque es menos probable que se rompa en ejecucion en el ingreso de los enteros
 	Definir numeroUno, numeroDos Como Real
 	Escribir sin saltar "Escribe la inicial de una de las operaciones (S)uma, (R)esta, (M)ultiplicación y (D)ivisión que desees que se ejecute "
 	Leer operacionSeleccion

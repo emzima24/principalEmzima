@@ -1,3 +1,11 @@
+// Complementario 1 HECHO CON SUBPROCESOS PARA PODER CONSIDERAR EL BISIESTO PARA JODER NADA MAS
+// Lee tres números que representen una fecha (día, mes, año) y verifica si es una fecha válida. 
+// Si la fecha no es válida, muestra un mensaje de error en pantalla. Si la fecha es válida, 
+// imprime la fecha cambiando el número que representa el mes por su nombre. 
+// Por ejemplo, si se introduce 1 2 2006, se imprimirá "1 de febrero de 2006".
+
+
+
 SubProceso anhoBisiesto ( anho por Valor, isBisiesto Por Referencia)
 	// programa valido desde el año 1952
 	isBisiesto = Falso
@@ -49,7 +57,7 @@ SubProceso mesTexto ( mes por Valor, mesLetra por Referencia)
 FinSubProceso
 
 Algoritmo fechaConBisiestos
-	// considera a febrero de 29 dias
+	// considera a febrero de segun bisiesto o no
 	Definir dia, anho Como Real
 	Definir mes,mesLetra Como Caracter
 	Definir isBisiesto Como Logico
