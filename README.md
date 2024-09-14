@@ -1,5 +1,6 @@
-# Portafolio para Emiliano Zapata alias emzima  
-Este repositorio contiene archivos relacionados con mis proyectos tanto en contexto de aprendizajes como en contextos de proyectos en las areas que se mencionan en cada caso
+# Portafolio de Emiliano Zapata alias emzima  
+Este repositorio contiene archivos relacionados con mis proyectos tanto en contexto de aprendizajes como en contextos de proyectos en las areas que se mencionan en cada caso.  
+La idea es quien quiera ver lo que hacemos o quiere consultar algo puntual.
 
 Reglas generales: 
 > 1) **Se prefiere la variable de tipo más global** que pueda cumplir el requerimiento **sin romper la ejecución**.  
