@@ -7,5 +7,5 @@ Reglas generales:
 >    Esto es, si se solicita un entero que luego opera matemáticamente pero el usuario puede ingresar como decimal entonces se prefiere esta última
 >    (el usuario no lo "sabe" y si lo introduce luego podes anular los decimales desde el código pero es otra discusión).
 >    Otro ejemplo, si se solicita un entero que no opera matematicamente entonces se prefiere caracter.
->    Por último ejemplo se pide al usuario que seleccione algo de un menu, si hay dos opciones puede ser true o false,
->    si hubiesen más de dos valores, se prefiere caracter. (No es obligatorio es como se hace aca)  
+>    Por último ejemplo se pide al usuario que seleccione algo de un menu, si hay dos opciones puede ser Verdadero o False,
+>    o si hubiesen más de dos valores, se prefiere caracter. (No es obligatorio es como lo hacemos hace aca)  
