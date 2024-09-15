@@ -1,3 +1,11 @@
+// Actividad 1
+// 
+// Se define real porque es menos probable que se rompa en ejecucion en el ingreso de la variable
+// Se define real porque es menos probable que se rompa en ejecucion en el ingreso de la variable y se mantiene para todos los casos por economia de codigo
+// Se define real por costumbre mas que por otra razon cuando la memoria importe lo consideraremos distinto
+
+
+
 SubProceso codificacion ( frase Por Valor,fraseCodificada Por Referencia )
 	Definir i Como Real
 	Definir fraseNormalizada Como Caracter

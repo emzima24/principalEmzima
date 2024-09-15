@@ -1,0 +1,5 @@
+Actividad 1:                       numerosAsteriscos
+Actividad 2:                       cantidadDigitos
+integrador:                        integrador
+noObligatorio (enVivo):            sistemasReciclaje
+  
