@@ -1,3 +1,15 @@
+// Complementario 3
+// Crea un subproceso que llene dos arreglos de tamaño n con números aleatorios. Luego, desarrollar 
+// una función que tome como argumentos los dos arreglos y determine si todos sus valores son iguales o no. 
+// Esta función debe devolver un valor booleano que indique el resultado de la validación.  
+// Finalmente, en el algoritmo principal, mostrar un mensaje según el resultado obtenido. Se 
+// recomienda utilizar variables de tipo lógico para facilitar la implementación.
+// Se define real porque es menos probable que se rompa en ejecucion en el ingreso de la variable
+// Se define real porque es menos probable que se rompa en ejecucion en el ingreso de la variable y se mantiene para todos los casos por economia de codigo
+// Se define real por costumbre mas que por otra razon cuando la memoria importe lo consideraremos distinto
+
+
+
 Funcion mostrarVector( number, tamanho,letter )
 	Definir i Como Real
 	Escribir Sin Saltar"El arreglo (" letter ") es "

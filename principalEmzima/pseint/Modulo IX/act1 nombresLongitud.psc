@@ -1,3 +1,10 @@
+// Actividad 1
+// Crea un programa que solicite al usuario ingresar el tamaño deseado para dos vectores. El primero
+// almacenará nombres de personas como cadenas, mientras que el segundo vector contendrá la longitud 
+// de cada uno de los nombres. Luego, se mostrarán en pantalla los nombres junto con su respectiva longitud.
+
+
+
 Funcion mostrarVector( arreglo1, arreglo2, tamanho,letter )
 	Definir i Como Real
 	Escribir "El arreglo (" letter ") es "
@@ -29,9 +36,9 @@ SubProceso  llenarArregloChar(tamanho por Valor, valores Por Valor, vector1 Por 
 FinSubProceso
 
 SubProceso  menu
+	// Se define real porque es menos probable que se rompa en ejecucion en el ingreso de la variable y se mantiene para todos los casos por economia de codigo
 	Definir choice,choiceVector,letter,vectorA Como Caracter
-	//Definir acumCemento, acumArena, acumLadrillos, acumPiedras, acumHierro8, acumHierro4, acumHierro10, acumPiedrasVol, acumHierro6, acumPintura, acumIluminacion Como Real
-	//Definir a, b, c Como Real
+
 	Definir number,i,tamanho,vectorB Como Real
 	Definir salir Como Logico
 	

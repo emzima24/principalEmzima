@@ -1,3 +1,9 @@
+// Actividad 4
+// Desarrolla un programa que rellene un vector de tamaño N, con valores numéricos ingresados por el usuario.
+// A continuación, se deberá crear una función que reciba el vector y devuelva el valor más grande del arreglo.
+
+
+
 Funcion mostrarVector( number, tamanho )
 	Definir i Como Real
 	Escribir Sin Saltar"El arreglo es "
@@ -18,6 +24,7 @@ Funcion NumberMax <- maximo ( number, tamanho )
 Fin Funcion
 
 Algoritmo arregloFuncion
+	// Se define real porque es menos probable que se rompa en ejecucion en el ingreso de la variable y se mantiene para todos los casos por economia de codigo
 	Definir number,i,tamanho Como Real
 	Escribir Sin Saltar "Tamaño del arreglo "
 	Leer tamanho

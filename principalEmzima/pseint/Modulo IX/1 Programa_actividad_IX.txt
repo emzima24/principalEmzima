@@ -1,0 +1,9 @@
+Actividad 1:                 nombresLongitud
+Actividad 2:                 notasCategorias
+Actividad 3:                 seleccionRealEntero
+Actividad 4:                 comparacionLogica
+noObligatorio 1:             ordenarMenorMayorBurbuja         
+noObligatorio 2:             seleccionRealEnteroSumaRecursiva
+noObligatorio 3:             seleccionRealEnteroSumaRecursivaImparPar
+noObligatorio 3 (enVivo):    SumaRecursivaImparPar
+noObligatorio 4:             nombresMenu

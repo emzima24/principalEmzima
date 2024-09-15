@@ -1,4 +1,4 @@
-// Complementario 4
+// Complementario 4 (SE PUEDE COMPARAR CON LA VERSION RECURSIVA EN EL MODULO VII noOANEXO factorialRecursivo)
 // La función factorial se aplica a números enteros positivos. El factorial de un número
 // entero positivo (!n) es igual al producto de todos los enteros positivos desde 1 hasta n:
 //

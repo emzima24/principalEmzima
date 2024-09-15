@@ -1,5 +1,69 @@
+// Integrador II
+// Calculadora de materiales de construcción
+//
+// Deberán programar una calculadora de materiales para la construcción.  El algoritmo principal 
+// solo debe llamar al subprograma "menu()". Cada subprograma puede subdividirse, 
+// si es necesario, en otros subprogramas, según la creatividad del programador.
+//		
+//	El menú principal debe presentarse de la siguiente manera:
+//		
+//		1. Calcular muro de ladrillo
+//		2. Calcular viga de hormigón
+//		3. Calcular columnas de hormigón
+//		4. Calcular contrapisos
+//		5. Calcular techo
+//		6. Calcular pisos
+//		7. Calcular pintura
+//		8. Calcular iluminación
+//		9. Salir  (Hasta que el usuario no elija esta opción, después de calcular algún material, el programa debe regresar al menú principal)
+//		
+//	Subprogramas sugeridos: 
+//		
+//		1. calcularSuperficie y calcularVolumen: Ambos se utilizarán dentro de los otros subprogramas. El usuario no podrá acceder a ellos.
+//		
+//		2. calcularMuro: Este subprograma solicitará al usuario seleccionar si el muro tendrá un espesor de 20 o 30 cm. 
+//						Luego, se pedirá el largo y el alto. Con estos datos, se mostrará al usuario la superficie del muro 
+//						y la cantidad de materiales necesarios para su construcción. Si el muro tiene 30 cm de espesor, 
+// 						se necesitarán 15.2 kg de cemento, 0.115 m3 de arena y 120 ladrillos por metro cuadrado. 
+// 						Si es de 20 cm, se necesitarán 10.9 kg de cemento, 0.09 m3 de arena y 90 ladrillos por metro cuadrado. Mostrar el resultado por pantalla.
+//					
+//		3. calcularViga: Este subprograma pedirá al usuario ingresar el largo de la viga. Se calcularán los materiales 
+// 						necesarios para una viga de 1 metro lineal, incluyendo 9 kg de cemento, 0.02 m3 de arena, 0.02 m2 de piedra,
+//						4 m de hierro del 8 y 3 m de hierro del 4. Mostrar el resultado por pantalla.
+//						
+//		4. calcularColumna: Se solicitará al usuario ingresar el largo de la columna. Se calcularán los materiales 
+// 						necesarios para una columna de 1 metro lineal, incluyendo 7.5 kg de cemento, 0.016 m3 de arena,
+//						0.016 m2 de piedra, 6 m de hierro del 10 y 3 m de hierro del 4. Mostrar el resultado por pantalla.
+//							
+//		5. calcularContrapisos: Se pedirá al usuario ingresar el espesor, ancho y largo del contrapiso. Se calcularán
+//						los materiales necesarios por metro cúbico, incluyendo 105 kg de cemento, 0.45 m3 de 
+//						arena y 0.9 m3 de piedra. Mostrar el resultado por pantalla.
+//							
+//		6. calcularTecho: Se solicitará al usuario ingresar el espesor, ancho y largo del techo. Se calcularán 
+//						los materiales necesarios por metro cuadrado, incluyendo 33 kg de cemento, 0.072 m3 de arena, 
+//						0.072 m3 de piedra, 7 m de hierro del 8 y 4 m de hierro del 6. Mostrar el resultado por pantalla.
+//							
+//		7. calcularPisos: Se pedirá al usuario ingresar el ancho y largo del paño de piso. Se calculará la 
+//						superficie y se añadirá un 10% extra por recortes. El resultado se mostrará en 
+//						metros cuadrados. Mostrar el resultado por pantalla.
+//							
+//		8. calcularPintura: Se solicitará al usuario ingresar la superficie del muro. Se calculará la cantidad 
+//						de pintura necesaria, considerando que rinde 6 m2 por litro. Mostrar el resultado por pantalla.
+//							
+//		9. calcularIluminacion: Se pedirá al usuario ingresar la superficie de la habitación. La iluminación se 
+//						calculará multiplicando la superficie por 0.20. Se mostrará el resultado correspondiente 
+//						a la cantidad mínima de superficie para la iluminación natural, 
+//						como ventanas y puertas de vidrio. Mostrar el resultado por pantalla.
+//								
+// Si lo desean, pueden incorporar alguna otra funcionalidad o validación que consideren que optimizará el 
+// funcionamiento de su sistema. A su vez, les recomendamos dividir las tareas dentro del equipo. 
+
+
+
 SubProceso  menu
 	Definir choice Como Caracter
+	// Se define real porque es menos probable que se rompa en ejecucion en el ingreso de la variable y se mantiene para todos los casos por economia de codigo
+	// las selecciones se definen como caracter como mecanismo mas general para evitar la ruptura de codigo
 	Definir acumCemento, acumArena, acumLadrillos, acumPiedras, acumHierro8, acumHierro4, acumHierro10, acumPiedrasVol, acumHierro6, acumPintura, acumIluminacion Como Real
 	//Definir a, b, c Como Real
 	Definir salir Como Logico
@@ -249,6 +313,7 @@ SubProceso  calcularIluminacion(acumCemento Por Referencia, acumArena Por Refere
 	acumularMateriales(0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0.2 * superficie,acumCemento, acumArena, acumLadrillos, acumPiedras, acumHierro8, acumHierro4, acumHierro10, acumPiedrasVol, acumHierro6, acumPintura, acumIluminacion )
 FinSubProceso
 
+// ESTE CODIGO ADICIONAL A LO SOLICITADO PARA ACUMULAR LOS MATERIALES
 SubProceso  acumularMateriales(cemento Por Valor, arena Por Valor, ladrillos Por Valor, piedras Por Valor, hierro8 Por Valor, hierro4 Por Valor, hierro10 Por Valor, piedrasVol Por Valor, hierro6 Por Valor, pintura Por Valor, iluminacion Por Valor, acumCemento Por Referencia, acumArena Por Referencia, acumLadrillos Por Referencia, acumPiedras Por Referencia, acumHierro8 Por Referencia, acumHierro4 Por Referencia, acumHierro10 Por Referencia, acumPiedrasVol Por Referencia, acumHierro6 Por Referencia, acumPintura Por Referencia, acumIluminacion Por Referencia)
 	Definir seleccion Como Caracter
 	Escribir "Desea acumular esa lista de materiales (S/N)"
@@ -273,6 +338,7 @@ SubProceso  acumularMateriales(cemento Por Valor, arena Por Valor, ladrillos Por
 	FinSi
 FinSubProceso
 
+// ESTE CODIGO ADICIONAL A LO SOLICITADO PARA PODER MOSTRAR SEGUN SE REQUIERA
 funcion  mostrarAcumulado(acumCemento, acumArena, acumLadrillos, acumPiedras, acumHierro8, acumHierro4, acumHierro10, acumPiedrasVol, acumHierro6, acumPintura, acumIluminacion)
 	//Definir superficie Como Real
 	Limpiar Pantalla

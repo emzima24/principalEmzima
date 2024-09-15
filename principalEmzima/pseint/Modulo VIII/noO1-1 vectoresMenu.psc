@@ -1,3 +1,36 @@
+// Complementario 1
+// Desarrolla un programa con un menú de opciones que permita al usuario realizar diversas operaciones 
+// con vectores hasta que elija la opción 'Salir'. El menú contempla las siguientes opciones: 
+//
+// 		1. Llenar Vector A: Este vector, de tamaño N, se llena de manera aleatoria 
+//			utilizando la función Aleatorio(valorMin, valorMax) de PSeInt.
+//	
+// 		2. Llenar Vector B: Este vector, de tamaño N, se llena de manera aleatoria 
+//			utilizando la función Aleatorio(valorMin, valorMax) de PSeInt.
+//	
+// 		3. Llenar Vector C con la suma de los vectores A y B: La suma se realiza 
+//			elemento a elemento (es decir, C[i] = A[i] + B[i]). Esto quiere decir, 
+//			por ejemplo, que la posición 1 del vector C será el número resultante 
+//			de la suma de la posición 1 del vector A y la posición 1 del vector B.
+//	
+// 		4. Llenar Vector C con la resta de los vectores B y A: La resta se realiza 
+//			elemento a elemento (es decir, C[i] = B[i] - A[i]). Esto quiere decir, 
+//			por ejemplo, que la posición 1 del vector C será el número resultante 
+//			de la resta de la posición 1 del vector A y la posición 1 del vector B.
+//	
+// 		5. Mostrar: Esta opción permite al usuario decidir qué vector desea mostrar: Vector A, B o C.
+//		
+// 		6.Salir.
+//		
+// 			Tener en cuenta: 
+//		
+// 		El rango de los números aleatorios para los vectores será de -100 a 100. La longitud para 
+//		todos los vectores será la misma, por lo tanto, esa información solo se solicitará una vez.
+//				
+// 		Utiliza funciones o subprocesos para mejorar la reutilización de código.
+
+
+
 Funcion mostrarVector( number, tamanho,letter )
 	Definir i Como Real
 	Escribir Sin Saltar"El arreglo (" letter ") es "
@@ -35,9 +68,8 @@ SubProceso  operarArreglo(operacion por Valor, tamanho por Valor, vector1 Por Re
 FinSubProceso
 
 SubProceso  menu
+	// Se define real porque es menos probable que se rompa en ejecucion en el ingreso de la variable
 	Definir choice,choiceVector,letter Como Caracter
-	//Definir acumCemento, acumArena, acumLadrillos, acumPiedras, acumHierro8, acumHierro4, acumHierro10, acumPiedrasVol, acumHierro6, acumPintura, acumIluminacion Como Real
-	//Definir a, b, c Como Real
 	Definir number,i,tamanho,vectorA,vectorB,vectorC Como Real
 	Definir salir Como Logico
 	
