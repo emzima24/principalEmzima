@@ -1,0 +1,7 @@
+Actividad 1:                 matrizNxMtranspuesta
+Actividad 2:                 matrizGeometria0y1
+Actividad 3:                 matrizSumaUltimaColumna
+Actividad 4:                 matrizSumaOMultiplicacion
+noObligatorio 1:             ventasCafe
+noObligatorio 2:             mal planteado (es el 2 sin indicaciones)
+noObligatorio 3:             ventasProductoSemana
