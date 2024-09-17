@@ -4,15 +4,15 @@
 // letra 'R' de cada palabra quede en la posición 5, alineándose correctamente. Para abordar este 
 // problema de manera eficiente y organizada, se propone dividir el trabajo en subprogramas o funciones.
 //	   	0 1 2 3 4 5 6  7 8 9 10 11		0 1 2 3 4 5 6  7 8 9 10 11
-// 0	V E C T O R						V E C T O R
-// 1	M A T R I X							M A T R I X
-// 2	P R O G R A M A					  P R O G R A M A
-// 3	S U B P R O G R A M A			  S U B P R O G R A M A
-// 4	S U B P R O C E S O				  S U B P R O C E S O
-// 5	V A R I A B L E						  V A R I A B L E
-// 6 	E N T E R O						  E N T E R O
-// 7 	P A R A								  P A R A
-// 8 	M I E N T R A S					M I E N T R A S
+// 0	V E C T O R	                    V E C T O R
+// 1	M A T R I X                         M A T R I X
+// 2	P R O G R A M A                         P R O G R A M A
+// 3	S U B P R O G R A M A             S U B P R O G R A M A
+// 4	S U B P R O C E S O               S U B P R O C E S O
+// 5	V A R I A B L E                       V A R I A B L E
+// 6 	E N T E R O                       E N T E R O
+// 7 	P A R A                               P A R A
+// 8 	M I E N T R A S                 M I E N T R A S
 //  Deberán al menos contemplar los siguientes subprogramas:
 //  	1. subprograma inicializarMatriz: Esta función inicializará la matriz con un asterisco 
 //		en cada celda para evitar problemas y garantizar que no esté vacía. Deberá recibir como 
