@@ -43,6 +43,7 @@
 //		opción "Ingresar Botellas". Permitirá al usuario ingresar múltiples botellas en una misma sesión, si así lo desea.
 //																			
 // Si lo desean, pueden incorporar alguna otra funcionalidad o validación que consideren que optimizará el funcionamiento de su sistema.
+// El diagrama de flujo se realizó como un mapa mental en Miro puede verse en https://miro.com/app/board/uXjVKhbRVzc=/?share_link_id=443584331132
 
 
 

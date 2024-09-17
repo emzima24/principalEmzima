@@ -35,6 +35,9 @@
 // La idea será completada con variantes que a mi juicio mejoran el tema del subproceso considerando 
 // que incluso ya lo hemos hecho antes por eso incumplimos la consigna conscientes de lo dicho anteriormente.
 // Se usan del modulo X noO2 llenarPalabraMatriz.psc, modulo IX  y con ello listo se resuelve noO4 nombresMenu.psc 
+// El diagrama de flujo se realizó como un mapa mental en Miro puede verse en https://miro.com/app/board/uXjVLdm-dIU=/?share_link_id=662231495089
+
+
 
 // ADICIONAL A LO SOLICITADO EN EL INTEGRADOR
 SubProceso controlLetraR (valUno Por Referencia)
