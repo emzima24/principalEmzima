@@ -36,6 +36,7 @@
 // que incluso ya lo hemos hecho antes por eso incumplimos la consigna conscientes de lo dicho anteriormente.
 // Se usan del modulo X noO2 llenarPalabraMatriz.psc, modulo IX  y con ello listo se resuelve noO4 nombresMenu.psc 
 
+// ADICIONAL A LO SOLICITADO EN EL INTEGRADOR
 SubProceso controlLetraR (valUno Por Referencia)
 	Definir mensaje,prueba Como Caracter
 	Definir count,i Como Real
@@ -59,6 +60,7 @@ SubProceso controlLetraR (valUno Por Referencia)
 	Mientras Que control = Falso
 FinSubProceso
 
+// Se corresponde con subprograma inicializarMatriz y con el subprograma agregarPalabra
 SubProceso crearMatrizChar (type Por Valor,numRow Por Valor,numCol Por Valor,matrixChar Por Referencia)
 	Definir i,j,count,salto Como Real
 	Definir valUno Como Caracter
@@ -85,6 +87,7 @@ SubProceso crearMatrizChar (type Por Valor,numRow Por Valor,numCol Por Valor,mat
 	FinPara
 FinSubProceso
 
+// Se corresponde con subprograma imprimirMatriz 
 Funcion mostrarMatriz (numRow,numCol,matrix)
 	Definir i,j Como Real
 	Escribir "La matriz es "
@@ -96,6 +99,7 @@ Funcion mostrarMatriz (numRow,numCol,matrix)
 	FinPara
 Fin Funcion
 
+// Se corresponde con subprograma buscarR 
 SubProceso  letraEspecificaArregloChar(i por valor, numCol Por Valor, letter Por Valor, matrix Por Referencia,ubicacion Por Referencia)
 	Definir j Como Entero
 	Definir count Como real
@@ -108,6 +112,7 @@ SubProceso  letraEspecificaArregloChar(i por valor, numCol Por Valor, letter Por
 		FinPara
 FinSubProceso
 
+// Se corresponde con subprograma acomodarPalabra
 SubProceso operarMatriz (type Por Valor,numRow Por Valor,numCol Por Valor,matrix Por Referencia, matrixB Por Referencia)
 	Definir i,j,sum,count, ubicacion,ubicacionDos,step Como Real
 	sum = 0
@@ -115,7 +120,7 @@ SubProceso operarMatriz (type Por Valor,numRow Por Valor,numCol Por Valor,matrix
 	Segun type Hacer
 		"ordenar":
 			letraEspecificaArregloChar(0, numCol, "r", matrix, ubicacion)
-			Para i = 1 Hasta numRow-1 Hacer
+			Para i = 0 Hasta numRow-1 Hacer
 				letraEspecificaArregloChar(i, numCol, "r", matrix, ubicacionDos)
 				step = ubicacion - ubicacionDos
 				Para j = 0 Hasta numCol-1 Hacer
@@ -133,7 +138,7 @@ FinSubProceso
 
 Algoritmo palabrasCruzadas
 	// Se define real porque es menos probable que se rompa en ejecucion en el ingreso de la variable y se mantiene para otros de los casos por economia de codigo
-	Definir numRow,numCol,matrix Como Real
+	Definir numRow,numCol Como Real
 	Definir type, matrixChar, matrixCharOrd  Como Caracter
 	type = "cuadrada"
 	numCol = 12
