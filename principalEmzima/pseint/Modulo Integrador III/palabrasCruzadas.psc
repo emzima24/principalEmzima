@@ -38,7 +38,7 @@
 
 // ADICIONAL A LO SOLICITADO EN EL INTEGRADOR
 SubProceso controlLetraR (valUno Por Referencia)
-	Definir mensaje,prueba Como Caracter
+	Definir mensaje,valDos Como Caracter
 	Definir count,i Como Real
 	Definir control Como Logico
 	mensaje = ""
@@ -50,9 +50,9 @@ SubProceso controlLetraR (valUno Por Referencia)
 		FinSi
 		Escribir "Introduce la palabra con alguna letra r " + mensaje
 		Leer valUno
-		prueba = Mayusculas(valUno)
+		valDos = Mayusculas(valUno)
 		Para i = 0 Hasta Longitud(valUno) Hacer
-			Si Subcadena(prueba,i,i) = "R" Entonces
+			Si Subcadena(valDos,i,i) = "R" Entonces
 				control = Verdadero
 			FinSi
 		FinPara
@@ -62,10 +62,9 @@ FinSubProceso
 
 // Se corresponde con subprograma inicializarMatriz y con el subprograma agregarPalabra
 SubProceso crearMatrizChar (type Por Valor,numRow Por Valor,numCol Por Valor,matrixChar Por Referencia)
-	Definir i,j,count,salto Como Real
+	Definir i,j Como Real
 	Definir valUno Como Caracter
-	count = 0
-	salto = 0
+	
 	Para i = 0 Hasta numRow-1 Hacer
 		Para j = 0 Hasta numCol-1 Hacer
 			Segun type Hacer
@@ -114,9 +113,7 @@ FinSubProceso
 
 // Se corresponde con subprograma acomodarPalabra
 SubProceso operarMatriz (type Por Valor,numRow Por Valor,numCol Por Valor,matrix Por Referencia, matrixB Por Referencia)
-	Definir i,j,sum,count, ubicacion,ubicacionDos,step Como Real
-	sum = 0
-	count = 0
+	Definir i,j, ubicacion,ubicacionDos,step Como Real
 	Segun type Hacer
 		"ordenar":
 			letraEspecificaArregloChar(0, numCol, "r", matrix, ubicacion)

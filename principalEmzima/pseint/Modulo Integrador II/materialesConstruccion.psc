@@ -58,6 +58,8 @@
 // Si lo desean, pueden incorporar alguna otra funcionalidad o validación que consideren que optimizará el 
 // funcionamiento de su sistema. A su vez, les recomendamos dividir las tareas dentro del equipo. 
 
+// El diagrama de flujo se realizó como un mapa mental en Miro puede verse en https://miro.com/app/board/uXjVKhYx8qs=/?share_link_id=21575831806
+
 
 
 SubProceso  menu
