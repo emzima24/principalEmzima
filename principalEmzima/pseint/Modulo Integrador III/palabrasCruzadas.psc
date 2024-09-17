@@ -152,7 +152,7 @@ Algoritmo palabrasCruzadas
 	mostrarMatriz(numRow,numCol,matrixCharOrd)
 	Limpiar Pantalla
 	Escribir "*******************************"
-	Escribir "Cargar palabras en las matrices"
+	Escribir "Cargar palabras en las matriz"
 	Escribir "*******************************"
 	Escribir ""
 	Esperar Tecla
@@ -162,7 +162,7 @@ Algoritmo palabrasCruzadas
 	mostrarMatriz(numRow,numCol,matrixChar)
 	Limpiar Pantalla
 	Escribir "*******************"
-	Escribir "Ordenar la matrices"
+	Escribir "Ordenar la matriz"
 	Escribir "*******************"
 	Escribir ""
 	Esperar Tecla

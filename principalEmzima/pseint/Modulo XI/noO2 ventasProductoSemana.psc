@@ -1,20 +1,20 @@
 // Complementario 3
 // Una empresa de venta de productos por correo desea realizar una 
-// estadística de las ventas de cada uno de sus productos a lo largo de una 
-// semana, distribuyendo los 5 productos en los 5 días hábiles. Se desea conocer:
-//		* El total de ventas por cada día de la semana.
+// estadï¿½stica de las ventas de cada uno de sus productos a lo largo de una 
+// semana, distribuyendo los 5 productos en los 5 dï¿½as hï¿½biles. Se desea conocer:
+//		* El total de ventas por cada dï¿½a de la semana.
 //	 	* El total de ventas de cada producto a lo largo de la semana.
-//		* El producto más vendido en cada semana.
-//		* El nombre, el día de la semana y la cantidad del producto más vendido.
-// El informe final tendrá el siguiente formato:
-//							Lunes	Martes	Miércoles	Jueves	Viernes	Total producto
+//		* El producto mï¿½s vendido en cada semana.
+//		* El nombre, el dï¿½a de la semana y la cantidad del producto mï¿½s vendido.
+// El informe final tendrï¿½ el siguiente formato:
+//							Lunes	Martes	Miï¿½rcoles	Jueves	Viernes	Total producto
 //	Producto 1						
 //	Producto 2						
 //	Producto 3						
 //	Producto 4						
 //	Producto 5						
 //	Total semana						
-//	Producto más vendido						
+//	Producto mï¿½s vendido						
 
 
 
@@ -199,3 +199,11 @@ Algoritmo ventasProductoSemana
 	mostrarMatriz("particular",numRow,numCol-1,matrixA,"Informe ",diasSemana, productos)
 FinAlgoritmo
 
+MATRIX
+PROGRAMA
+SUBPROGRAMA
+SUBPROCESO
+VARIABLE
+ENTERO
+PARA
+MIENTRAS

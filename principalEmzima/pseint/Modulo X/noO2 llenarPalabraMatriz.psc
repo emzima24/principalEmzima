@@ -148,7 +148,7 @@ FinSubProceso
 Algoritmo llenarPalabraMatriz
 	// Se define real porque es menos probable que se rompa en ejecucion en el ingreso de la variable y se mantiene para otros de los casos por economia de codigo
 	Definir numRow,numCol,matrix Como Real
-	Definir type, matrixchar Como Caracter
+	Definir type, matrixChar Como Caracter
 	type = "cuadrada"
 	numCol = 3
 	numRow = 3

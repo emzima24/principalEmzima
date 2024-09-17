@@ -103,7 +103,7 @@ SubProceso  letraEspecificaArregloChar(tamanho por Referencia, letter Por Valor,
 		FinSi
 	FinPara
 	Si tamanho = 0 Entonces
-		
+		Escribir "Tamaño no puede ser 0"
 	FinSi
 FinSubProceso
 
