@@ -34,7 +34,7 @@
 
 // La idea será completada con variantes que a mi juicio mejoran el tema del subproceso considerando 
 // que incluso ya lo hemos hecho antes por eso incumplimos la consigna conscientes de lo dicho anteriormente.
-// Se usan del modulo X noO2 llenarPalabraMatriz.psc, modulo IX  y con ello listo se resuelve noO4 nombresMenu.psc 
+// Se usan del modulo X noO2 llenarPalabraMatriz.psc, modulo IX  noO4 nombresMenu.psc 
 // El diagrama de flujo se realizó como un mapa mental en Miro puede verse en https://miro.com/app/board/uXjVLdm-dIU=/?share_link_id=662231495089
 // Una explicacion de la forma de como avanzar en la siguiente tabla https://docs.google.com/spreadsheets/d/1XZUC2BzjYaTDcOBipbDeZIlfXTtfCCvNFRDJzELJEUg/edit?gid=236092997#gid=236092997&range=B2:AB12
 
