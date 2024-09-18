@@ -40,11 +40,13 @@
 // diagonales, se mostrará en pantalla el mensaje "La muestra NO contiene los patrones especificados en sus diagonales".
 // 
 // Se usan del modulo Integrador III palabrasCruzadas.psc, modulo X noO3 magiaMatriz.psc y  modulo Integrador IV trabajandoFrase.psc
-// Una explicacion de la forma de como avanzar en la siguiente tabla https://docs.google.com/spreadsheets/d/1XZUC2BzjYaTDcOBipbDeZIlfXTtfCCvNFRDJzELJEUg/edit?gid=236092997#gid=236092997&range=B2:AB12
-//A los efectos del codigo se consideraron vocales a las acentuadas o con dieresis
-// Frase de 101 caracteres "Yo disculpar que le perdone. No por haberme abandonado lo cual es en esencia falso. Le agradezco todo" vocales 39
-// Frase de 99 caracteres "El rara avis que fui siempre se sintió un tanto pérdido en esa familia pero quizás era parte de mi." vocales 41
-// Frase de 99 caracteres "Hasta donde percibo llegamos a la etapa del sálvese quien pueda. No soy sociólogo pero la formación!" vocales 41
+// Una explicacion de la forma de como avanzar respecto a las diagonales en la siguiente tabla https://docs.google.com/spreadsheets/d/1XZUC2BzjYaTDcOBipbDeZIlfXTtfCCvNFRDJzELJEUg/edit?gid=1514302018#gid=1514302018&range=D3:K14
+// Una explicacion de la forma de como avanzar respecto al texto cargado en la matriz en la siguiente tabla https://docs.google.com/spreadsheets/d/1XZUC2BzjYaTDcOBipbDeZIlfXTtfCCvNFRDJzELJEUg/edit?gid=1944097503#gid=1944097503&range=B2:I15
+// A los efectos del codigo se consideraron casos de predefinidos
+// Positivo 4x4 2 ACDDCADBCDABDBBA
+// Positivo 3x3 1 ACACABADA
+// Negativo 4x4 2 ACDDCADBCDABDBBD
+// Negativo 3x3 1 ACACABADD
 
 SubProceso controlLetras (valUno Por Referencia, isConfirm Por Referencia)
 	Definir mensaje,valDos Como Caracter
@@ -132,9 +134,11 @@ SubProceso operarMatriz (numRow Por Valor,numCol Por Valor,matrix Por Referencia
 			isConfirm = Falso
 			i = numRow
 		FinSi
-		SI matrix[i,numCol-1-i] <> matrix[0,numCol-1] Entonces
-			isConfirm = Falso
-			i = numRow
+		Si isConfirm Entonces	
+			SI matrix[i,numCol-1-i] <> matrix[0,numCol-1] Entonces
+				isConfirm = Falso
+				i = numRow
+			FinSi
 		FinSi
 	FinPara
 	Si isConfirm Entonces
