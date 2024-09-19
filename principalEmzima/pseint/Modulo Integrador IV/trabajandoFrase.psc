@@ -63,9 +63,9 @@ SubProceso  llenarArreglo(tamanhoA por Referencia, tamanhoB por Referencia,  vec
 		controlLongitud(valUno)
 		valDos = Minusculas(valUno)
 		Para i <- 0 Hasta Longitud(valUno) -1 Hacer
-			isExpres1 <- Subcadena(valDos,i,i) = "a" O Subcadena(valDos,i,i) = "e" O Subcadena(valDos,i,i) = "i" O Subcadena(valDos,i,i) = "o" O Subcadena(valDos,i,i) = "u"
-			isExpres2 <- Subcadena(valDos,i,i) = "á" O Subcadena(valDos,i,i) = "é" O Subcadena(valDos,i,i) = "í" O Subcadena(valDos,i,i) = "ó" O Subcadena(valDos,i,i) = "ú"
-			isExpres3 <- Subcadena(valDos,i,i) = "ü"
+			isExpres1 <- Subcadena(valDos,i,i) == "a" O Subcadena(valDos,i,i) == "e" O Subcadena(valDos,i,i) == "i" O Subcadena(valDos,i,i) == "o" O Subcadena(valDos,i,i) == "u"
+			isExpres2 <- Subcadena(valDos,i,i) == "á" O Subcadena(valDos,i,i) == "é" O Subcadena(valDos,i,i) == "í" O Subcadena(valDos,i,i) == "ó" O Subcadena(valDos,i,i) == "ú"
+			isExpres3 <- Subcadena(valDos,i,i) == "ü"
 			Si isExpres1 O isExpres2 O isExpres3 Entonces
 				vectorA[tamanhoA] = Subcadena(valUno,i,i)
 				tamanhoA = tamanhoA + 1
