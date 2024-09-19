@@ -37,7 +37,26 @@
 // Se usan del modulo X noO2 llenarPalabraMatriz.psc, modulo IX  noO4 nombresMenu.psc 
 // El diagrama de flujo se realizó como un mapa mental en Miro puede verse en https://miro.com/app/board/uXjVLdm-dIU=/?share_link_id=662231495089
 // Una explicacion de la forma de como avanzar en la siguiente tabla https://docs.google.com/spreadsheets/d/1XZUC2BzjYaTDcOBipbDeZIlfXTtfCCvNFRDJzELJEUg/edit?gid=236092997#gid=236092997&range=B2:AB12
+//
+// Vector
+// Matrix
+// Programa
+// Subprograma
+// Subproceso
+// Variable
+// Entero
+// Para
+// Mientras
 
+// VectoR
+// MatRix
+// PRograma
+// SubpRograma
+// SubpRoceso
+// VaRiable
+// EnteRo
+// PaRa
+// MientRas 
 
 
 // ADICIONAL A LO SOLICITADO EN EL INTEGRADOR
@@ -62,6 +81,15 @@ SubProceso controlLetraR (valUno Por Referencia)
 		FinPara
 		count = count +1
 	Mientras Que control = Falso
+FinSubProceso
+
+// ADICIONAL A LO SOLICITADO EN EL INTEGRADOR
+SubProceso ingresarFilaColumna (numRow Por Referencia,numCol Por Referencia)
+	Definir i,j,valUno Como Real
+	Escribir "Indique cantidad de Palabras a introducir "
+	Leer numRow
+	Escribir "Indique cantidad máxima de letras de la palabra más larga "
+	Leer numCol
 FinSubProceso
 
 // Se corresponde con subprograma inicializarMatriz y con el subprograma agregarPalabra
@@ -141,11 +169,9 @@ Algoritmo palabrasCruzadas
 	// Se define real porque es menos probable que se rompa en ejecucion en el ingreso de la variable y se mantiene para otros de los casos por economia de codigo
 	Definir numRow,numCol Como Real
 	Definir type, matrixChar, matrixCharOrd  Como Caracter
-	type = "cuadrada"
-	numCol = 12
-	numRow = 9
-	
-	dimension matrixChar[numRow,numCol], matrixCharOrd[numRow,numCol]
+	type = "cuadrada"1
+	ingresarFilaColumna (numRow,numCol)
+	dimension matrixChar[numRow,*2numCol], matrixCharOrd[numRow,2*numCol]
 	Limpiar Pantalla
 	Escribir "**************"
 	Escribir "Crear matrices"
@@ -164,8 +190,8 @@ Algoritmo palabrasCruzadas
 	Esperar Tecla
 	type = "palabra"
 	crearMatrizChar(type,numRow,numCol,matrixChar)
-	Esperar Tecla
 	mostrarMatriz(numRow,numCol,matrixChar)
+	Esperar Tecla
 	Limpiar Pantalla
 	Escribir "*******************"
 	Escribir "Ordenar la matriz"

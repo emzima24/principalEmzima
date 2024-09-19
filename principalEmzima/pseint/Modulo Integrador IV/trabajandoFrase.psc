@@ -14,11 +14,11 @@
 // 
 // Se usan del modulo VIII noO1 vectoresMenu.psc
 // El diagrama de flujo se realizó como un mapa mental en Miro puede verse en https://miro.com/app/board/uXjVLdm-dIU=/?share_link_id=662231495089
-// Una explicacion de la forma de como avanzar en la siguiente tabla https://docs.google.com/spreadsheets/d/1XZUC2BzjYaTDcOBipbDeZIlfXTtfCCvNFRDJzELJEUg/edit?gid=236092997#gid=236092997&range=B2:AB12
-//A los efectos del codigo se consideraron vocales a las acentuadas o con dieresis
-// Frase de 101 caracteres "Yo disculpar que le perdone. No por haberme abandonado lo cual es en esencia falso. Le agradezco todo" vocales 39
-// Frase de 99 caracteres "El rara avis que fui siempre se sintió un tanto pérdido en esa familia pero quizás era parte de mi." vocales 41
-// Frase de 99 caracteres "Hasta donde percibo llegamos a la etapa del sálvese quien pueda. No soy sociólogo pero la formación!" vocales 41
+// Una explicacion de la  contabilzacion de las letras https://docs.google.com/spreadsheets/d/1XZUC2BzjYaTDcOBipbDeZIlfXTtfCCvNFRDJzELJEUg/edit?gid=236092997#gid=236092997&range=B2:AB12
+// A los efectos del codigo se consideraron vocales a las acentuadas o con dieresis
+// Frase de 101 caracteres "Yo disculpar que le perdone. No por haberme abandonado lo cual es en esencia falso. Le agradezco todo" vocales 36 al quitar  " todo"
+// Frase de 99 caracteres "El rara avis que fui siempre se sintió un tanto pérdido en esa familia pero quizás era parte de mi." vocales 40
+// Frase de 99 caracteres "Hasta donde percibo llegamos a la etapa del sálvese quien pueda. No soy sociólogo pero la formación!" vocales 39
 
 
 SubProceso controlLongitud (valUno Por Referencia)
