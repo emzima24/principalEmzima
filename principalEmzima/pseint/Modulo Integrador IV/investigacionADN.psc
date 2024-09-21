@@ -93,10 +93,8 @@ SubProceso crearMatrizChar (type Por Valor,numRow Por Valor,numCol Por Valor,mat
 	Para i = 0 Hasta numRow-1 Hacer
 		Para j = 0 Hasta numCol-1 Hacer
 			Segun type Hacer
-				"user":
-					Escribir "Indique el valor (" i, j ")"
-					Leer valUno
-					matrixChar[i,j] = valUno
+				"inicializar":
+					matrixChar[i,j] = "*"
 				"palabra":
 					controlLongitud(valUno, numCol*numRow)
 					Para i = 0 Hasta numRow-1 Hacer
@@ -110,10 +108,10 @@ SubProceso crearMatrizChar (type Por Valor,numRow Por Valor,numCol Por Valor,mat
 	FinPara
 FinSubProceso
 
-Funcion mostrarMatriz (numRow,numCol,matrix)
+Funcion mostrarMatriz (numRow,numCol,matrix,name)
 	Definir i,j Como Real
 	Escribir ""
-	Escribir "La matriz es "
+	Escribir "La matriz " name " es "
 	Para i = 0 Hasta numRow-1 Hacer
 		Para j = 0 Hasta numCol-1 Hacer
 			Escribir Sin Saltar matrix[i,j] ", " //(" i "," j ")"
@@ -156,7 +154,7 @@ Algoritmo investigacionADN
 	Definir type, matrixChar3,matrixChar4,choice Como Caracter
 	Definir isSalir Como Logico
 	isSalir = Falso
-	type = "cuadrada"
+	//type = "cuadrada"
 	numR3C = 3
 	numR4C = 4
 	type = "palabra"
@@ -171,12 +169,17 @@ Algoritmo investigacionADN
 		Leer choice
 		Segun choice
 			"1":
+				// la inicialización no es necesaria solo se usa para practicar y mostrar la utilidad del segun en el crearMatrizChar
+				crearMatrizChar("inicializar",numR3C,numR3C,matrixChar3)
+				mostrarMatriz(numR3C,numR3C,matrixChar3, "inicializada")
 				crearMatrizChar(type,numR3C,numR3C,matrixChar3)
-				mostrarMatriz(numR3C,numR3C,matrixChar3)
+				mostrarMatriz(numR3C,numR3C,matrixChar3,"con la cadena de ADN")
 				operarMatriz(numR3C,numR3C,matrixChar3)
 			"2":
+				crearMatrizChar("inicializar",numR4C,numR4C,matrixChar4)
+				mostrarMatriz(numR4C,numR4C,matrixChar4,"inicializada")
 				crearMatrizChar(type,numR4C,numR4C,matrixChar4)
-				mostrarMatriz(numR4C,numR4C,matrixChar4)
+				mostrarMatriz(numR4C,numR4C,matrixChar4,"con la cadena de ADN")
 				operarMatriz(numR4C,numR4C,matrixChar4)
 			"3": 
 				isSalir = Verdadero
@@ -184,7 +187,6 @@ Algoritmo investigacionADN
 			De Otro Modo:
 				Escribir "del 1 al 3 boludo"
 		Fin Segun
-		
 		Si choice <> "3"
 			Escribir 'Presione enter para volver al menu principal'
 		SiNo

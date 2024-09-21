@@ -38,6 +38,9 @@
 // El diagrama de flujo se realizó como un mapa mental en Miro puede verse en https://miro.com/app/board/uXjVLdm-dIU=/?share_link_id=662231495089
 // Una explicacion de la forma de como avanzar en la siguiente tabla https://docs.google.com/spreadsheets/d/1XZUC2BzjYaTDcOBipbDeZIlfXTtfCCvNFRDJzELJEUg/edit?gid=236092997#gid=236092997&range=B2:AB12
 //
+// para predefinir la entrada (ctr+F9) se debe colocar lo siguiente caso 1:
+// 9
+// 12
 // Vector
 // Matrix
 // Programa
@@ -47,16 +50,21 @@
 // Entero
 // Para
 // Mientras
-
-// VectoR
+//
+// o lo siguiente caso 2:
+// 11
+// 17
+// MientRas
 // MatRix
 // PRograma
 // SubpRograma
 // SubpRoceso
 // VaRiable
+// Radiocomunicacion
 // EnteRo
 // PaRa
-// MientRas 
+// Valorizar 
+// VectoR
 
 
 // ADICIONAL A LO SOLICITADO EN EL INTEGRADOR
@@ -85,11 +93,11 @@ FinSubProceso
 
 // ADICIONAL A LO SOLICITADO EN EL INTEGRADOR
 SubProceso ingresarFilaColumna (numRow Por Referencia,numCol Por Referencia)
-	Definir i,j,valUno Como Real
 	Escribir "Indique cantidad de Palabras a introducir "
 	Leer numRow
 	Escribir "Indique cantidad máxima de letras de la palabra más larga "
 	Leer numCol
+	numCol = 2*numCol
 FinSubProceso
 
 // Se corresponde con subprograma inicializarMatriz y con el subprograma agregarPalabra
@@ -169,9 +177,9 @@ Algoritmo palabrasCruzadas
 	// Se define real porque es menos probable que se rompa en ejecucion en el ingreso de la variable y se mantiene para otros de los casos por economia de codigo
 	Definir numRow,numCol Como Real
 	Definir type, matrixChar, matrixCharOrd  Como Caracter
-	type = "cuadrada"1
-	ingresarFilaColumna (numRow,numCol)
-	dimension matrixChar[numRow,*2numCol], matrixCharOrd[numRow,2*numCol]
+	type = "cuadrada"
+	ingresarFilaColumna(numRow,numCol)
+	dimension matrixChar[numRow,2*numCol], matrixCharOrd[numRow,2*numCol]
 	Limpiar Pantalla
 	Escribir "**************"
 	Escribir "Crear matrices"
