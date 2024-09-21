@@ -184,6 +184,7 @@ Algoritmo palabrasCruzadas
 	Escribir "**************"
 	Escribir "Crear matrices"
 	Escribir "**************"
+	Escribir "Listo... Presione enter"
 	Escribir ""
 	Esperar Tecla
 	crearMatrizChar("vacios",numRow,numCol,matrixChar)
@@ -194,18 +195,27 @@ Algoritmo palabrasCruzadas
 	Escribir "*******************************"
 	Escribir "Cargar palabras en las matriz"
 	Escribir "*******************************"
-	Escribir ""
-	Esperar Tecla
+	Escribir "Presione Enter"
 	type = "palabra"
+	Esperar Tecla
+	Escribir ""
+	Escribir "Listo... Presione enter"
+	Escribir ""
 	crearMatrizChar(type,numRow,numCol,matrixChar)
 	mostrarMatriz(numRow,numCol,matrixChar)
+	Escribir ""
+	Escribir "Listo... Presione enter"
+	Escribir ""
 	Esperar Tecla
 	Limpiar Pantalla
 	Escribir "*******************"
 	Escribir "Ordenar la matriz"
 	Escribir "*******************"
 	Escribir ""
-	Esperar Tecla
 	operarMatriz("ordenar",numRow,numCol,matrixChar,matrixCharOrd)
+	Escribir "Listo... Presione enter"
+	Escribir ""
+	Esperar Tecla
 	mostrarMatriz(numRow,numCol,matrixCharOrd)
+	Escribir ""
 FinAlgoritmo
