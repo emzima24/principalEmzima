@@ -1,7 +1,6 @@
 principalEmzima/pseint/no ubicados/
 principalEmzima/noUbicados
 principalEmzima/.ipynb_checkpoints
-principalEmzima/pyhton/test/.pytest_cache
-principalEmzima/pyhton/test/__pycache__
-principalEmzima/pyhton/test/test_vivo_.py
-principalEmzima/pyhton/test/pytest
+principalEmzima/pyhtonAutomatizacion/test/.pytest_cache/
+principalEmzima/pyhtonAutomatizacion/pyhton/test/__pycache__/
+principalEmzima/pyhtonAutomatizacion/pyhton/test/a_*
