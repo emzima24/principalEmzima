@@ -1,4 +1,4 @@
-# video en youtube para construir pensar en como construir este codigo  https://youtu.be/rkQETLak6vU
+# video en youtube para pensar en como construir este codigo  https://youtu.be/rkQETLak6vU
 
 import datetime
 import os
