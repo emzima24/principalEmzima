@@ -36,7 +36,7 @@ Algoritmo departamentoContabilidad
 			Escribir "Escribe el total de las ventas "
 			Leer totalVentas
 //			totalVentas = 1000
-			Escribir "El salario por esta semana segun tu opcion por comisión es de ",1000*.40 
+			Escribir "El salario por esta semana segun tu opcion por comisión es de ",totalVentas*.40 
 		"B":
 			Escribir "Escribe el valor de la hora "
 			Leer valorHora
@@ -50,7 +50,7 @@ Algoritmo departamentoContabilidad
 			Escribir "Escribe el total de las ventas "
 			Leer totalVentas
 //			totalVentas = 1000
-			Escribir "El salario por esta semana segun tu opcion mixta es de ",1000*.25+valorHora*cantidadHoras 
+			Escribir "El salario por esta semana segun tu opcion mixta es de ",totalVentas*.25+valorHora*cantidadHoras 
 		"C":
 			cantidadHorasAdicionales = 0
 			Escribir "Escribe el valor de la hora "
@@ -68,6 +68,6 @@ Algoritmo departamentoContabilidad
 			//Escribir valorHora*cantidadHorasAdicionales*.50 
 			
 		De Otro Modo:
-			Escribir  "che, escribir A, B o T, en serio..."
+			Escribir  "che, escribir A, B o C en serio..."
 	Fin Segun
 FinAlgoritmo
