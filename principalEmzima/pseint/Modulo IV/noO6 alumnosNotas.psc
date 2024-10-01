@@ -13,7 +13,7 @@ Algoritmo alumnosNotas
 	Definir alumno Como Caracter
 	// Se define real porque es menos probable que se rompa en ejecucion en el ingreso de la variable
 	Definir notaPractica,notaProblemas,notaTeoria Como Real
-	alumno = "a"
+	// alumno = "a"
 	Escribir sin saltar "Escribe el nombre del alumno "
 	Leer alumno
 	Mientras alumno <> "" Hacer

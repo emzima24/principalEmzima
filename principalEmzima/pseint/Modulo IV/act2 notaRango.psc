@@ -15,5 +15,5 @@ Algoritmo notaRango
 		Leer nota
 		//nota = 10
 	Fin Mientras
-	Escribir "la nota, es ", nota
+	Escribir "La nota es ", nota
 FinAlgoritmo

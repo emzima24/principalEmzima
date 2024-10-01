@@ -17,11 +17,11 @@ Algoritmo enteroPositivoPromedio
 		Escribir sin saltar "Escribe un numero (se para con -1) "
 		Leer numeroEntry
 		//numeroEntry = 1001
-		Si (numeroEntry <> -1) Y (numeroEntry > 0) Entonces
+		Si (numeroEntry > 0) Entonces
 			acumulado = acumulado + numeroEntry
 			cantidad = cantidad + 1
 		FinSi
 	Fin Mientras
-	Escribir "Gracias por participar, el total es ", acumulado/cantidad
+	Escribir "Gracias por participar, el promedio es ", acumulado/cantidad
 FinAlgoritmo
 

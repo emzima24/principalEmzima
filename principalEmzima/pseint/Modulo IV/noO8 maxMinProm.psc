@@ -1,4 +1,4 @@
-// Complementario 6
+// Complementario 8
 // Escribe un programa que solicite al usuario ingresar números enteros hasta que se 
 // introduzca el número 0 (cero). Al finalizar, el programa deberá mostrar el 
 // número máximo ingresado, el mínimo y el promedio de todos ellos.
@@ -43,12 +43,7 @@ Algoritmo maxMinProm
 			Escribir "No vale numeros negativos, turro"
 		FinSi
 	FinMientras
-	Si cantidad = 0 Entonces
-		Escribir "No escribiste ningun numero, turro"
-	SiNo
-		Escribir "De los numeros positivos que escribiste el maximo es ",maximo
-		Escribir "De los numeros positivos que escribiste el minimo es ",minimo
-		//Escribir "acumulado ",acumulado," cantidad",cantidad
-		Escribir "De los numeros positivos que escribiste el promedio es ",acumulado/cantidad
-	FinSi
+	Escribir "De los numeros positivos que escribiste el maximo es ",maximo
+	Escribir "De los numeros positivos que escribiste el minimo es ",minimo
+	Escribir "De los numeros positivos que escribiste el promedio es ",acumulado/cantidad
 FinAlgoritmo

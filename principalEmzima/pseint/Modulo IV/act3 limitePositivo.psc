@@ -9,7 +9,7 @@
 Algoritmo limitePositivo
 	// Se define real porque es menos probable que se rompa en ejecucion en el ingreso de la edad
 	Definir limite,numeroEntry,acumulado Como Real
-	Escribir sin saltar "Escribe una limite "
+	Escribir sin saltar "Escribe un numero limite "
 	Leer limite
 	//limite = 1000
 	acumulado = 0

@@ -13,14 +13,15 @@ Algoritmo parAcumulado
 	acumuladoPar = 0
 	contador = 0
 	Repetir
-		Si (numeroIngresado <= 0) Entonces
-			Escribir "No vale numeros negativos, turro, no sera tomado en cuenta para nada"
-		SiNo
+		Si (numeroIngresado > 0) Entonces
 			contador = contador + 1
 			acumuladoPar = acumuladoPar + contador*2
 		FinSi
-		
-	Mientras Que (contador  < numeroIngresado) Y (numeroIngresado >= 1)
-	Escribir "De los primeros ",numeroIngresado," numeros pares la suma es ",acumuladoPar
+	Mientras Que (contador  < numeroIngresado)
+	Si (numeroIngresado < 0) Entonces
+		Escribir "No vale numeros negativos, turro, no sera tomado en cuenta para nada"
+	SiNo
+		Escribir "De los primeros ",numeroIngresado," numeros pares la suma es ",acumuladoPar
+	FinSi
 	
 FinAlgoritmo

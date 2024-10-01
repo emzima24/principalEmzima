@@ -19,5 +19,5 @@ Algoritmo digitosSinConvertir
 		cantidadDigitos = cantidadDigitos + 1
 		control = trunc(numeroIngresado/10)
 	FinMientras
-	Escribir "El numero ",numeroIngresadoOriginal," tiene ",cantidadDigitos
+	Escribir "El numero ",numeroIngresadoOriginal," tiene ",cantidadDigitos, " cifras"
 FinAlgoritmo

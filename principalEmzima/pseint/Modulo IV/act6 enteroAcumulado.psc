@@ -21,12 +21,12 @@ Algoritmo enteroAcumulado
 		Escribir sin saltar "Escribe un numero entero positivo "
 		Leer numeroEntry
 		//numeroEntry = 1001
-		Si numeroEntry < 0 Entonces
+		Si numeroEntry > 0 Entonces
 			acumulado = acumulado + numeroEntry
 		SiNo
 			Escribir sin saltar "Que parte de un numero entero positivo no entendes turro"
 		FinSi
-		Escribir sin saltar "quieres introducir otro numero escribe (S) para si o (N) para no "
+		Escribir sin saltar "quieres introducir otro numero escribe (s) para si o (n) para no "
 		Leer seleccionEntry
 		seleccionEntry = Minusculas(seleccionEntry)
 		

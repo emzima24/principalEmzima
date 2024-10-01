@@ -7,7 +7,7 @@
 
 Algoritmo mayorDiez
 	Definir numeroEntry Como Real
-	Escribir sin saltar "Escribe una numeroEntry "
+	Escribir sin saltar "Escribe un numero "
 	Leer numeroEntry
 //	numeroEntry = 11
 	Mientras (numeroEntry > 10) Hacer
