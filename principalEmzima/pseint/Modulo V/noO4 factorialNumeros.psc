@@ -25,11 +25,11 @@ Algoritmo factorialNumeros
 		factorial = 1
 		seriesText = ""
 		Para numberEntryThree<- 1 Hasta numberEntry Con Paso 1 Hacer
-			factorial = factorial*1* numberEntryThree
+			factorial = factorial* numberEntryThree
 			Si numberEntryThree= 1  Entonces
 				seriesText = seriesText + ConvertirATexto(numberEntryThree)
 			SiNo
-				seriesText = seriesText + ","+ConvertirATexto(numberEntryThree)
+				seriesText = seriesText + "*"+ConvertirATexto(numberEntryThree)
 			FinSi
 		Fin Para
 		Escribir "!",numberEntry," = ",seriesText," = ",factorial

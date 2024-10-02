@@ -4,6 +4,24 @@
 // con una nota de integrador mayor a 7.5, la mayor nota obtenida en las exposiciones, y el total de 
 // estudiantes que obtuvieron una nota en el Parcial entre 4.0 y 7.5. El programa pedirá la cantidad 
 // de alumnos que tiene el docente, luego solicitará las 3 notas de cada alumno y calculará los informes requeridos. Recuerda nombrar y guardar tu algoritmo.
+// valores predefinidos
+// 4
+// Carlos
+// 10
+// 3
+// 15
+// Luis
+// 5
+// 7
+// 7
+// Juan
+// 9
+// 6
+// 9
+// Jose
+// 3
+// 1
+// 4
 
 
 
@@ -57,11 +75,11 @@ Algoritmo docenteInformes
 					FinSi
 			Fin Segun
 		Fin Para
-		Si sum/3 > 6 Entonces
+		Si (sum/3) > 6 Entonces
 			quality = "Aprobado"
 		SiNo
 			quality = "Reprobado"
-			sumRepro = sumRepro + sum/3
+			sumRepro = sumRepro + (sum/3)
 			qtyRepro = qtyRepro + 1 
 		FinSi
 	Fin Para

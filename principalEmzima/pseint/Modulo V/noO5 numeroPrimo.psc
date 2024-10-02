@@ -9,9 +9,9 @@ Algoritmo numeroPrimo
 	// Se define real porque es menos probable que se rompa en ejecucion en el ingreso de la variable
 	Definir numberEntry,element,count Como Real
 	Escribir Sin Saltar"Introduce un número "
-	//Leer numberEntry
+	Leer numberEntry
 	count = 0
-	numberEntry = 7
+	//numberEntry = 7
 	Si numberEntry > 1 Entonces
 		Para element<- 1 Hasta numberEntry Con Paso 1 Hacer
 			Si ((numberEntry MOD element) = 0) Entonces
