@@ -11,8 +11,11 @@ Funcion isImpar <- imparTodosDigitos ( cifra )
 	Definir  digito Como Real
 	isImpar = Verdadero
 	//sumDig = cifra mod 10
+	Si cifra = 0 Entonces
+		isImpar = Falso
+	FinSi
 	
-	Mientras cifra > 0 Hacer
+	Mientras cifra > 0 Y isImpar Hacer
 		digito = cifra MOD 10
 		Si ((digito MOD 2) = 0) Entonces
 			isImpar = Falso

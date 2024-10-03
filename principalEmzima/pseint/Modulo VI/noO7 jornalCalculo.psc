@@ -12,7 +12,11 @@
 // El programa debe solicitar al usuario: el nombre del trabajador, el día de la semana,
 // el turno (diurno o nocturno), y la cantidad de horas trabajadas. 
 // Además, debe preguntar si el día era festivo para calcular el jornal diario.
-
+// Carlos
+// Lunes
+// d
+// s
+// 15
 
 
 Funcion jornal <- calculoLaboral ( turno, festivo, cantidad )

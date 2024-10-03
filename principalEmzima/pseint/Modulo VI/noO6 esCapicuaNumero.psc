@@ -18,8 +18,8 @@ Funcion isCapicua <- esCapicua ( cifra )
 		cifraInvertida = cifraInvertida*10 + (cifra MOD 10)
 		cifra = trunc(cifra/10)
 	Fin Mientras
-	Escribir cifraInvertida
-	Si cifraInvertida = cifraOrigen Y cifraOrigen>10 Entonces
+	//Escribir cifraInvertida
+	Si cifraInvertida = cifraOrigen Entonces
 		isCapicua = Verdadero
 	Fin Si
 Fin Funcion
