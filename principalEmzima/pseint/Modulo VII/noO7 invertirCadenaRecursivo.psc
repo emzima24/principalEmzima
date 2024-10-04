@@ -1,6 +1,7 @@
 // Complementario 7
 // Implemente de forma recursiva una función que le dé la vuelta a una cadena de caracteres. 
 // NOTA: Si la cadena es un palíndromo, la cadena y su inversa coincidirán. 
+// ejemplos: reconocer, casa, aca, ressasser
 
 
 
@@ -22,5 +23,6 @@ Algoritmo invertirCadenaRecursivo
 	Definir frase Como Caracter
 	Escribir "Escribe la frase "
 	Leer frase
+	//frase = "reconocer" //, casa, aca, ressasser
 	Escribir "La frase (" frase ") invertida es (" invertirFrase(frase,Longitud(frase)) ")"
 FinAlgoritmo

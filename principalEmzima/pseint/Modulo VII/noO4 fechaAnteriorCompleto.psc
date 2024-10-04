@@ -11,18 +11,16 @@ Funcion diaAnterior <- fechaAnterior ( dia,mes, anho )
 	Definir mesNumber Como Real
 	Definir diaAnterior Como Caracter
 	Si dia -1 = 0 Entonces
-		anho = anho
 		mesNumber = ConvertirANumero(mes) - 1
 		Si mesNumber = 0 Entonces
 			mes = "12"
+			anho = anho -1
 		SiNo
 			mes = ConvertirATexto(mesNumber)
 		FinSi
 		mesCheck(dia,mes,anho)
 	SiNo
 		dia = dia -1
-		mes = mes
-		anho = anho
 	FinSi
 	diaAnterior = ConvertirATexto(dia) + "/" + mes + "/" + ConvertirATexto(anho)
 Fin Funcion
