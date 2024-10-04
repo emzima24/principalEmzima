@@ -12,9 +12,7 @@ SubProceso convertirEspaciado( frase Por Valor, fraseEspaciado Por Referencia )
 	fraseNormalizada = Minusculas(frase)
 	fraseEspaciado = ""
 	Para i <- 0 hasta Longitud(frase)-1 Hacer
-		Si (Subcadena(fraseNormalizada,i,i) =  " ") Entonces
-			fraseEspaciado = fraseEspaciado
-		SiNo
+		Si (Subcadena(fraseNormalizada,i,i) <>  " ") Entonces
 			Si (Subcadena(fraseNormalizada,i,i) =  Subcadena(fraseNormalizada,Longitud(frase)-1,Longitud(frase)-1)) Entonces
 				fraseEspaciado = fraseEspaciado + Subcadena(frase,i,i)
 			SiNo

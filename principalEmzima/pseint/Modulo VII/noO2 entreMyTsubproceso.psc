@@ -18,8 +18,8 @@ Algoritmo entreMyTsubproceso
 	Definir letra Como Caracter
 	Definir isTodoOk Como Logica
 	Escribir "Escribe una letra "
-	//Leer letra
-	letra = "u"
+	Leer letra
+	//letra = "u"
 	entreMyT(letra,isTodoOk)
 	Si isTodoOk Entonces
 		Escribir "La letra (" letra ") se encuentra entre la M y la T"
