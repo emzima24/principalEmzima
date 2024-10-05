@@ -37,7 +37,7 @@ SubProceso  llenarArregloNum(tamanho por Valor, valores Por Valor, vector1 Por R
 	FinSegun
 FinSubProceso
 
-Funcion  resultado <- operarArreglo(tamanho por Valor, vector1 Por Referencia, campo Por Valor)
+Funcion  resultado <- operarArreglo(tamanho, vector1, campo)
 	Definir i, resultado,vector1temp Como Real
 	
 	Si tamanho = 0 Entonces

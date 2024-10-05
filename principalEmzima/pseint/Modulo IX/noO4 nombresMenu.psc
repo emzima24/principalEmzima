@@ -9,9 +9,8 @@
 //		4. Encontrar y mostrar el nombre más largo y el nombre más corto del vector.
 //		5. Crear un nuevo vector que contenga solo los nombres que comiencen con una 
 //		letra específica ingresada por el usuario.Mostrar el nuevo vector en pantalla.
-// Se define real porque es menos probable que se rompa en ejecucion en el ingreso de la variable
 // Se define real porque es menos probable que se rompa en ejecucion en el ingreso de la variable y se mantiene para otros de los casos por economia de codigo
-// Se define real por costumbre mas que por otra razon cuando la memoria importe lo consideraremos distinto
+
 
 
 
