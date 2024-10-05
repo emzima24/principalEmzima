@@ -25,40 +25,55 @@
 
 
 
-Funcion mostrarVector( number, tamanho,letter )
+Funcion mostrarVector( frase, number, tamanho,letter )
 	Definir i Como Real
-	Escribir Sin Saltar"El arreglo (" letter ") es "
-	Para i <- 0 Hasta tamanho-1 Hacer
-		Escribir Sin Saltar number[i] ", "
-	FinPara
-	Escribir ""
+	Si Longitud(frase)<> 0 Entonces
+		Escribir Sin Saltar"El arreglo (" letter ") es "
+		Para i <- 0 Hasta tamanho-1 Hacer
+			Escribir Sin Saltar number[i] ", "
+		FinPara
+		Escribir ""
+	SiNo
+		Escribir "Esta vacia la frase boludo"
+	FinSi
 Fin Funcion
 
 SubProceso  llenarArreglo(tamanho por Valor, frase Por Referencia, vector Por Referencia)
 	//Definir vector Como Caracter
 	Definir i Como Entero
-	Para i <- 0 Hasta tamanho-1 Hacer
-		vector[i] = Subcadena(frase,i,i)
-	FinPara
-	Si tamanho<19 Entonces
-		Para i <- tamanho Hasta 19 Hacer
-			vector[i] = " "
+	Si Longitud(frase)<> 0 Entonces
+		Para i <- 0 Hasta tamanho-1 Hacer
+			vector[i] = Subcadena(frase,i,i)
 		FinPara
+		Si tamanho<19 Entonces
+			Para i <- tamanho Hasta 19 Hacer
+				vector[i] = " "
+			FinPara
+		FinSi
+	SiNo
+		Escribir "Esta vacia la frase boludo"
 	FinSi
 FinSubProceso
 
-SubProceso  operarArreglo( tamanho por Valor, vector Por Referencia)
+SubProceso  operarArreglo( frase Por Valor, tamanho por Valor, vector Por Referencia)
 	Definir i, posicion Como Entero
-	Definir char Como Caracter	
-	Escribir "Indica un caracter "
-	Leer char
-	Escribir "En que posición deseas colocarlo "
-	Leer posicion
-	Si vector[posicion] = " " Entonces
-		vector[posicion] = char
-		mostrarVector( vector, tamanho,"Cambiada" )
+	Definir char Como Caracter
+	
+	Si Longitud(frase)<> 0 Entonces
+		Escribir "Indica un caracter "
+		Leer char
+		Repetir
+			Escribir "En que posición deseas colocarlo entre 0 y " tamanho-1 
+			Leer posicion
+		Mientras Que posicion < 0 O posicion > tamanho-1
+		Si vector[posicion] = " " Entonces
+			vector[posicion] = char
+			mostrarVector( frase, vector, tamanho,"Cambiada" )
+		SiNo
+			Escribir "La posición (" posicion ") está ocupada"
+		FinSi
 	SiNo
-		Escribir "La posición (" posicion ") está ocupada"
+		Escribir "Esta vacia la frase boludo"
 	FinSi
 	
 FinSubProceso
@@ -71,6 +86,7 @@ SubProceso  menu
 	
 	Dimension vectorUnidimensional[20]
 	salir = Falso
+	frase = ''
 	Repetir
 		Limpiar Pantalla
 		Escribir "Opciones "
@@ -90,9 +106,9 @@ SubProceso  menu
 			"1":
 				llenarArreglo(Longitud(frase),frase,vectorUnidimensional)
 			"2":
-				operarArreglo(20, vectorUnidimensional)
+				operarArreglo(frase, 20, vectorUnidimensional)
 			"3":
-				mostrarVector( vectorUnidimensional, 20, "Frase" )
+				mostrarVector( frase, vectorUnidimensional, 20, "Frase" )
 			"4":
 				salir = Verdadero
 				Escribir "Hasta la vista baby"

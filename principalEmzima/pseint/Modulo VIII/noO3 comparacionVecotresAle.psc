@@ -4,9 +4,7 @@
 // Esta función debe devolver un valor booleano que indique el resultado de la validación.  
 // Finalmente, en el algoritmo principal, mostrar un mensaje según el resultado obtenido. Se 
 // recomienda utilizar variables de tipo lógico para facilitar la implementación.
-// Se define real porque es menos probable que se rompa en ejecucion en el ingreso de la variable
 // Se define real porque es menos probable que se rompa en ejecucion en el ingreso de la variable y se mantiene para todos los casos por economia de codigo
-// Se define real por costumbre mas que por otra razon cuando la memoria importe lo consideraremos distinto
 
 
 
@@ -45,12 +43,9 @@ FinSubProceso
 
 SubProceso  menu
 	Definir choice,choiceVector,letter Como Caracter
-	//Definir acumCemento, acumArena, acumLadrillos, acumPiedras, acumHierro8, acumHierro4, acumHierro10, acumPiedrasVol, acumHierro6, acumPintura, acumIluminacion Como Real
-	//Definir a, b, c Como Real
 	Definir number,i,tamanho,vectorA,vectorB Como Real
 	Definir salir, isIgual Como Logico
 	
-	//Escribir Sin Saltar "Tamaño del arreglo "
 	tamanho = azar(20)
 	Dimension vectorA[tamanho]
 	Dimension vectorB[tamanho]

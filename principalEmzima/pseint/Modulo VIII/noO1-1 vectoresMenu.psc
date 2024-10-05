@@ -71,7 +71,7 @@ SubProceso  menu
 	// Se define real porque es menos probable que se rompa en ejecucion en el ingreso de la variable
 	Definir choice,choiceVector,letter Como Caracter
 	Definir number,i,tamanho,vectorA,vectorB,vectorC Como Real
-	Definir salir Como Logico
+	Definir isSalir Como Logico
 	
 	Escribir Sin Saltar "Tamaño del arreglo "
 	Leer tamanho
@@ -79,7 +79,7 @@ SubProceso  menu
 	Dimension vectorB[tamanho]
 	Dimension vectorC[tamanho]
 	
-	salir = Falso
+	isSalir = Falso
 	llenarArreglo(tamanho, 0,vectorA)
 	llenarArreglo(tamanho, 0,vectorB)
 	llenarArreglo(tamanho, 0,vectorC)
@@ -132,7 +132,7 @@ SubProceso  menu
 					FinSi
 				Mientras Que choiceVector <> "S"
 			"6":
-				salir = Verdadero
+				isSalir = Verdadero
 				Escribir "Hasta la vista baby"
 			De Otro Modo:
 				Escribir "del 1 al 6 boludo"
@@ -143,7 +143,7 @@ SubProceso  menu
 			Escribir 'Presione enter para salir'
 		FinSi
 		Esperar Tecla	
-	Mientras Que salir = Falso
+	Mientras Que isSalir = Falso
 FinSubProceso
 
 Algoritmo vectoresMenu
