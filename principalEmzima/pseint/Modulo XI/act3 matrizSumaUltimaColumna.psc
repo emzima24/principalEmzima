@@ -2,8 +2,8 @@
 // Crea una matriz con 3 columnas y una cantidad de filas definida por el usuario. En las dos primeras columnas, el usuario ingresará valores enteros (puede diseñar este ingreso de manera aleatoria para enviar la carga manual). En la tercera columna se almacenará el resultado de sumar los números de la primera y segunda columna. La matriz se mostrará de la siguiente forma:
 //
 //	3  5  8 => 8 se obtuvo de sumar 3 + 5 
-//	4  3  7 ? 7 se obtuvo de sumar 4 + 3 
-//	1  4  5 ? 5 se obtuvo de sumar 1 +4 
+//	4  3  7 => 7 se obtuvo de sumar 4 + 3 
+//	1  4  5 => 5 se obtuvo de sumar 1 + 4 
 
 
 

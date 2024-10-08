@@ -22,11 +22,13 @@ Algoritmo numerosAsteriscos
 	Definir ast Como Caracter
 	Para i<-1 Hasta 5 Con Paso 1 Hacer
 		ast = ""
-		Escribir "Numero (" i ")"
-		Leer number
+		Repetir
+			Escribir "Numero (" i ")"
+			Leer number
+		Mientras Que number< 1 O number > 20
 		Para j<-1 Hasta number Con Paso 1 Hacer
 			ast = ast +"*"
 		Fin Para
-		Escribir "Para el número (" number "), imprimir: " number ast
+		Escribir number ast
 	Fin Para
 FinAlgoritmo

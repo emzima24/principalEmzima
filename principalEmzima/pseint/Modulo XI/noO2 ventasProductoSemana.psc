@@ -1,20 +1,21 @@
 // Complementario 3
 // Una empresa de venta de productos por correo desea realizar una 
-// estadï¿½stica de las ventas de cada uno de sus productos a lo largo de una 
-// semana, distribuyendo los 5 productos en los 5 dï¿½as hï¿½biles. Se desea conocer:
-//		* El total de ventas por cada dï¿½a de la semana.
-//	 	* El total de ventas de cada producto a lo largo de la semana.
-//		* El producto mï¿½s vendido en cada semana.
-//		* El nombre, el dï¿½a de la semana y la cantidad del producto mï¿½s vendido.
-// El informe final tendrï¿½ el siguiente formato:
-//							Lunes	Martes	Miï¿½rcoles	Jueves	Viernes	Total producto
+// estadística de las ventas de cada uno de sus productos a lo largo de una 
+// semana, distribuyendo los 5 productos en los 5 días hábiles. Se desea conocer:
+//	 * El total de ventas por cada día de la semana.
+//	 * El total de ventas de cada producto a lo largo de la semana.
+//	 * El producto más vendido en cada semana.
+//	 * El nombre, el día de la semana y la cantidad del producto más vendido.
+// El informe final tendrá el siguiente formato:
+//
+//	                  Lunes  Martes  Miércoles  Jueves  Viernes  Total producto
 //	Producto 1						
 //	Producto 2						
 //	Producto 3						
 //	Producto 4						
 //	Producto 5						
 //	Total semana						
-//	Producto mï¿½s vendido						
+//	Producto más vendido		
 
 
 
@@ -168,7 +169,6 @@ FinSubProceso
 Algoritmo ventasProductoSemana
 	// Se define real porque es menos probable que se rompa en ejecucion en el ingreso de la variable y se mantiene para todos los casos por economia de codigo
 	// las selecciones se definen como caracter como mecanismo mas general para evitar la ruptura de codigo
-	Definir acumCemento, acumArena, acumLadrillos, acumPiedras, acumHierro8, acumHierro4, acumHierro10, acumPiedrasVol, acumHierro6, acumPintura, acumIluminacion Como Real
 	Definir numRow,numCol,matrixA,matrixB,matrixC,min,max,i Como Real
 	Definir type,nombre,productos,diasSemana, choice,choiceVector  Como Caracter
 	Definir salir,salir2 Como Logico
@@ -198,12 +198,3 @@ Algoritmo ventasProductoSemana
 	crearMatriz(type,numRow,numCol-1,5,10,matrixA)  //
 	mostrarMatriz("particular",numRow,numCol-1,matrixA,"Informe ",diasSemana, productos)
 FinAlgoritmo
-
-MATRIX
-PROGRAMA
-SUBPROGRAMA
-SUBPROCESO
-VARIABLE
-ENTERO
-PARA
-MIENTRAS

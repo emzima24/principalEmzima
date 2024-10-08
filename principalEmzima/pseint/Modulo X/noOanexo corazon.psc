@@ -20,7 +20,7 @@ Funcion cadaLinea(ini,top, ini2, top2,i)
 FinFuncion
 
 Funcion mostrarArreglo (arreglo)
-	Definir  j Como Entero
+	Definir  i,j Como Entero
 	Para i = 0 hasta 7-1 Hacer
 		Escribir Sin Saltar arreglo[i] ", "
 	FinPara	
