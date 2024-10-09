@@ -78,7 +78,7 @@ Algoritmo integrador
 				Escribir '   2- Consultar Saldo'
 				Escribir '   3- Retirar dinero'
 				Escribir '   4- Salir'
-				Escribir 'Elija una opción (1-3): ' Sin Saltar
+				Escribir 'Elija una opción (1-4): ' Sin Saltar
 				Leer opc
 				Segun opc Hacer
 					'1':
