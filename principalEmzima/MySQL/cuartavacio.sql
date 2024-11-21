@@ -1,0 +1,233 @@
+-- Ejercicios cláusula IN
+-- Encuentra los empleados cuyos IDs son 1, 3 o 5.
+-- 
+-- Busca los productos con IDs 2, 4 o 6 en la tabla de productos.
+-- 
+-- Encuentra las ventas que tienen los clientes con IDs 1, 3 o 5.
+-- 
+-- 
+-- Ejercicios cláusula LIKE
+-- Encuentra los empleados cuyos nombres comienzan con "L".
+-- 
+-- Busca los productos cuyos nombres contengan la palabra "Teléfono".
+-- 
+-- Encuentra los clientes cuyas direcciones contienen la palabra "Calle".
+
+
+-- Ejercicios cláusula ORDER BY:
+-- Ordena los empleados por salario de manera ascendente.
+-- 
+-- Ordena los productos por nombre de manera descendente.
+-- 
+-- Ordena las ventas por cantidad de manera ascendente y luego por precio_unitario de manera descendente.
+-- 
+-- Ejercicios LIMIT
+-- Muestra los 5 productos más caros de la tabla "productos".
+-- 
+-- Muestra los 10 primeros empleados en orden alfabético por apellido.
+-- 
+-- Muestra las 3 ventas con el monto total más alto.
+-- 
+-- Ejercicios AS
+-- Crea una consulta que muestre el salario de los empleados junto con el salario aumentado en un 10% nombrando a la columna como “Aumento del 10%”.
+-- 
+-- Crea una consulta que calcule el monto total de las compras realizadas por cliente y que la columna se llame “Monto total gastado”.
+-- 
+-- Muestra los nombres completos de los empleados concatenando los campos "nombre" y "apellido" y que la columna se llame “Nombre y apellido”.
+
+-- Ejercicios CASE
+-- Crea una consulta que muestre el nombre de los productos y los categorice como "Caro" si el precio es mayor o igual a $500, "Medio" si es mayor o igual a $200 y menor que $500, y "Barato" en otros casos.
+-- 
+-- Crea una consulta que muestre el nombre de los empleados y los categorice como "Joven" si tienen menos de 30 años, "Adulto" si tienen entre 30 y 40 años, y "Mayor" si tienen más de 40 años.
+-- 
+-- Crea una consulta que muestre el ID de la venta y los categorice como "Poca cantidad" si la cantidad es menor que 3, "Cantidad moderada" si es igual o mayor que 3 y menor que 6, y "Mucha cantidad" en otros casos.
+-- 
+-- Crea una consulta que muestre el nombre de los clientes y los categorice como "Comienza con A" si su nombre comienza con la letra 'A', "Comienza con M" si comienza con 'M' y "Otros" en otros casos.
+-- 
+-- Crea una consulta que muestre el nombre de los empleados y los categorice como "Salario alto" si el salario es mayor o igual a $3500, "Salario medio" si es mayor o igual a $3000 y menor que $3500, y "Salario bajo" en otros casos.
+
+-- Ejercicios Función MAX() 
+-- Encuentra el salario máximo de todos los empleados.
+-- 
+-- Encuentra la cantidad máxima de productos vendidos en una sola venta.
+-- 
+-- Encuentra la edad máxima de los empleados.
+-- 
+-- Ejercicios Función MIN()
+-- Encuentra el salario mínimo de todos los empleados.
+-- 
+-- Encuentra la cantidad mínima de productos vendidos en una sola venta.
+-- 
+-- Encuentra la edad mínima de los empleados.
+-- 
+-- Ejercicios de la Función COUNT()
+-- Cuenta cuántos empleados hay en total.
+-- 
+-- Cuenta cuántas ventas se han realizado.
+-- 
+-- Cuenta cuántos productos tienen un precio superior a $500.
+-- 
+-- 
+-- Ejercicios de la Función SUM()
+-- Calcula la suma total de salarios de todos los empleados.
+-- 
+-- Calcula la suma total de montos vendidos en todas las ventas.
+-- 
+-- Calcula la suma de precios de productos con ID par.
+-- 
+-- 
+-- Ejercicios Función AVG()
+-- Calcula el salario promedio de todos los empleados.
+-- 
+-- Calcula el precio unitario promedio de todos los productos.
+-- 
+-- Calcula la edad promedio de los empleados.
+-- 
+-- Ejercicios GROUP BY()
+-- Agrupa las ventas por empleado y muestra la cantidad total de ventas realizadas por cada empleado.
+-- 
+-- Agrupa los productos por precio y muestra la cantidad de productos con el mismo precio.
+-- 
+-- Agrupa los empleados por departamento y muestra la cantidad de empleados en cada departamento.
+-- 
+-- Ejercicios HAVING 
+-- Encuentra los departamentos con un salario promedio de sus empleados superior a $3,000.
+-- 
+-- Encuentra los productos que se han vendido al menos 5 veces.
+-- 
+-- Selecciona los empleados que tengan una “o” en su nombre o apellido y agrúpalos por departamento y muestra los que tengan el salario máximo.
+-- 
+-- Actividad: Ejercicios Complementarios
+-- 
+-- EJERCICIOS CON CLÁUSULA IN
+-- 
+-- Busca los empleados que trabajan en los departamentos 2 o 3.
+-- 
+-- Trae a los clientes que no tengan los IDs 2, 4 o 6.
+-- 
+-- Busca los productos cuyos precios son 350.00, 480.00 o 800.00.
+-- 
+-- EJERCICIOS CON CLÁUSULA LIKE
+-- 
+-- Busca los empleados cuyos correos electrónicos terminan en "mail.com".
+-- 
+-- Encuentra los productos cuyos nombres tengan exactamente 6 caracteres.
+-- 
+-- Busca los clientes cuyos nombres tengan una "a" en la tercera posición 
+-- 
+-- EJERCICIOS CON CLÁUSULA ORDER BY
+-- 
+-- Ordena los clientes por nombre de manera ascendente y luego por dirección de manera descendente.
+-- 
+-- Ordena los empleados por fecha_contratación de manera descendente.
+-- 
+-- Ordena los productos por precio de manera ascendente.
+-- 
+-- EJERCICIOS CON FUNCIÓN MAX()
+-- 
+-- Encuentra el precio máximo de un producto.
+-- 
+-- Encuentra el monto total máximo de una venta.
+-- 
+-- Encuentra el ID de cliente con el valor máximo.
+-- 
+-- EJERCICIOS CON FUNCIÓN MIN()
+-- 
+-- Encuentra el precio mínimo de un producto.
+-- 
+-- Encuentra el monto total mínimo de una venta.
+-- 
+-- Encuentra el ID de cliente con el valor mínimo.
+-- 
+-- EJERCICIOS CON FUNCIÓN  COUNT()
+-- 
+-- Cuenta cuántos clientes tienen la palabra "López" en su nombre.
+-- 
+-- Cuenta cuántas ventas fueron realizadas por el empleado con el id 9 .
+-- 
+-- Cuenta cuántos productos tienen un nombre que contiene la palabra "Digital".
+-- 
+-- EJERCICIOS CON FUNCIÓN  SUM()
+-- 
+-- Calcula la suma de cantidades de productos vendidos por empleado.
+-- 
+-- Calcula la suma de salarios de empleados en el Departamento 1.
+-- 
+-- Calcula la suma de precios de productos vendidos al cliente con id 2.
+-- 
+-- EJERCICIOS CON FUNCIÓN  AVG()
+-- 
+-- Calcula el precio promedio de productos con un precio superior a $200.
+-- 
+-- Calcula el salario promedio de los empleados en el Departamento 1.
+-- 
+-- Calcula la cantidad promedio de productos vendidos por empleado.
+-- 
+-- EJERCICIOS CON FUNCIÓN  GROUP BY()
+-- 
+-- Agrupa las ventas por cliente y muestra el monto total gastado por cada cliente.
+-- 
+-- Encuentra el salario máximo por departamento.
+-- 
+-- Encuentra el salario mínimo por departamento.
+-- 
+-- Obtén la suma total de salarios por departamento.
+-- 
+-- Encuentra la cantidad total de productos vendidos por empleado.
+-- 
+-- EJERCICIOS CON FUNCIÓN  HAVING()
+-- 
+-- Encuentra los departamentos con al menos 2 empleados con una edad menor de 30 años.
+-- 
+-- Muestra los clientes que han gastado más de $2,000 en total en compras.
+-- 
+-- EJERCICIOS CON FUNCIÓN  AS()
+-- 
+-- Crea una consulta que muestre la edad de los empleados junto con la edad aumentada en 5 años y que esta nueva columna se llame “Edad en 5 años”.
+-- 
+-- Muestra el monto total de ventas junto con el monto total aumentado en un 21%  y que esta nueva columna se llame “Precio + IVA”.
+-- 
+--  Crea una consulta que muestre el nombre del producto y su precio unitario precedido con el signo “$ ” y que esta nueva columna se llame “precio con formato”.
+-- 
+-- EJERCICIOS CON FUNCIÓN  LIMIT()
+-- 
+-- Muestra los 5 clientes con los IDs más bajos.
+-- 
+-- Muestra los 3 productos más vendidos.
+-- 
+-- Muestra los 5 empleados más jóvenes.
+-- 
+-- EJERCICIOS CON FUNCIÓN  CASE()
+-- 
+-- Crea una consulta que muestre el nombre de los productos y los categorice como "Laptop" si el nombre contiene la palabra "Laptop", "Teléfono" si contiene la palabra "Teléfono", y "Otros" en otros casos.
+-- 
+-- Crea una consulta que muestre el ID del producto y los clasifique en categorías según la cantidad total de ventas de cada producto en la tabla 'ventas'. Utilizando una instrucción 'CASE', establece las siguientes categorías: 
+-- 
+-- Si la suma de la cantidad de ventas (SUM(cantidad)) es mayor o igual a 9, la categoría es 'Alto Volumen'. 
+-- 
+-- Si la suma de la cantidad de ventas está entre 4 y 8 (inclusive), la categoría es 'Medio Volumen'.
+-- 
+-- En otros casos, la categoría es 'Bajo Volumen'.
+-- 
+-- Recuerda agrupar por producto_id y mostrar el resultado en orden descendente por la suma de la cantidad de ventas.
+-- 
+-- Crea una consulta que muestre el ID de la venta y los categorice como "Venta pequeña" si el monto total es menor que $500, "Venta mediana" si es mayor o igual a $500 y menor que $1500, y "Venta grande" en otros casos.
+-- 
+-- Crea una consulta que muestre el nombre de los clientes y los categorice como "Dirección larga" si la longitud de su dirección es mayor o igual a 30 caracteres, "Dirección mediana" si es mayor o igual a 20 y menor que 30 caracteres, y "Dirección corta" en otros casos.
+-- 
+--  Crea una consulta que muestre el nombre de los empleados y los categorice como "Ventas" si pertenecen al departamento 1, "Recursos Humanos" si pertenecen al departamento 2, y "Contabilidad"  si pertenecen al departamento 3.
+-- 
+-- Crea una consulta que muestre el nombre de los productos y los categorice de la siguiente manera:
+-- 
+-- Si el nombre del producto está en la lista ('Laptop', 'Reloj de Pulsera Inteligente', 'Reproductor de Blu-ray', 'Auriculares Bluetooth', 'Smart TV 55 Pulgadas', 'Cámara Digital', 'Impresora', 'Tablet', 'Teléfono móvil') y el precio es mayor o igual a 1000, la categoría es 'Tecnología cara'.
+-- 
+-- Si el nombre del producto está en la lista anterior y el precio está entre 500 y 999 (inclusive), la categoría es 'Tecnología gama media'.
+-- 
+-- Si el nombre del producto está en la lista anterior y el precio es menor a 500, la categoría es 'Tecnología barata'.
+-- 
+-- Si el precio es mayor o igual a 1000 y el nombre del producto no está en la lista, la categoría es 'Caro'.
+-- 
+-- Si el precio está entre 500 y 999 (inclusive) y el nombre del producto no está en la lista, la categoría es 'Medio'.
+-- 
+-- Si el precio es menor a 500 y el nombre del producto no está en la lista, la categoría es 'Barato'.
+
