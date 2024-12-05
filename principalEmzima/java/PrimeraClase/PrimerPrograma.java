@@ -5,11 +5,11 @@ public class PrimerPrograma {
         final String MI_NOMBRE = "Emiliano";
 
         boolean isVerdad = true;
-        String gestorCasosPrueba = "Testlink"; // Mayuscula a diferencia del resto
+        String gestorCasosPrueba = "Testlink"; // Mayúscula a diferencia del resto
         double escalaMinimo = 1.0; 
         float escalaMaximo = 10.0f;   // f es obligatoria para float
         char letra = 'm'; // comillas simples obligatorias
-        long numerote = 9223372036854775807L;  // L es obligatoria para float
+        long numerote = 9223372036854775807L;  // L es obligatoria para long
         
         System.out.println(SALUDO);
         System.out.println("La edad de " + MI_NOMBRE + " es " + EDAD);
