@@ -8,7 +8,8 @@ public class ComplementarioEdad {
         System.out.print("Ingresa tu año de nacimiento: ");
         int yearOfBirth = input.nextInt();
         boolean isLegalAge = CURRENTYEAR - yearOfBirth > 18; 
-        System.out.println("Para el año de nacimiento "+ yearOfBirth +" es mayor de edad? "+ isLegalAge);
+        String greater = isLegalAge ? "Si, es mayor" : "No, no es mayor"; 
+        System.out.println("Para el año de nacimiento "+ yearOfBirth +" es mayor de edad? "+ greater);
         input.close();
         }
 }
