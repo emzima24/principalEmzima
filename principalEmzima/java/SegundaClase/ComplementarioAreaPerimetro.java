@@ -8,10 +8,10 @@ public class ComplementarioAreaPerimetro {
         Scanner input = new Scanner(System.in);
         input.useLocale(Locale.US);
     
-        //System.out.print("Ingresa la base del rectángulo: ");
-        //float base = input.nextFloat();
-        //System.out.print("Ingresa la altura del rectángulo: ");
-        //float height = input.nextFloat();
+        // System.out.print("Ingresa la base del rectángulo: ");
+        // float baseRectangle = input.nextFloat();
+        // System.out.print("Ingresa la altura del rectángulo: ");
+        // float heightRectangle = input.nextFloat();
         float baseRectangle = random.nextFloat(101);
         float heightRectangle = random.nextInt(101);
        

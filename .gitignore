@@ -22,4 +22,5 @@ principalEmzima/pythonAutomatizacion/pytestBehave/__*
 principalEmzima/pythonAutomatizacion/pytestBehave/loQuehicimosSoloBehave/steps/__*
 principalEmzima/pythonAutomatizacion/pytestBehave/save_continue
 principalEmzima/PowerBI/
-
+principalEmzima/pyhtonAutomatizacion/saucedemoproject/.pytest_cache/
+principalEmzima/pythonAutomatizacion/saucedemoproject/__pycache__/
