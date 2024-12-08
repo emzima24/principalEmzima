@@ -7,6 +7,7 @@ class Login:
         """Inicializa el navegador en la instancia.
         Lo solicita para comenzar e incorporarlo en el resto de las funciones"""
         self.browser = chrome_browser
+        self.logged_in = False
 
     def username(self):
         """Completa el campo de nombre de usuario."""
@@ -36,6 +37,7 @@ class Login:
             WebDriverWait(self.browser, BrowserConfig.TIMEOUTLOW).until(
                 lambda driver: driver.current_url != BrowserConfig.BASE_URL
             )
+            self.logged_in = True
             time.sleep(BrowserConfig.TIMEOUTLOW)
         except Exception as e:
             raise AssertionError(f"Login fallido: {e}")

@@ -3,20 +3,11 @@ from configconstan import BrowserConfig, Cards
 from Features.pages.Login import Login
 
 
-class Catalogue:
+class Catalogue(Login):
     def __init__(self, chrome_browser):
         """Inicializa el navegador en la instancia.
         Lo solicita para comenzar e incorporarlo en el resto de las funciones"""
-        self.browser = chrome_browser
-        self.logged_in = False
-
-    def login(self):
-        """Realiza el inicio de sesión."""
-        if not self.logged_in: 
-            login = Login(self.browser)
-            login.login()  
-            self.logged_in = True
-        return self
+        super().__init__(chrome_browser)
 
     def verify_login(self):
         """Verifica si el usuario está autenticado antes de ejecutar otras funciones."""
