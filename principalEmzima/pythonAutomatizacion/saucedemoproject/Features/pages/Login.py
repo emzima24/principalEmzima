@@ -26,15 +26,13 @@ class Login:
         self.browser.get(url)
         try:
             WebDriverWait(self.browser, BrowserConfig.TIMEOUTLOW).until(
-                EC.presence_of_element_located((By.ID, 'password'))
-            )
+                EC.presence_of_element_located((By.ID, 'password')))
             self.username(user)
             self.password(password)
             self.login_button()
 
             WebDriverWait(self.browser, BrowserConfig.TIMEOUTLOW).until(
-                lambda driver: driver.current_url != BrowserConfig.BASE_URL
-            )
+                lambda driver: driver.current_url != BrowserConfig.BASE_URL)
             self.logged_in = True
             #time.sleep(BrowserConfig.TIMEOUTLOW)
         except Exception as e:
