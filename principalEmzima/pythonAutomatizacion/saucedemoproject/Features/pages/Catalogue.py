@@ -59,6 +59,16 @@ class Catalogue(Login):
             EC.element_to_be_clickable((By.ID, product['id_add_cart']))
         ).click()
         return self
+    
+    def description(self,product_name):
+        """Abre el carro de compras desde la barra superior."""
+        product = Cards.products.get(product_name)
+        self.verify_login()
+        WebDriverWait(self.browser, BrowserConfig.TIMEOUTLOW).until(
+            EC.element_to_be_clickable((By.XPATH, product['xpath_title']))
+        ).click()
+        #time.sleep(BrowserConfig.TIMEOUTLOW)
+        return self
 
 
         

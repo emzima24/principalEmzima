@@ -37,7 +37,7 @@ class Checkout_Information(Cart):
         ).click()
 
     def cancel(self):
-        """Se devuelve a la página de cart."""
+        """Se devuelve a la página de catalogo."""
         self.verify_login()
         WebDriverWait(self.browser, BrowserConfig.TIMEOUTLOW).until(
             EC.element_to_be_clickable((By.ID, 'cancel'))

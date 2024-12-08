@@ -4,6 +4,10 @@ from Features.pages.Login import Login
 from Features.pages.Catalogue import Catalogue
 from Features.pages.Cart import Cart
 from Features.pages.Checkout_Information import Checkout_Information
+from Features.pages.Checkout_Overview import Checkout_Overview
+from Features.pages.Checkout_Complete import Checkout_Complete
+from Features.pages.Description import Description
+
 
 URL = BrowserConfig.BASE_URL
 USER = config.get('USERNAME')
@@ -50,5 +54,6 @@ def test_continue(chrome_browser):
     checkout_information.cart()
     checkout_information.checkout()
     checkout_information.continue_paying('Carlos','Ramirez','C1429SAV')
+
 
 
