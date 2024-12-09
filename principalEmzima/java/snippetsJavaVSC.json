@@ -1,0 +1,109 @@
+{
+	// Place your snippets for java here. Each snippet is defined under a snippet name and has a prefix, body and 
+	// description. The prefix is what is used to trigger the snippet and the body will be expanded and inserted. Possible variables are:
+	// $1, $2 for tab stops, $0 for the final cursor position, and ${1:label}, ${2:another} for placeholders. Placeholders with the 
+	// same ids are connected.
+
+    "Static void main template": {
+        "prefix": "svmjava",
+        "body": [
+            "    public static void main(String[] args) {",
+            "        ${1:text}",
+            "    }",
+        ],
+        "description": "Template for a Java Static void main"
+    },
+
+	"Scanner template": {
+        "prefix": "scan",
+        "body": [
+			"Scanner input = new Scanner(System.in);",
+			"",
+			"System.out.print(\"Ingresa ${1:text}: \");",
+            "${2:var_type} ${3:variable} = input.${4:next_type};",
+            "System.out.println(\"${1:text} \"+${3:variable});",
+			"input.close();",
+        ],
+        "description": "Template for a Scanner"
+    },
+
+	"Input int template": {
+        "prefix": "inpint",
+        "body": [
+			"System.out.print(\"Ingresa ${1:text}: \");",
+            "int ${2:variable} = input.nextInt();",
+        ],
+        "description": "Template for a Scanner int"
+    },
+	
+	"Input String template": {
+        "prefix": "inpstr",
+        "body": [
+			"System.out.print(\"Ingresa ${1:text}: \");",
+            "String ${2:variable} = input.nextLine();",
+        ],
+        "description": "Template for a Scanner String"
+    },
+
+    "Input Char template": {
+        "prefix": "inpchar",
+        "body": [
+			"System.out.print(\"Ingresa ${1:text}: \");",
+            "char ${2:variable} = input.next().charAt(0);",
+        ],
+        "description": "Template for a Scanner char"
+    },
+
+	"Input float template": {
+        "prefix": "inpflo",
+        "body": [
+			"System.out.print(\"Ingresa ${1:text}: \");",
+            "float ${2:variable} = input.nextFloat();",
+        ],
+        "description": "Template for a Scanner float"
+    },
+	
+	"Input double template": {
+        "prefix": "inpfdou",
+        "body": [
+			"System.out.print(\"Ingresa ${1:text}: \");",
+            "double ${2:variable} = input.nextDouble();",
+        ],
+        "description": "Template for a Scanner double"
+    },
+
+	"Input boolean template": {
+        "prefix": "inpboo",
+        "body": [
+			"System.out.print(\"Ingresa ${1:text}: \");",
+            "boolean ${2:isVariable} = input.nextBoolean();",
+        ],
+        "description": "Template for a Scanner int"
+    },
+
+    "Systemout not standard template": {
+        "prefix": "soutns",
+        "body": [
+			"System.out.print(\"${1:text} \");",
+        ],
+        "description": "Template not standard Systemout "
+    },
+
+    "Systemout not standard two template": {
+        "prefix": "sout2ns",
+        "body": [
+			"System.out.print(\"${1:text}: \");",
+            "System.out.print(\"${2:text}: \");",
+        ],
+        "description": "Two Template not standard Systemout"
+    },
+
+    "Systemout Two template": {
+        "prefix": "sout2st",
+        "body": [
+			"System.out.println(\"${1:text}: \");",
+            "System.out.println(\"${2:text}: \");",
+        ],
+        "description": "Two Template standard Systemout"
+    },
+}
