@@ -27,3 +27,5 @@ principalEmzima/pythonAutomatizacion/saucedemoproject/__pycache__/
 principalEmzima/pythonAutomatizacion/saucedemoproject/Features/pages/Checkout_Overview.py
 principalEmzima/pythonAutomatizacion/saucedemoproject/Features/pages/Checkout_Complete.py
 principalEmzima/pythonAutomatizacion/saucedemoproject/Features/pages/Description.py
+principalEmzima/pythonAutomatizacion/saucedemoproject/Features/end2end.feature
+principalEmzima/pythonAutomatizacion/saucedemoproject/Features/steps/test_end2end.py
