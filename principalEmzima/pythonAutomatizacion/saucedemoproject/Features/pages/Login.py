@@ -8,6 +8,10 @@ class Login:
         Lo solicita para comenzar e incorporarlo en el resto de las funciones"""
         self.browser = chrome_browser
         self.logged_in = False
+    
+    def open_url(self,url):
+        """Ingresa a la url."""
+        self.browser.get(url)
 
     def username(self,user_name):
         """Completa el campo de nombre de usuario."""
@@ -23,7 +27,7 @@ class Login:
 
     def login(self,url,user,password):
         """Realiza el inicio de sesión completo."""
-        self.browser.get(url)
+        self.open_url(url)
         try:
             WebDriverWait(self.browser, BrowserConfig.TIMEOUTLOW).until(
                 EC.presence_of_element_located((By.ID, 'password')))
