@@ -19,7 +19,7 @@ public class FiguraGeometrica {
         String metric = switch (option) {
             case "1" -> {
                 figure = "Círculo";
-                constant = 3.14f;
+                constant = Math.PI;
                 yield "el radio";}
             case "2" -> {
                 figure = "Cuadrado";
@@ -45,7 +45,7 @@ public class FiguraGeometrica {
                     area = value1*value2*constant;
 
                 }
-                System.out.printf("El area del %s %.2f cm2, según el(los) valor(es) dado(s) en cm %s %s",figure,area,metric,formattedNumber);
+                System.out.printf("El área del %s es %.2f cm2, según el(los) valor(es) dado(s) en cm %s %s",figure,area,metric,formattedNumber);
         } else {
             System.out.println("Boludo un número entre 1 y 3, en serio \"" + option + "\" Dale!");
         }

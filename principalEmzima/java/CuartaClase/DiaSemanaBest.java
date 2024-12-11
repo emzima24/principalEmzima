@@ -20,7 +20,7 @@ public class DiaSemanaBest {
                 text.equals("No válido")
                         ? "Boludo un número entre 1 y 7, en serio \"" + numberStr + "\" Dale!"
                         : "Para el número \""+numberStr+"\", el día de la semana es " + text
-                                + "\"");
+                        );
         input.close();
     }
 
