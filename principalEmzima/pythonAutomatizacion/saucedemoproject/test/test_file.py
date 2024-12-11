@@ -56,4 +56,14 @@ def test_continue(chrome_browser):
     checkout_information.continue_paying('Carlos','Ramirez','C1429SAV')
 
 
+def test_finish(chrome_browser):
+    checkout_overview = Checkout_Overview(chrome_browser)
+    checkout_overview.login(URL, USER,PASSWORD)
+    checkout_overview.add_to_cart('Sauce Labs Oneise')
+    checkout_overview.cart()
+    checkout_overview.checkout()
+    checkout_overview.continue_paying('Carlos','Ramirez','C1429SAV')
+    checkout_overview.finish()
+
+
 
