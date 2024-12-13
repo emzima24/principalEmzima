@@ -4,9 +4,9 @@ from Features.pages.Login import Login
 from Features.pages.Catalogue import Catalogue
 from Features.pages.Cart import Cart
 from Features.pages.Checkout_Information import Checkout_Information
-from Features.pages.Checkout_Overview import Checkout_Overview
-from Features.pages.Checkout_Complete import Checkout_Complete
-from Features.pages.Description import Description
+from Features.pages.Not_Checkout_Overview import Checkout_Overview
+from Features.pages.Not_Checkout_Complete import Checkout_Complete
+from Features.pages.Not_Description import Description
 
 
 URL = BrowserConfig.BASE_URL
@@ -55,5 +55,22 @@ def test_continue(chrome_browser):
     checkout_information.checkout()
     checkout_information.continue_paying('Carlos','Ramirez','C1429SAV')
 
+# prueba de que funciona description
+def test_description(chrome_browser):
+    description = Description(chrome_browser)
+    description.login(URL,USER,PASSWORD)
+    description.description('Sauce Labs Oneise')
+    description.add_to_cart_description()
+    description.cart()
+    description.hamburger_menu()
+    description.logout()
 
-
+# prueba de que funciona finish
+def test_finish(chrome_browser):
+    checkout_overview = Checkout_Overview(chrome_browser)
+    checkout_overview.login(URL,USER,PASSWORD)
+    checkout_overview.add_to_cart('Sauce Labs Oneise')
+    checkout_overview.cart()
+    checkout_overview.checkout()
+    checkout_overview.continue_paying('Carlos','Ramirez','C1429SAV')
+    checkout_overview.finish()
