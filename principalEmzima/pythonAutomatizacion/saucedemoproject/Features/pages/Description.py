@@ -4,7 +4,7 @@ from Features.pages.Catalogue import Catalogue
 from Features.pages.Cart import Cart
 
 
-class Description(Catalogue, Cart):
+class Description(Cart, Catalogue):
     def __init__(self, chrome_browser):
         """Inicializa el navegador en la instancia Description herendando de Catalogue que hereda de Login.
         Lo solicita para comenzar e incorporarlo en el resto de las funciones"""
