@@ -1,5 +1,5 @@
 Feature: Go to on test page on login
-
+  
   Scenario Outline: Login test in ulr
     Given I'm a registered user on the <website>
     When I enter my <username> and <password>

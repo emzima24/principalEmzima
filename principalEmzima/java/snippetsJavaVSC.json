@@ -106,4 +106,97 @@
         ],
         "description": "Two Template standard Systemout"
     },
+
+    "if else template exter": {
+        "prefix": "ifelex",
+        "body": [
+            "boolean ${1:isVariable} ${2:variable} = ${3:logicalOperator} ${4:otherVariable};",
+            "if (${1:isVariable}) {",
+            "   System.out.println(\"${5:text}\"+${2:variable});",
+            "} else {",
+            "   System.out.println(\"${6:text}\"+${2:variable});",
+            "}",
+        ],
+        "description": "Template If-else exter"
+    },
+
+    "if else template inter": {
+        "prefix": "ifelin",
+        "body": [
+            "if (${1:variable} ${2:logicalOperator} ${3:otherVariable}) {",
+            "   System.out.println(\"${4:text}\"+${1:variable});",
+            "} else {",
+            "   System.out.println(\"${5:text}\"+${1:variable});",
+            "}",
+        ],
+        "description": "Template If-else inter"
+    },    
+
+    "if else if else template": {
+        "prefix": "ifelif",
+        "body": [
+            "if (${1:variable} ${2:logicalOperator} ${3:otherVariable}) {",
+            "   System.out.println(\"${4:text}\"+${1:variable});",
+            "} else if (${1:variable} ${5:otherLogicalOperator} ${3:otherVariable}) {",
+            "   System.out.println(\"${6:otherText}\"+${1:variable});",
+            "} else {",
+            "   System.out.println(\"${7:otherOtext}\"+${1:variable});",
+            "}",
+        ],
+        "description": "Template If-else"
+    },
+
+    "switch3 template": {
+        "prefix": "swit3",
+        "body": [
+            "switch (${1:variable}) {",
+            "   case ${2:1}:",
+            "       break;",
+            "   case ${3:2}:",
+            "       break;",
+            "   case ${4:3}:",
+            "       break;",
+            "   default:",
+            "       System.out.println(\"${5:text} e introdujiste el valor: \"+${1:variable});",
+            "       break;",
+            "}",
+        ],
+        "description": "Template switch 3 case & default"
+    },
+
+    "switch5 template": {
+        "prefix": "swit5",
+        "body": [
+            "switch (${1:variable}) {",
+            "   case ${2:1}:",
+            "       break;",
+            "   case ${3:2}:",
+            "       break;",
+            "   case ${4:3}:",
+            "       break;",
+            "   case ${5:4}:",
+            "       break;",
+            "   case ${6:5}:",
+            "       break;",
+            "   default:",
+            "       System.out.println(\"${7:text} e introdujiste el valor: \"+${1:variable});",
+            "       break;",
+            "}",
+        ],
+        "description": "Template switch 5 case & default"
+    },
+
+    "switch4 expression template": {
+        "prefix": "swit4exp",
+        "body": [
+            "switch (${1:variable}) {",
+            "   case ${2:1} -> ${6:text};",
+            "   case ${3:2} -> ${6:text};",
+            "   case ${4:3} -> ${6:text};",
+            "   case ${5:4} -> ${6:text};",
+            "   default -> ${6:text};",
+            "}",
+        ],
+        "description": "Template switch 5 case & default"
+    }
 }
