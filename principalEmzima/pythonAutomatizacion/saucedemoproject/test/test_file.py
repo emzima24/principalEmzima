@@ -5,7 +5,7 @@ from Features.pages.Catalogue import Catalogue
 from Features.pages.Cart import Cart
 from Features.pages.Checkout_Information import Checkout_Information
 from Features.pages.Checkout_Overview import Checkout_Overview
-#from Features.pages.Checkout_Complete import Checkout_Complete
+from Features.pages.Checkout_Complete import Checkout_Complete
 #from Features.pages.Description import Description
 
 
@@ -64,6 +64,16 @@ def test_finish(chrome_browser):
     checkout_overview.checkout()
     checkout_overview.continue_paying('Carlos','Ramirez','C1429SAV')
     checkout_overview.finish()
+
+def test_complete(chrome_browser):
+    checkout_complete = Checkout_Complete(chrome_browser)
+    checkout_complete.login(URL, USER,PASSWORD)
+    checkout_complete.add_to_cart('Sauce Labs Oneise')
+    checkout_complete.cart()
+    checkout_complete.checkout()
+    checkout_complete.continue_paying('Carlos','Ramirez','C1429SAV')
+    checkout_complete.finish()
+    checkout_complete.back_home()
 
 
 
