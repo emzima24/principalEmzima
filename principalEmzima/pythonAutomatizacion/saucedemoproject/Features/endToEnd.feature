@@ -1,29 +1,27 @@
-Feature: Return to Home Page After Checkout and Logout
+Feature: Return to Login Page After Logout 
 
-  Scenario Outline: Logout and navigate to home page
-    Given I'm a registered user on the <website>
-    When I entered the username and password
-    And I did click on Login button
-    And I did click on the "Add to cart" button for the <product>
-    And I did click on the cart icon
-    And I did click on the "Checkout" button
-    And I did click on the "Finish" button
-    And I filled the field for the <First_Name>
-    And I filled the field for the <Last_Name>
-    And I filled the field for the <Zip_Code>
-    And I did click on the "Continue" button
-    And I did complete the transaction
-    And I did click on the "Back Home" button
-    And I displayed the hamburger menu
-    And I logged out
-    Then I want to see a logout confirmation message
-    And I want to be redirected to the homepage
+  Scenario Outline: Login, Add to cart, Overview, Checkout, Finish, Logout
+    Given I go to the website as a registered user
+    When I enter the username and password
+    And I click on Login button
+    And I click on the "Add to cart" button for the <product>
+    And I click on the cart icon
+    And I click on the "Checkout" button
+    And I fill First Name field with <first_name>
+    And I fill Last Name field with <last_name>
+    And I fill Zip Code field with <zip_code>
+    And I click on the "Continue" button
+    And I click on the "Finish" button
+    And I click on the "Back Home" button
+    And I display the hamburger menu
+    And I log out
+    Then I want to go to the login page
 
     Examples:
-| website                     | First_Name | Last_Name | Zip_Code | product                           |
-| https: // www.saucedemo.com | Carlos     | Alonso    | C1429SAV | Sauce Labs Backpack               |
-| https: // www.saucedemo.com | Carlos     | Alonso    | C1428SAV | Sauce Labs Bike Light             |
-| https: // www.saucedemo.com | Carlos     | Alonso    | C1427SAV | Sauce Labs Bolt T-shirt           |
-| https: // www.saucedemo.com | Carlos     | Alonso    | C1426SAV | Sauce Labs Fleece Jacket          |
-| https: // www.saucedemo.com | Carlos     | Alonso    | C1425SAV | Sauce Labs Onesie                 |
-| https: // www.saucedemo.com | Carlos     | Alonso    | C1424SAV | Test.allTheThings() T-shirt (Red) |
+| first_name | last_name | zip_code | product                           |
+| Carlos     | Alonso    | C1429SAV | Sauce Labs Backpack               |
+| Carlos     | Alonso    | C1428SAV | Sauce Labs Bike Light             |
+| Carlos     | Alonso    | C1427SAV | Sauce Labs Bolt T-shirt           |
+| Carlos     | Alonso    | C1426SAV | Sauce Labs Fleece Jacket          |
+| Carlos     | Alonso    | C1425SAV | Sauce Labs Onesie                 |
+| Carlos     | Alonso    | C1424SAV | Test.allTheThings() T-shirt (Red) |
