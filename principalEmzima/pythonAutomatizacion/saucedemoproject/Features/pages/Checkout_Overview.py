@@ -1,6 +1,6 @@
 from imports import *  
 from configconstan import BrowserConfig, Cards
-from Features.pages.Checkout_Information import Checkout_Information
+from features.pages.Checkout_Information import Checkout_Information
 
 
 class Checkout_Overview(Checkout_Information):

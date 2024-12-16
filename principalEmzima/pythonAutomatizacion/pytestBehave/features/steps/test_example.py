@@ -15,7 +15,7 @@ def test_bbd():
     pass 
 
 @given(u'I want to launch the browser')
-def i_want_to_launch_the_browser(context):
+def i_want_to_launch_the_browser(context,url):
     context.driver = webdriver.Chrome()
 
 @when(u'I enter the <website> in the navegation bar and go there')
