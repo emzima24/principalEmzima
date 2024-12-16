@@ -11,7 +11,7 @@ public class Practica {
         char primerCaracter = texto.charAt(0); // Devuelve 'H'
         System.out.println("primer caracter: " + primerCaracter);
 
-        String subcadena = texto.substring(5, 1); // Devuelve "Mundo"
+        String subcadena = texto.substring(0, 10); // Devuelve "Mundo"
         System.out.println("Parte de una cadena: " + subcadena);
 
         boolean sonIguales = texto.equals(texto2); // Devuelve true
@@ -42,8 +42,14 @@ public class Practica {
         int compara2 = texto3.compareTo(texto4);
         System.out.println("Comparación orden alfabetico por su valor unicode "+compara2); // Salida: un número negativo porque "apple" es menor que "banana"
         
+        int result = texto.compareToIgnoreCase(texto2);
+        System.out.println("Comparación orden alfabetico por su valor unicode sin considerar mayusculas y minusculas "+result);
         
-        // String newStr = str.concat("!"); // "Hello, World!!"
+        boolean resultBoolean = texto.endsWith("World");
+        System.out.println("Finaliza con"+resultBoolean);
+
+        boolean resultEqualsIgnore = texto.equalsIgnoreCase(texto2);
+        System.out.println("Valor igual sin considerar mayusculas y minusculas "+resultEqualsIgnore);
 
 
     }
