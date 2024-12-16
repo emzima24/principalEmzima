@@ -1,7 +1,7 @@
 from imports import *  
-from configconstan import BrowserConfig
-from Features.pages.Checkout_Overview import Checkout_Overview
-
+from Checkout_Overview import Checkout_Overview
+from Description import Description
+from Catalogue import Catalogue
 class Checkout_Complete(Checkout_Overview):
     def __init__(self, chrome_browser):
         """Inicializa el navegador en la instancia Checkout_Complete que hereda Checkout_Overview herendando de Cart que hereda de Catalogue que hereda de Login.
@@ -15,8 +15,9 @@ class Checkout_Complete(Checkout_Overview):
         
     def back_home(self):
         """Se dirge a la pagina de catalog. """
-        self.verify_login()
-        WebDriverWait(self.browser, BrowserConfig.TIMEOUTLOW).until(
-            EC.element_to_be_clickable((By.ID, 'back-to-products'))
-        ).click()
+        Description.back_to_products()
+        """Abre el hamburguer menu"""
+        Catalogue.hamburger_menu()
+        """Cierra sesion"""
+        Catalogue.logout()
         return self
