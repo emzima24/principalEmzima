@@ -1,14 +1,14 @@
 from imports import *
 from configconstan import BrowserConfig,config
-from Features.pages.Login import Login
-from Features.pages.Catalogue import Catalogue
-from Features.pages.Cart import Cart
-from Features.pages.Checkout_Information import Checkout_Information
-from Features.pages.Checkout_Overview import Checkout_Overview
-#from Features.pages.Checkout_Complete import Checkout_Complete
-#from Features.pages.Description import Description
-from Features.pages.Not_Checkout_Overview import Checkout_Overview
-from Features.pages.Not_Checkout_Complete import Checkout_Complete
+from features.pages.Login import Login
+from features.pages.Catalogue import Catalogue
+from features.pages.Cart import Cart
+from features.pages.Checkout_Information import Checkout_Information
+from features.pages.Checkout_Overview import Checkout_Overview
+#from features.pages.Checkout_Complete import Checkout_Complete
+from features.pages.Not_Description import Description
+from features.pages.Not_Checkout_Overview import Checkout_Overview
+from features.pages.Not_Checkout_Complete import Checkout_Complete
 
 
 URL = BrowserConfig.BASE_URL

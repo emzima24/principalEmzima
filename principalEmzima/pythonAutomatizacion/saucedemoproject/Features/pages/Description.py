@@ -1,7 +1,7 @@
 from imports import *  
 from configconstan import BrowserConfig
-from Features.pages.Catalogue import Catalogue
-from Features.pages.Cart import Cart
+from features.pages.Catalogue import Catalogue
+from features.pages.Cart import Cart
 
 
 class Description(Cart, Catalogue):

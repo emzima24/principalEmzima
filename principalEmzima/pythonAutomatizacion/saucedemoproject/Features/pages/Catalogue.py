@@ -1,6 +1,6 @@
 from imports import *  
 from configconstan import BrowserConfig, Cards 
-from Features.pages.Login import Login
+from features.pages.Login import Login
 
 
 class Catalogue(Login):
