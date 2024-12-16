@@ -12,15 +12,18 @@ public class ExtraccionSubcadena {
             startPosition = Integer.parseInt(input.nextLine());
             System.out.print("Ingresa hasta que posición se toma, debe ser mayor que la anterior: ");
             endPosition = Integer.parseInt(input.nextLine());
-            String chain = texString.substring(startPosition,endPosition);
-            System.out.println("Para el texto "+texString);
-            System.out.println("Cortando en la posición incial "+startPosition+" y en la posición final "+endPosition);
+            String chain = texString.substring(startPosition, endPosition);
+            System.out.println("Para el texto " + texString);
+            System.out.println(
+                    "Cortando en la posición incial " + startPosition + " y en la posición final " + endPosition);
             System.out.println("La sub cadena que tomas es " + chain);
 
         } catch (NumberFormatException e) {
             System.out.println("Error: Ingresa un número entero válido.");
         } catch (IndexOutOfBoundsException e) {
-            System.out.println("Error: Ingresa un número entero válido entre 0 y "+texString.length()+"\n e introdujiste "+startPosition+" para iniciar y para finalizar en "+endPosition+"\n fijate que "+endPosition+" sea mayor que "+startPosition);
+            System.out.println("Error: Ingresa un número entero válido entre 0 y " + texString.length()
+                    + "\n e introdujiste " + startPosition + " para iniciar y para finalizar en " + endPosition
+                    + "\n fijate que " + endPosition + " sea mayor que " + startPosition);
         }
 
         input.close();
