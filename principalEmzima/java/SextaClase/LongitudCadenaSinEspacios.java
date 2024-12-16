@@ -4,7 +4,7 @@ public class LongitudCadenaSinEspacios {
     public static void main(String[] args) {
         Scanner input = new Scanner(System.in);
 
-        System.out.print("Ingresa ingresa un texto: ");
+        System.out.print("Ingresa un texto: ");
         String inputText = input.nextLine();
         String textWithoutSpaces = inputText.replace(" ", "");
         System.out.println(
