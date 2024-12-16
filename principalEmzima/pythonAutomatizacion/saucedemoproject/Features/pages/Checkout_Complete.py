@@ -16,8 +16,14 @@ class Checkout_Complete(Checkout_Overview):
     def back_home(self):
         """Se dirge a la pagina de catalog. """
         Description.back_to_products()
+        return self
+    
+    def open_hamburger_menu(self):
         """Abre el hamburguer menu"""
         Catalogue.hamburger_menu()
+        return self
+
+    def log_out(self):
         """Cierra sesion"""
         Catalogue.logout()
         return self
