@@ -11,5 +11,8 @@ public class NumerosAleatorios {
         
         System.out.println("El número aleatorio es "+formattedNumber);
         System.out.println("El número aleatorio es " + numberCast);
+
+        long numberRound = Math.round((Math.random()*355+1));
+        System.out.println("El número aleatorio es " + numberRound);
     }
 }

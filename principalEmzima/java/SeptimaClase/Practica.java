@@ -24,7 +24,7 @@ public class Practica {
 
         double num2 = 3.499;
         long roundedNum = Math.round(num2); // roundedNum será igual a 4
-        System.out.println("redondeo normal de " + num2 + " el decimal 0.5 redondea hacia arriba y 0.49 redondea hacia abajo: "+roundedNum);
+        System.out.println("redondeo normal de " + num2 + " el decimal 0.5 redondea hacia arriba y 0.49 redondea hacia abajo, int: "+roundedNum);
 
         double num3 = 4.99;
         double flooredNum = Math.floor(num3); // flooredNum será igual a 4.0
@@ -33,6 +33,9 @@ public class Practica {
         double num4 = 2.01;
         double ceiledNum = Math.ceil(num4); // ceiledNum será igual a 3.0
         System.out.println("redondeo por arriba de " + num4 + " siempre pertenece al mayor: "+ceiledNum);
+
+        double roundedNum2 = Math.rint(num2); // roundedNum será igual a 4
+        System.out.println("redondeo normal de " + num2 + " el decimal 0.5 redondea hacia arriba y 0.49 redondea hacia abajo, double: "+roundedNum2);
 
     }
 }
