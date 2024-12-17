@@ -20,30 +20,5 @@ public class AleatorioEntreLimites {
                 + " es, " + randomInt);
 
         input.close();
-
-        // Scanner input = new Scanner(System.in);
-        // try {
-        // System.out.print("Ingresa un número entero límite bajo: ");
-        // int numberLow = Integer.parseInt(input.nextLine());
-        // System.out.print("Ingresa un número entero límite alto: ");
-        // int numberHigh = Integer.parseInt(input.nextLine());
-
-        // double number = Math.floor(Math.random() * (numberHigh + 1) + numberLow);
-        // DecimalFormat df = new DecimalFormat("#");
-        // String formattedNumber = df.format(number);
-
-        // int numberCast = (int) (Math.random() * numberHigh + numberLow);
-
-        // System.out.println("El número aleatorio,dentro de los \nlímites desde " +
-        // numberLow + " hasta " + numberHigh
-        // + " es, " + formattedNumber);
-        // System.out.println("El número aleatorio,dentro de los \nlímites desde " +
-        // numberLow + " hasta " + numberHigh
-        // + " es, " + numberCast);
-
-        // } catch (NumberFormatException e) {
-        // System.out.println("Che boludo un número entero, no cuesta tanto.");
-        // }
-        // input.close();
     }
 }
