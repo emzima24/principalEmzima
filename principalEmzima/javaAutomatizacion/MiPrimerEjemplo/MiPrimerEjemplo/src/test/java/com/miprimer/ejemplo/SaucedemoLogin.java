@@ -33,19 +33,24 @@ public class SaucedemoLogin {
         // esta parte decides si incluirla
         driver.findElement(By.id("add-to-cart-sauce-labs-bolt-t-shirt")).click();
         driver.findElement(By.xpath("//*[@id=\"shopping_cart_container\"]/a")).click();
+        driver.findElement(By.id("checkout")).click();
+
         try {
+            Thread.sleep(3000);
+
+
+        driver.findElement(By.id("first-name")).sendKeys("Carlos");
+        driver.findElement(By.id("last-name")).sendKeys("Alonso");
+        driver.findElement(By.id("postal-code")).sendKeys("C1249SAV");
+        driver.findElement(By.id("continue")).submit();
+        driver.findElement(By.id("finish")).click();
+
             Thread.sleep(3000);
         } catch (InterruptedException e) {
             e.printStackTrace();
         }
-
         driver.findElement(By.id("react-burger-menu-btn")).click();
         driver.findElement(By.id("logout_sidebar_link")).click();
-        try {
-            Thread.sleep(3000);
-        } catch (InterruptedException e) {
-            e.printStackTrace();
-        }
         assertEquals("Swag Labs",driver.getTitle());
 
     }
