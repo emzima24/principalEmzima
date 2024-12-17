@@ -29,6 +29,8 @@ public class SaucedemoLogin {
         driver.findElement(By.id("login-button")).submit();
         assertEquals("Swag Labs",driver.getTitle());
 
+
+        // esta parte decides si incluirla
         driver.findElement(By.id("add-to-cart-sauce-labs-bolt-t-shirt")).click();
         driver.findElement(By.xpath("//*[@id=\"shopping_cart_container\"]/a")).click();
         try {
@@ -37,7 +39,6 @@ public class SaucedemoLogin {
             e.printStackTrace();
         }
 
-        // esta parte decides si incluirla
         driver.findElement(By.id("react-burger-menu-btn")).click();
         driver.findElement(By.id("logout_sidebar_link")).click();
         try {
