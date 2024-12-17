@@ -17,7 +17,7 @@ public class Practica {
         double base = 2;
         double exponente = 3;
         double resultado = Math.pow(base, exponente); // resultado será igual a 8.0
-        System.out.println("potencia de " + base + " elevado a " + exponente + ": " + resultado);
+        System.out.println("el resultado de elevar " + base + " a la " + exponente + ": " + resultado);
 
         double randomNum = Math.random(); // Genera un número aleatorio entre 0.0 y 1.0
         System.out.println("aleatorio sin rangos default entre 0 y 1: " + randomNum);
