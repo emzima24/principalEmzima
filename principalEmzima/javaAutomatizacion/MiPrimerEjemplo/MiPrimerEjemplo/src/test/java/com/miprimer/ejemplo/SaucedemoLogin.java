@@ -30,7 +30,7 @@ public class SaucedemoLogin {
         assertEquals("Swag Labs",driver.getTitle());
 
 
-        // esta parte decides si incluirla
+        // esta parte decides si incluirla o no
         driver.findElement(By.id("add-to-cart-sauce-labs-bolt-t-shirt")).click();
         driver.findElement(By.xpath("//*[@id=\"shopping_cart_container\"]/a")).click();
         driver.findElement(By.id("checkout")).click();
