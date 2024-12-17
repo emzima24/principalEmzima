@@ -27,12 +27,26 @@ public class SaucedemoLogin {
         driver.findElement(By.id("user-name")).sendKeys("standard_user");
         driver.findElement(By.id("password")).sendKeys("secret_sauce");
         driver.findElement(By.id("login-button")).submit();
+        assertEquals("Swag Labs",driver.getTitle());
+
+        driver.findElement(By.id("add-to-cart-sauce-labs-bolt-t-shirt")).click();
+        driver.findElement(By.xpath("//*[@id=\"shopping_cart_container\"]/a")).click();
+        try {
+            Thread.sleep(3000);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
+
+        // esta parte decides si incluirla
+        driver.findElement(By.id("react-burger-menu-btn")).click();
+        driver.findElement(By.id("logout_sidebar_link")).click();
         try {
             Thread.sleep(3000);
         } catch (InterruptedException e) {
             e.printStackTrace();
         }
         assertEquals("Swag Labs",driver.getTitle());
+
     }
     @After
     public void tearDown(){
