@@ -3,8 +3,7 @@ import java.util.Scanner;
 public class AleatorioEntreLimites {
     public static void main(String[] args) {
         Scanner input = new Scanner(System.in);
-        System.out
-                .print("Ingresa un número entero límite bajo (positivo) si no cumples lo establecido se asignará 0: ");
+        System.out.print("Ingresa un número entero límite bajo (positivo) si no cumples lo establecido se asignará 0: ");
         int tempLow = input.hasNextInt() ? input.nextInt() : 0;
         int numberLow = tempLow >= 0 ? tempLow : 0;
         input.nextLine();
