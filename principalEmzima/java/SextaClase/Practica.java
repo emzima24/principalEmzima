@@ -1,9 +1,10 @@
 public class Practica {
     public static void main(String[] args) {
         String texto = "Hola Mundo";
-        String texto2 = "Hola";
+        String texto2 = "Hola Mundo";
         String texto3 = "apple";
         String texto4 = "banana";
+        ;
 
         int longitud = texto.length(); // Devuelve 10
         System.out.println("longitud: " + longitud);
