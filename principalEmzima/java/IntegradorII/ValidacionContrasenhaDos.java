@@ -39,8 +39,13 @@ public class ValidacionContrasenhaDos {
             errorMessage += "[" + count + "] no tiene al menos un caracter especial\n";
         }
 
+        if (password.startsWith(" ") || password.endsWith(" ")) {
+            count += 1;
+            errorMessage += "[" + count + "] No debe comenzar o terminar con espacios\n";
+        }
+
         if (count == 0) {
-            errorMessage += "Excelente! Su nueva contrasena es: ************* (" + password + ")";
+            System.out.println("Excelente! Su nueva contrasena es: ************* (" + password + ")");
         } else {
             System.out.println(errorMessage);
         }

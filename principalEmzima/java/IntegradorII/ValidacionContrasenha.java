@@ -11,7 +11,7 @@ public class ValidacionContrasenha {
         int minimunChars = password.length();
         if (minimunChars < 8) {
             count += 1;
-            text = count + ") Debe ser mayor o igual a 8 (solo colocaste " + minimunChars + ")\n";
+            text = count + ") Debe ser mayor o igual a 8 caracteres (solo colocaste " + minimunChars + ")\n";
         } 
         if (!password.matches(".*[A-Z].*")) {
             count += 1;
