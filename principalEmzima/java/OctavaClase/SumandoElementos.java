@@ -2,10 +2,10 @@ import java.util.Random;
 
 public class SumandoElementos {
     public static void main(String[] args) {
-        int count = 0;
-        float sum = 0;
         Random random = new Random();
         float[] arrayFloat = new float[3];
+        int count = 0;
+        float sum = 0;
         arrayFloat[count] = random.nextFloat(0, 101);
         System.out.println("El primer elemento del arreglo [" + count + "] " + arrayFloat[count]);
         sum += arrayFloat[count];
