@@ -17,6 +17,8 @@ public class SumandoElementos {
         arrayFloat[count] = random.nextFloat(0, 101);
         System.out.println("El tercer elemento del arreglo [" + count + "] " + arrayFloat[count]);
         sum += arrayFloat[count];
+        System.out.println("******************************************");
         System.out.println("La suma de los elementos del arreglo " + sum);
+        System.out.println("******************************************");
     }
 }

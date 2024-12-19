@@ -8,25 +8,27 @@ public class PomediandoElementos {
         float promedio;
 
         try (Scanner input = new Scanner(System.in)) {
-            System.out.print("Ingresa el primer elemento del arreglo [" + count + "] ");
+            System.out.print("Ingresa un número entero, el primer elemento del arreglo [" + count + "] ");
             arrayInt[count] = input.nextInt();
             sum += arrayInt[count];
             count++;
-            System.out.print("Ingresa el segundo elemento del arreglo [" + count + "] ");
+            System.out.print("Ingresa un número entero, el segundo elemento del arreglo [" + count + "] ");
             arrayInt[count] = input.nextInt();
             sum += arrayInt[count];
             count++;
-            System.out.print("Ingresa el tercer elemento del arreglo [" + count + "] ");
+            System.out.print("Ingresa un número entero, el tercer elemento del arreglo [" + count + "] ");
             arrayInt[count] = input.nextInt();
             sum += arrayInt[count];
             count++;
-            System.out.print("Ingresa el cuarto elemento del arreglo [" + count + "] ");
+            System.out.print("Ingresa un número entero, el cuarto elemento del arreglo [" + count + "] ");
             arrayInt[count] = input.nextInt();
             sum += arrayInt[count];
             count++;
             promedio = (float) sum / count;
-            System.out.println("La suma de los elementos del arreglo " + sum);
+            System.out.println("**************************************************************");
+            System.out.println("La suma de los elementos del arreglo (números enteros) " + sum);
             System.out.printf("El promedio de los números en el arreglo es %.2f", promedio);
+            System.out.println("**************************************************************");
         } catch (InputMismatchException e) {
             System.out.println(
                     "Che boludo un número entero, no cuesta tanto");
