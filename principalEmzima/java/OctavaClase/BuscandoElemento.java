@@ -11,6 +11,7 @@ public class BuscandoElemento {
         String message = "El número %d %s encuentra en el arreglo";
         boolean isExist = false;
         try (Scanner input = new Scanner(System.in)) {
+            new ProcessBuilder("cmd", "/c", "cls").inheritIO().start().waitFor();
             System.out.print("Ingresa un numero ENTERO entre 0  y " + max + ": ");
             int number = input.nextInt();
             if ((number > 10) || (number < 0)) {
@@ -34,6 +35,8 @@ public class BuscandoElemento {
             System.out.println("Che boludo un número ENTERO, no cuesta tanto");
         } catch (IndexOutOfBoundsException e) {
             System.out.println(e.getMessage());
+        } catch (Exception e) {
+            e.printStackTrace();
         }
     }
 }

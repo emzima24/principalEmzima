@@ -2,6 +2,11 @@ import java.util.Random;
 
 public class SumandoElementos {
     public static void main(String[] args) {
+        try {
+            new ProcessBuilder("cmd", "/c", "cls").inheritIO().start().waitFor();
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
         Random random = new Random();
         int[] arrayInt = new int[3];
         String[] arrayText = { "primer", "segundo", "tercer" };
