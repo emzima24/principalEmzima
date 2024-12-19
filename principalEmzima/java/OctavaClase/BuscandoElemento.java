@@ -6,6 +6,7 @@ public class BuscandoElemento {
     public static void main(String[] args) {
         Random random = new Random();
         int[] arrayInt = new int[3];
+        String[] arrayText = { "primer", "segundo", "tercer", "cuarto", "quinto", "sexto" };
         int count = 0, max = 10;
         String message = "El número %d %s encuentra en el arreglo";
         boolean isExist = false;
@@ -16,15 +17,15 @@ public class BuscandoElemento {
                 throw new IndexOutOfBoundsException("Entre 0 y " + max + " boludo tampoco es tan díficil");
             }
             arrayInt[count] = random.nextInt(1, 10);
-            System.out.println("El primer elemento del arreglo [" + count + "] " + arrayInt[count]);
+            System.out.println("El " + arrayText[count] + " elemento del arreglo [" + count + "] " + arrayInt[count]);
             isExist = arrayInt[count] == number;
             count++;
             arrayInt[count] = random.nextInt(1, 10);
-            System.out.println("El segundo elemento del arreglo [" + count + "] " + arrayInt[count]);
+            System.out.println("El " + arrayText[count] + " elemento del arreglo [" + count + "] " + arrayInt[count]);
             isExist = (isExist) ? isExist : arrayInt[count] == number;
             count++;
             arrayInt[count] = random.nextInt(1, 10);
-            System.out.println("El tercer elemento del arreglo [" + count + "] " + arrayInt[count]);
+            System.out.println("El " + arrayText[count] + " elemento del arreglo [" + count + "] " + arrayInt[count]);
             isExist = (isExist) ? isExist : arrayInt[count] == number;
             System.out.println("***************************");
             System.out.printf(message, number, isExist ? "SE" : "NO SE");
