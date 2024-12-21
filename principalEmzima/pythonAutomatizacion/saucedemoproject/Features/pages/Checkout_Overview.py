@@ -17,7 +17,7 @@ class Checkout_Overview(Checkout_Information):
     def finish(self):
         """Se dirge a la pagina de checkout complete."""
         self.verify_login()
-        WebDriverWait(self.browser, BrowserConfig.TIMEOUTLOW).until(
+        WebDriverWait(self.browser, BrowserConfig.TIMEOUTHIGH).until(
             EC.element_to_be_clickable((By.ID, 'finish'))
         ).click()
         return self

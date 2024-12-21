@@ -28,10 +28,10 @@ principalEmzima/pythonAutomatizacion/saucedemoproject/Features/pages/Not_Checkou
 principalEmzima/pythonAutomatizacion/saucedemoproject/Features/pages/Not_Description.py
 principalEmzima/pythonAutomatizacion/saucedemoproject/Features/steps/test_end2end.py
 principalEmzima/pythonAutomatizacion/saucedemoproject/Features/pages/Not_Checkout_Overview.py
-principalEmzima/pythonAutomatizacion/saucedemoproject/Features/not_end2end.feature
+principalEmzima/pythonAutomatizacion/saucedemoproject/Features/not_endToend.feature
 principalEmzima/java/QuintaClase/PracticaII.java
-# //principalEmzima/javaAutomatizacion/
-
+# principalEmzima/javaAutomatizacion/
+principalEmzima/pythonAutomatizacion/SaucedemoProjectPlay/
 .idea/modules.xml
 .idea/jarRepositories.xml
 .idea/compiler.xml

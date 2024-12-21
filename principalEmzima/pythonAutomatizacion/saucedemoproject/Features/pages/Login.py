@@ -8,6 +8,10 @@ class Login:
         Lo solicita para comenzar e incorporarlo en el resto de las funciones"""
         self.browser = chrome_browser
         self.logged_in = False
+
+    def get_screenshot_as_png(self):
+        """Toma una captura de pantalla del navegador."""
+        return self.browser.get_screenshot_as_png()
     
     def open_url(self,url):
         """Ingresa a la url."""
@@ -29,7 +33,7 @@ class Login:
         """Hace clic en el botón de login."""
         try:
             self.login_button_location().click()
-            WebDriverWait(self.browser, BrowserConfig.TIMEOUTLOW).until(
+            WebDriverWait(self.browser, BrowserConfig.TIMEOUTHIGH).until(
                     lambda driver: driver.current_url != BrowserConfig.BASE_URL)
             self.logged_in = True
         except Exception as e:
@@ -40,7 +44,7 @@ class Login:
         """Realiza el inicio de sesión completo."""
         self.open_url(url)
         try:
-            WebDriverWait(self.browser, BrowserConfig.TIMEOUTLOW).until(
+            WebDriverWait(self.browser, BrowserConfig.TIMEOUTHIGH).until(
                 EC.presence_of_element_located((By.ID, 'password')))
             self.username(user)
             self.password(password)

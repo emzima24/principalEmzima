@@ -18,7 +18,7 @@ class Description(Cart, Catalogue):
     def add_to_cart_description(self):
         """Añade un producto al carro desde la página Description"""
         self.verify_login()
-        WebDriverWait(self.browser, BrowserConfig.TIMEOUTLOW).until(
+        WebDriverWait(self.browser, BrowserConfig.TIMEOUTHIGH).until(
             EC.element_to_be_clickable((By.ID, 'add-to-cart'))
         ).click()
         return self
@@ -26,7 +26,7 @@ class Description(Cart, Catalogue):
     def back_to_products(self):
         """Se devuelve a la página Catalogue"""
         self.verify_login()
-        WebDriverWait(self.browser, BrowserConfig.TIMEOUTLOW).until(
+        WebDriverWait(self.browser, BrowserConfig.TIMEOUTHIGH).until(
             EC.element_to_be_clickable((By.ID, 'back-to-products'))
         ).click()
         return self

@@ -32,23 +32,23 @@ class Checkout_Information(Cart):
     def continue_button(self):
         """Abre la página de checkout overview confirmando los valores de los inputs."""
         self.verify_login()
-        WebDriverWait(self.browser, BrowserConfig.TIMEOUTLOW).until(
+        WebDriverWait(self.browser, BrowserConfig.TIMEOUTHIGH).until(
             EC.element_to_be_clickable((By.ID, 'continue'))
         ).click()
 
     def cancel(self):
         """Se devuelve a la página de catalogo."""
         self.verify_login()
-        WebDriverWait(self.browser, BrowserConfig.TIMEOUTLOW).until(
+        WebDriverWait(self.browser, BrowserConfig.TIMEOUTHIGH).until(
             EC.element_to_be_clickable((By.ID, 'cancel'))
         ).click()
 
     def continue_paying(self,name_first,name_last,code_postal):
         """Abre la página de checkout overview."""
-        WebDriverWait(self.browser, BrowserConfig.TIMEOUTLOW).until(
+        WebDriverWait(self.browser, BrowserConfig.TIMEOUTHIGH).until(
             EC.presence_of_element_located((By.ID, 'postal-code')))
         self.first_name(name_first)
         self.last_name(name_last)
         self.postal_code(code_postal)
         self.continue_button()
-        #time.sleep(BrowserConfig.TIMEOUTLOW)
+        #time.sleep(BrowserConfig.TIMEOUTHIGH)

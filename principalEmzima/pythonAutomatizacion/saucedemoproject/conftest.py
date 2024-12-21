@@ -1,16 +1,7 @@
 from imports import webdriver,pytest,allure, subprocess
 from configconstan import config
 
-# @pytest.fixture
-# def context_with_driver():
-#     class Context:
-#         driver = None
 
-#     context = Context()
-#     context.driver = webdriver.Chrome()
-#     context.driver.maximize_window()
-#     yield context
-#     context.driver.quit()
 
 @pytest.fixture()
 def chrome_browser(): 
@@ -18,35 +9,16 @@ def chrome_browser():
     driver.maximize_window()
     yield driver
     driver.quit()
-
-# @pytest.fixture
-# def browser_context():
-#     class Context:
-#         driver = None 
-
-#     context = Context()
-#     context.driver = webdriver.Chrome()
-#     context.driver.maximize_window()
-#     yield context
-#     context.driver.quit()
-
-# @pytest.fixture
-# def setup_browser_context():
-#     class Context:
-#         driver = None 
-
-#     context = Context()
-#     context.driver = webdriver.Chrome()
-#     context.driver.maximize_window()
-#     yield context
-#     context.driver.quit()
-    
+  
 @pytest.fixture
-def allure_attach(image_bytes, name):  
-    allure.attach(
+def allure_attach():
+    def attach(image_bytes, name):
+        allure.attach(
             image_bytes,
             name=name,
-            attachment_type=allure.attachment_type.PNG)
+            attachment_type=allure.attachment_type.PNG
+        )
+    return attach
 
 def pytest_addoption(parser):
     """Agrega la opción '--env' para cambiar el entorno desde la línea de comandos."""
@@ -63,10 +35,3 @@ def set_environment(pytestconfig):
     env = pytestconfig.getoption('env')
     config.set_environment(env) 
     print(f"ENTORNO CONFIGURADO: {env}")
-
-# def pytest_addoption(parser):
-#     parser.addoption('--behave', action='store-true',help='run behave BBD tests')
-
-# def pytest_configure(config):
-#     if config.getoption('--behave'):
-#         subprocess.run(['behave'],check=True)

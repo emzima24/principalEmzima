@@ -17,7 +17,7 @@ class Cart(Catalogue):
     def checkout(self):
         """Abre la página de checkout Your information."""
         self.verify_login()
-        WebDriverWait(self.browser, BrowserConfig.TIMEOUTLOW).until(
+        WebDriverWait(self.browser, BrowserConfig.TIMEOUTHIGH).until(
             EC.element_to_be_clickable((By.ID, 'checkout'))
         ).click()
         return self
@@ -25,7 +25,7 @@ class Cart(Catalogue):
     def continue_shopping(self):
         """Se devuelve a la página de catalogue."""
         self.verify_login()
-        WebDriverWait(self.browser, BrowserConfig.TIMEOUTLOW).until(
+        WebDriverWait(self.browser, BrowserConfig.TIMEOUTHIGH).until(
             EC.element_to_be_clickable((By.ID, 'continue-shopping'))
         ).click()
         return self
