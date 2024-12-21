@@ -1,8 +1,9 @@
 from imports import *  
 from Checkout_Overview import Checkout_Overview
-from Description import Description
-from Catalogue import Catalogue
-class Checkout_Complete(Checkout_Overview):
+from features.pages.Checkout_Overview import Checkout_Overview
+from features.pages.Description import Description
+
+class Checkout_Complete(Checkout_Overview,Description):
     def __init__(self, chrome_browser):
         """Inicializa el navegador en la instancia Checkout_Complete que hereda Checkout_Overview herendando de Cart que hereda de Catalogue que hereda de Login.
         Lo solicita para comenzar e incorporarlo en el resto de las funciones"""
@@ -15,15 +16,6 @@ class Checkout_Complete(Checkout_Overview):
         
     def back_home(self):
         """Se dirge a la pagina de catalog. """
-        Description.back_to_products()
-        return self
+        self.verify_login()
+        return self.back_to_products()
     
-    def open_hamburger_menu(self):
-        """Abre el hamburguer menu"""
-        Catalogue.hamburger_menu()
-        return self
-
-    def log_out(self):
-        """Cierra sesion"""
-        Catalogue.logout()
-        return self
