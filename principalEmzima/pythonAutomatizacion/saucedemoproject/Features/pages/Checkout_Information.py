@@ -17,47 +17,21 @@ class Checkout_Information(Cart):
     def first_name(self,name_first):
         """Completa el campo de nombre del usuario."""
         self.verify_login()
-        # self.browser.implicitly_wait(BrowserConfig.TIMEOUTLOW)
-        first_name_field = self.browser.find_element(By.ID, 'first-name')
-        first_name_field.clear()
-        first_name_field.send_keys(name_first)
-        WebDriverWait(self.browser, BrowserConfig.TIMEOUTLOW).until(
-            EC.text_to_be_present_in_element_value((By.ID, 'first-name'),name_first)
-        )
-        print("First Name Field Value:", first_name_field.get_attribute('value'))
-        # time.sleep(2)
-
+        self.browser.find_element(By.ID, 'first-name').send_keys(name_first)
+        
     def last_name(self,name_last):
         """Completa el campo de apellido del usuario."""
         self.verify_login()
-        # self.browser.implicitly_wait(BrowserConfig.TIMEOUTLOW)
-        # WebDriverWait(self.browser, BrowserConfig.TIMEOUTLOW).until(
-        #     EC.element_to_be_clickable((By.ID, 'last-name'))
-        # )
-        last_name_field = self.browser.find_element(By.ID, 'last-name')
-        last_name_field.clear()
-        last_name_field.send_keys(name_last)
-        WebDriverWait(self.browser, BrowserConfig.TIMEOUTLOW).until(
-            EC.text_to_be_present_in_element_value((By.ID, 'first-name'),name_last)
-        )
-        # time.sleep(2)
-
+        self.browser.find_element(By.ID, 'last-name').send_keys(name_last)
+        
     def postal_code(self,code_postal):
         """Completa el campo de código postal del usuario."""
         self.verify_login()
-        # self.browser.implicitly_wait(BrowserConfig.TIMEOUTLOW)
-        # WebDriverWait(self.browser, BrowserConfig.TIMEOUTLOW).until(
-        #     EC.element_to_be_clickable((By.ID, 'postal-code'))
-        # )
-        last_name_field = self.browser.find_element(By.ID, 'postal-code')
-        last_name_field.clear()
-        last_name_field.send_keys(code_postal)
-        time.sleep(2)
-
+        self.browser.find_element(By.ID, 'postal-code').send_keys(code_postal)
+        
     def continue_button(self):
         """Abre la página de checkout overview confirmando los valores de los inputs."""
-        # self.verify_login()
-        # self.browser.implicitly_wait(BrowserConfig.TIMEOUTLOW)
+        self.verify_login()
         WebDriverWait(self.browser, BrowserConfig.TIMEOUTLOW).until(
             EC.element_to_be_clickable((By.ID, 'continue'))
         ).click()
@@ -71,8 +45,8 @@ class Checkout_Information(Cart):
 
     def continue_paying(self,name_first,name_last,code_postal):
         """Abre la página de checkout overview."""
-        # WebDriverWait(self.browser, BrowserConfig.TIMEOUTLOW).until(
-        #     EC.presence_of_element_located((By.ID, 'postal-code')))
+        WebDriverWait(self.browser, BrowserConfig.TIMEOUTLOW).until(
+            EC.presence_of_element_located((By.ID, 'postal-code')))
         self.first_name(name_first)
         self.last_name(name_last)
         self.postal_code(code_postal)
