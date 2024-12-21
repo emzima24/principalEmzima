@@ -5,11 +5,8 @@ from features.pages.Catalogue import Catalogue
 from features.pages.Cart import Cart
 from features.pages.Checkout_Information import Checkout_Information
 from features.pages.Checkout_Overview import Checkout_Overview
-#from features.pages.Checkout_Complete import Checkout_Complete
-from features.pages.Not_Description import Description
-from features.pages.Not_Checkout_Overview import Checkout_Overview
-from features.pages.Not_Checkout_Complete import Checkout_Complete
-
+from features.pages.Checkout_Complete import Checkout_Complete
+from features.pages.Description import Description
 
 URL = BrowserConfig.BASE_URL
 USER = config.get('USERNAME')
@@ -76,3 +73,16 @@ def test_finish(chrome_browser):
     checkout_overview.checkout()
     checkout_overview.continue_paying('Carlos','Ramirez','C1429SAV')
     checkout_overview.finish()
+
+# prueba de que funciona back home
+def test_back_home(chrome_browser):
+    checkout_complete = Checkout_Complete(chrome_browser)
+    checkout_complete.login(URL,USER,PASSWORD)
+    checkout_complete.add_to_cart('Sauce Labs Oneise')
+    checkout_complete.cart()
+    checkout_complete.checkout()
+    checkout_complete.continue_paying('Carlos','Ramirez','C1429SAV')
+    checkout_complete.finish()
+    checkout_complete.back_home()
+    checkout_complete.hamburger_menu()
+    checkout_complete.logout()

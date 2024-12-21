@@ -1,5 +1,4 @@
 from imports import *  
-from Checkout_Overview import Checkout_Overview
 from features.pages.Checkout_Overview import Checkout_Overview
 from features.pages.Description import Description
 
