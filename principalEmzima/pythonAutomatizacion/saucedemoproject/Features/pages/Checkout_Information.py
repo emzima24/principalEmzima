@@ -1,6 +1,6 @@
 from imports import *  
 from configconstan import BrowserConfig
-from Features.pages.Cart import Cart
+from features.pages.Cart import Cart
 
 
 class Checkout_Information(Cart):
@@ -18,17 +18,17 @@ class Checkout_Information(Cart):
         """Completa el campo de nombre del usuario."""
         self.verify_login()
         self.browser.find_element(By.ID, 'first-name').send_keys(name_first)
-
+        
     def last_name(self,name_last):
-        self.verify_login()
         """Completa el campo de apellido del usuario."""
-        self.browser.find_element(By.ID, 'last-name').send_keys(name_last)
-
-    def postal_code(self,code_postal):
         self.verify_login()
+        self.browser.find_element(By.ID, 'last-name').send_keys(name_last)
+        
+    def postal_code(self,code_postal):
         """Completa el campo de código postal del usuario."""
+        self.verify_login()
         self.browser.find_element(By.ID, 'postal-code').send_keys(code_postal)
-
+        
     def continue_button(self):
         """Abre la página de checkout overview confirmando los valores de los inputs."""
         self.verify_login()

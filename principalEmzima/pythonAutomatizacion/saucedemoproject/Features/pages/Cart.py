@@ -1,6 +1,6 @@
 from imports import *  
 from configconstan import BrowserConfig
-from Features.pages.Catalogue import Catalogue
+from features.pages.Catalogue import Catalogue
 
 
 class Cart(Catalogue):

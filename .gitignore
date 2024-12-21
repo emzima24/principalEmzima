@@ -24,8 +24,18 @@ principalEmzima/pythonAutomatizacion/pytestBehave/save_continue
 principalEmzima/PowerBI/
 principalEmzima/pyhtonAutomatizacion/saucedemoproject/.pytest_cache/
 principalEmzima/pythonAutomatizacion/saucedemoproject/__pycache__/
-principalEmzima/pythonAutomatizacion/saucedemoproject/Features/pages/Checkout_Overview.py
-principalEmzima/pythonAutomatizacion/saucedemoproject/Features/pages/Checkout_Complete.py
-principalEmzima/pythonAutomatizacion/saucedemoproject/Features/pages/Description.py
-principalEmzima/pythonAutomatizacion/saucedemoproject/Features/end2end.feature
+principalEmzima/pythonAutomatizacion/saucedemoproject/Features/pages/Not_Checkout_Complete.py
+principalEmzima/pythonAutomatizacion/saucedemoproject/Features/pages/Not_Description.py
 principalEmzima/pythonAutomatizacion/saucedemoproject/Features/steps/test_end2end.py
+principalEmzima/pythonAutomatizacion/saucedemoproject/Features/pages/Not_Checkout_Overview.py
+principalEmzima/pythonAutomatizacion/saucedemoproject/Features/not_end2end.feature
+principalEmzima/java/QuintaClase/PracticaII.java
+# //principalEmzima/javaAutomatizacion/
+
+.idea/modules.xml
+.idea/jarRepositories.xml
+.idea/compiler.xml
+.idea/libraries/
+*.iws
+*.iml
+*.ipr
