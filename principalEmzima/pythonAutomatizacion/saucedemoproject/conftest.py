@@ -1,4 +1,4 @@
-from imports import webdriver,pytest,allure, subprocess
+from imports import webdriver,pytest,allure
 from configconstan import config
 
 
@@ -10,7 +10,7 @@ def chrome_browser():
     yield driver
     driver.quit()
   
-@pytest.fixture
+@pytest.fixture()
 def allure_attach():
     def attach(image_bytes, name):
         allure.attach(
