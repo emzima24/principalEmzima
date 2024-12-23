@@ -4,7 +4,7 @@ from configconstan import config
 @pytest.fixture(scope="session")
 def browser_context():
     with sync_playwright() as p:
-        browser = p.chromium.launch(headless=False)  # Cambia a True si prefieres sin interfaz
+        browser = p.chromium.launch(headless=True)  # Cambia a True si prefieres sin interfaz
         context = browser.new_context()
         yield context
         context.close()
