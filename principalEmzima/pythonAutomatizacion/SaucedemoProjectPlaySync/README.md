@@ -1,5 +1,5 @@
 # Proyecto Saucedemo (automatización python)  
-Paginas de la web app fueron diseñadas como en el ejemplo [proyecto saucedemo]()  
+Paginas de la web app fueron diseñadas como en el ejemplo [proyecto saucedemo](https://github.com/emzima24/principalEmzima/tree/main/principalEmzima/pythonAutomatizacion/saucedemoproject)  
 
 1. Login (clase Login) 
 2. Catalogo (clase Catalogue) Hereda la clase Login.
@@ -20,7 +20,7 @@ Se reconocen como entornos el usuario error_user (entorno 'test'), el usuario st
 ## Sobre el archivo conftest.py
 Contiene:
 
-* Chrome_browser, fixture para definir el webdriver de chrome para su uso en todos los procesos. Apertura y cierre.
+* Chrome_browser, fixture para definir el driver de chrome para su uso en todos los procesos. Apertura y cierre.
 * allure_attach, fixture que define el método de captura de imagenes para extender en cualquiera de los archivos de python durante las pruebas .
 * pytest_adoption, establece el uso de --env, opcion para cambiar el entorno con el comando de ejecucion en la terminal. Segun las siglas de cada entorno señaladas en el archivo anterior.
 * set_environment, predefine el entorno como 'prod'.
@@ -34,7 +34,7 @@ Contiene:
 Contiene todas las librerias cuyas importaciones son necesarias para este proyecto. Luego cada archivo py puede llamar a las que necesite desde imports.
 
 ## Sobre el archivo enviroment.py
-NO UTILIZADO Contiene la configuración necesaria de context para la administraci{o}n durante las pruebas si se usase behave. Como se usa pytest-bdd no es necesario.
+***NO UTILIZADO*** Contiene la configuración necesaria de context para la administraci{o}n durante las pruebas si se usase behave. Como se usa pytest-bdd no es necesario.
 
 ## Sobre las pruebas
 Existen dos tipos de pruebas:

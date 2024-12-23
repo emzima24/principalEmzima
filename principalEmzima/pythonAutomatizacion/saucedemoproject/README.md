@@ -33,7 +33,7 @@ Contiene:
 Contiene todas las librerias cuyas importaciones son necesarias para este proyecto. Luego cada archivo py puede llamar a las que necesite desde imports.
 
 ## Sobre el archivo enviroment.py
-**NO UTILIZADO** Contiene la configuración necesaria de context para la administraci{o}n durante las pruebas si se usase behave. Como se usa pytest-bdd no es necesario.
+***NO UTILIZADO*** Contiene la configuración necesaria de context para la administraci{o}n durante las pruebas si se usase behave. Como se usa pytest-bdd no es necesario.
 
 ## Sobre las pruebas
 Existen dos tipos de pruebas:
