@@ -2,7 +2,7 @@ import time
 # from conftest import allure_attach
 from imports import  scenario, given,when,then, allure,parsers
 from configconstan import BrowserConfig,config
-from features.pages.Not_Checkout_Complete import Not_Checkout_Complete
+from features.pages.Checkout_Complete import Checkout_Complete
 
 checkout_complete = None   
 @allure.title('EndToEnd Test')
@@ -13,7 +13,7 @@ def test_bdd():
 @given(u'I go to the website as a registered user')
 def i_go_to_the_website_as_a_registered_user(chrome_browser): 
     global checkout_complete
-    checkout_complete = Not_Checkout_Complete(chrome_browser)
+    checkout_complete = Checkout_Complete(chrome_browser)
     checkout_complete.open_url(BrowserConfig.BASE_URL)
 
 allure.step("ingresar usuario y contraseña")

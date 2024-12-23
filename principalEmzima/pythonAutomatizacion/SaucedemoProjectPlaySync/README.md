@@ -1,4 +1,4 @@
-# Proyecto Saucedemo (automatización python)  
+# Proyecto Saucedemo (automatización python con Playwright de forma sincrónica)  
 Paginas de la web app fueron diseñadas como en el ejemplo [proyecto saucedemo](https://github.com/emzima24/principalEmzima/tree/main/principalEmzima/pythonAutomatizacion/saucedemoproject)  
 
 1. Login (clase Login) 
