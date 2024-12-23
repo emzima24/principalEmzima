@@ -20,8 +20,8 @@ Feature: Return to Login Page After Logout
     Examples:
 | product                           | first_name | last_name | zip_code |
 | Sauce Labs Backpack               | Carlos     | Alonso    | C1429SAV |
-# | Sauce Labs Bike Light             | Carlos     | Alonso    | C1428SAV |
-# | Sauce Labs Bolt T-shirt           | Carlos     | Alonso    | C1427SAV |
-# | Sauce Labs Fleece Jacket          | Carlos     | Alonso    | C1426SAV |
-# | Sauce Labs Onesie                 | Carlos     | Alonso    | C1425SAV |
-# | Test.allTheThings() T-shirt (Red) | Carlos     | Alonso    | C1424SAV |
+| Sauce Labs Bike Light             | Carlos     | Alonso    | C1428SAV |
+| Sauce Labs Bolt T-Shirt           | Carlos     | Alonso    | C1427SAV |
+| Sauce Labs Fleece Jacket          | Carlos     | Alonso    | C1426SAV |
+| Sauce Labs Oneise                 | Carlos     | Alonso    | C1425SAV |
+| Test.allTheThings() T-Shirt (Red) | Carlos     | Alonso    | C1424SAV |
