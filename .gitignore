@@ -31,7 +31,9 @@ principalEmzima/pythonAutomatizacion/saucedemoproject/Features/pages/Not_Checkou
 principalEmzima/pythonAutomatizacion/saucedemoproject/Features/not_endToend.feature
 principalEmzima/java/QuintaClase/PracticaII.java
 # principalEmzima/javaAutomatizacion/
-principalEmzima/pythonAutomatizacion/SaucedemoProjectPlay/
+principalEmzima/pythonAutomatizacion/SaucedemoProjectPlayAsync/
+principalEmzima/pythonAutomatizacion/SaucedemoProjectPlayCypress/
+
 .idea/modules.xml
 .idea/jarRepositories.xml
 .idea/compiler.xml

@@ -6,7 +6,7 @@ Paginas de la web app
 4. Carro (clase Cart) **Emiliano - Fabian** Hereda la clase Catalogue. 
 5. Information (clase Checkout_Information) **Emiliano - Bisset** Hereda la clase Cart. 
 6. Checkout (clase Checkout_Overview)  **Franciso - Martin** Hereda la clase Checkout_Information.
-7. Completada (clase Checkout_Complete) **David - Silvia** Checkout_Overview, Description de la cual sobre escribe una clase.
+7. Completada (clase Checkout_Complete) **David - Silvia** Hereda la clase Checkout_Overview y Description de la cual se sobre escribe una clase.
 
 ## Sobre el archivo configconstan.py
 Contiene 3 clases 
@@ -33,30 +33,30 @@ Contiene:
 Contiene todas las librerias cuyas importaciones son necesarias para este proyecto. Luego cada archivo py puede llamar a las que necesite desde imports.
 
 ## Sobre el archivo enviroment.py
-NO UTILIZADO Contiene la configuración necesaria de context para la administraci{o}n durante las pruebas si se usase behave. Como se usa pytest-bdd no es necesario.
+**NO UTILIZADO** Contiene la configuración necesaria de context para la administraci{o}n durante las pruebas si se usase behave. Como se usa pytest-bdd no es necesario.
 
 ## Sobre las pruebas
 Existen dos tipos de pruebas:
 
-# Pruebas internas:
-Mediante el archivo **test_file.py** en la carpeta test se hacen las pruebas la programación por páginas de la web app. Solo prueban la implementación de webdriver para administrar las páginas y asi configurar las pruebas. No tienen asserts solo tienen que realizar la manipulación de la página necesaria.
-*Se recomienda que se comente la linea que habilita Allure durante las pruebas en el archivo pytest*
-Para ejecutar todo el archivo: **pytest test/test_file.py** 
+### Pruebas internas:
+Mediante el archivo **test_file.py** en la carpeta test se hacen las pruebas la programación por páginas de la web app. Solo prueban la implementación de webdriver para administrar las páginas y asi configurar las pruebas. No tienen asserts solo tienen que realizar la manipulación de la página necesaria.   
+*Se recomienda que se comente la linea que habilita Allure durante las pruebas con el archivo pytest*   
+Para ejecutar todo el archivo: **pytest test/test_file.py**    
 Para ejecutar solo un test específico el archivo: **pytest test/test_file.py::test_complete** 
 
-# Pruebas a sistemas
-Mediante el archivo **test_endToEnd.py** en la carpeta features/steps se prueban las features que el escenario define segun el contexto de behave(Gherkin). Este incluye capturas de imagenes y creación de informes en **Allure** para el contexto de ejecución. 
-Para ejecutar con pytest-bdd: **pytest features/steps/test_end2end.py**
+### Pruebas a sistemas
+Mediante el archivo **test_endToEnd.py** en la carpeta features/steps se prueban las features que el escenario define segun el contexto de behave(Gherkin). Este incluye capturas de imagenes y creación de informes en **Allure** para el contexto de ejecución.    
+Para ejecutar con pytest-bdd: **pytest features/steps/test_end2end.py**   
 Para ejecutar el informe allure: **allure serve ./reports/allure-results** y seguir instrucciones para parar la implementación del informe
 
 ## El trabajo fue realizado por el equipo siguiente:
-[Ana María Aracelli]()
-[Bisset Gonzales]()
-[Flor Jaimes]()
-[Milton Klun]()
-[Martin Morán]()
-[Silvia Verónica Noriega]()
-[Edwar Fabian Nossa]()
-[Francisco Jose Parra]()
+[Ana María Aracelli]()   
+[Bisset Gonzales]()   
+[Flor Jaimes]()   
+[Milton Klun]()   
+[Martin Morán]()   
+[Silvia Verónica Noriega]()   
+[Edwar Fabian Nossa]()   
+[Francisco Jose Parra]()   
 [Emiliano Zapata Machin](https://www.linkedin.com/in/emiliano-zapata-machin-emzima/)
 
