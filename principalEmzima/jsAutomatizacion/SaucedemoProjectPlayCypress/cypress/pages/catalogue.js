@@ -66,6 +66,11 @@ class Catalogue extends LoginClass {
         this.verifyLogin();
         cy.get(`[data-test="${product}"] > [data-test="inventory-item-name"]`).should('be.visible').click();
     }
+
+    clickImage(product) {
+        this.verifyLogin();
+        cy.get(`[data-test="${product}"]`).should('be.visible').click();
+    }
 }
 
 module.exports = Catalogue;

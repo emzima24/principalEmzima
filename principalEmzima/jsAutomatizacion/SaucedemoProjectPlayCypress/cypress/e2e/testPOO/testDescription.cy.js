@@ -1,6 +1,6 @@
 /// <reference types="cypress" />
 
-const Catalogue = require('../../pages/catalogue');
+const Description = require('../../pages/description');
 
 function obtenerAtributoProducto(productos, nombreProducto, atributo) {
   if (productos[nombreProducto]) {
@@ -12,10 +12,10 @@ function obtenerAtributoProducto(productos, nombreProducto, atributo) {
 };
 
 describe('test', () => {
-  const cat = new Catalogue();
+  const desc = new Description();
   let credentials;
   let productos;
-  let addId;
+  let addXpathImage;
   let addXpathTitle;
 
   before(() => {
@@ -26,26 +26,27 @@ describe('test', () => {
       productos = data;
     });
   });
-  it('should manage the catalogue in the app', () => {
-    cat.login(credentials.username, credentials.password);
+  it('should manage the description page in app and log out', () => {
+    desc.login(credentials.username, credentials.password);
     addXpathTitle = obtenerAtributoProducto(productos, 'Sauce Labs Backpack', 'xpath_title');
-    cat.clickTitle(addXpathTitle);
+    desc.clickTitle(addXpathTitle);
     // console.log(addXpathTitle);
-    cat.clickCart();
-    cat.clickAllItems();
-    cat.clickLogout({ force: true });
+    desc.clickAddToCartDescription();
+    desc.clickCart();
+    desc.clickAllItems();
+    desc.clickLogout({ force: true });
     cy.get('#login-button').should('be.visible');
   });
 
-  it('should manage the catalogue with a product in the app', () => {
-    cat.login(credentials.username, credentials.password);
-    cat.clickCart();
-    cat.clickResetAppState();
-    cat.clickAllItems();
-    addId = obtenerAtributoProducto(productos, 'Sauce Labs Oneise', 'id_add_cart');
-    // console.log(addId);
-    cat.clickAddToCart(addId);
-    cat.clickCart();
+  it('should manage the description page in app', () => {
+    desc.login(credentials.username, credentials.password);
+    desc.clickCart();
+    desc.clickResetAppState();
+    desc.clickAllItems();
+    addXpathImage = obtenerAtributoProducto(productos, 'Sauce Labs Oneise', 'xpath_image');
+    desc.clickImage(addXpathImage);
+    desc.clickAddToCartDescription();
+    desc.clickCart();
     cy.get('#checkout').should('be.visible');
   });
 });

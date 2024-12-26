@@ -26,7 +26,7 @@ describe('test', () => {
       productos = data;
     });
   });
-  it('should manage the catalogue in the app', () => {
+  it('should manage the catalogue in app', () => {
     cat.login(credentials.username, credentials.password);
     addXpathTitle = obtenerAtributoProducto(productos, 'Sauce Labs Backpack', 'xpath_title');
     cat.clickTitle(addXpathTitle);
@@ -40,7 +40,7 @@ describe('test', () => {
         // console.log(addXpathTitle);
   });
 
-  it('should manage the catalogue with a product in the app', () => {
+  it('should manage the catalogue with a product in app', () => {
     cat.login(credentials.username, credentials.password);
     cat.clickCart();
     cat.clickResetAppState();
