@@ -2,15 +2,6 @@
 
 const Description = require('../../pages/description');
 
-function obtenerAtributoProducto(productos, nombreProducto, atributo) {
-  if (productos[nombreProducto]) {
-    console.log(productos[nombreProducto][atributo]);
-    return productos[nombreProducto][atributo];
-  } else {
-    throw new Error(`Producto ${nombreProducto} no encontrado`);
-  };
-};
-
 describe('test', () => {
   const desc = new Description();
   let credentials;
@@ -28,9 +19,8 @@ describe('test', () => {
   });
   it('should manage the description page in app and log out', () => {
     desc.login(credentials.username, credentials.password);
-    addXpathTitle = obtenerAtributoProducto(productos, 'Sauce Labs Backpack', 'xpath_title');
+    addXpathTitle = desc.obtenerAtributoProducto(productos, 'Sauce Labs Backpack', 'xpath_title');
     desc.clickTitle(addXpathTitle);
-    // console.log(addXpathTitle);
     desc.clickAddToCartDescription();
     desc.clickCart();
     desc.clickAllItems();
@@ -43,7 +33,7 @@ describe('test', () => {
     desc.clickCart();
     desc.clickResetAppState();
     desc.clickAllItems();
-    addXpathImage = obtenerAtributoProducto(productos, 'Sauce Labs Oneise', 'xpath_image');
+    addXpathImage = desc.obtenerAtributoProducto(productos, 'Sauce Labs Oneise', 'xpath_image');
     desc.clickImage(addXpathImage);
     desc.clickAddToCartDescription();
     desc.clickCart();

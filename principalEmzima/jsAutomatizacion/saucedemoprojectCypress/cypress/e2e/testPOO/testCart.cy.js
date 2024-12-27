@@ -2,15 +2,6 @@
 
 const Cart = require('../../pages/cart');
 
-function obtenerAtributoProducto(productos, nombreProducto, atributo) {
-  if (productos[nombreProducto]) {
-    console.log(productos[nombreProducto][atributo]);
-    return productos[nombreProducto][atributo];
-  } else {
-    throw new Error(`Producto ${nombreProducto} no encontrado`);
-  };
-};
-
 describe('test', () => {
   const cart = new Cart();
   let credentials;
@@ -30,7 +21,7 @@ describe('test', () => {
     cart.clickCart();
     cart.clickResetAppState();
     cart.clickContinueShoping();
-    addId = obtenerAtributoProducto(productos, 'Sauce Labs Fleece Jacket', 'id_add_cart');
+    addId = cart.obtenerAtributoProducto(productos, 'Sauce Labs Fleece Jacket', 'id_add_cart');
     cart.clickAddToCart(addId);
     cart.clickCart();
     cart.clickLogout({ force: true });
@@ -42,7 +33,7 @@ describe('test', () => {
     cart.clickCart();
     cart.clickResetAppState();
     cart.clickContinueShoping();
-    addId = obtenerAtributoProducto(productos, 'Sauce Labs Bolt T-Shirt', 'id_add_cart');
+    addId = cart.obtenerAtributoProducto(productos, 'Sauce Labs Bolt T-Shirt', 'id_add_cart');
     cart.clickAddToCart(addId);
     cart.clickCart();
     cart.clickCheckout();

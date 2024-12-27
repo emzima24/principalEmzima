@@ -1,6 +1,7 @@
 /// <reference types="cypress" />
 
 import LoginClass from './login';
+const { obtenerAtributoProducto } = require('../support/functionProducts');
 
 class Catalogue extends LoginClass {
     constructor() {
@@ -17,6 +18,10 @@ class Catalogue extends LoginClass {
         if (!this.isLoggedIn) {
             throw new Error('Debes iniciar sesión primero usando la función login() heredada de Login.');
         }
+    }
+
+    obtenerAtributoProducto(productos, nombreProducto, atributo) {
+        return obtenerAtributoProducto(productos, nombreProducto, atributo);
     }
 
     clickHambugerMenu() {

@@ -1,12 +1,12 @@
 # Proyecto Saucedemo (automatización python)
-Paginas de la web app
+Los controladores de las páginas de la web app:
 1. Login (clase Login) **Emiliano**. 
 2. Catalogo (clase Catalogue) **Emiliano - Ana Maria** Hereda la clase Login. 
-3. Descripcion (clase Description) **Milton** Hereda la clase Catalogue, Cart.   
-4. Carro (clase Cart) **Emiliano - Fabian** Hereda la clase Catalogue. 
+3. Descripcion (clase Description) **Milton** Hereda la clase Catalogue, Cart. (Pudiera solo heredar la clase Catalogue)  
+4. Carro (clase Cart) **Emiliano - Fabian** Hereda la clase Catalogue. (Pudiera solo heredar la clase Description y asi hay una herencia continua)  
 5. Information (clase Checkout_Information) **Emiliano - Bisset** Hereda la clase Cart. 
 6. Checkout (clase Checkout_Overview)  **Franciso - Martin** Hereda la clase Checkout_Information.
-7. Completada (clase Checkout_Complete) **David - Silvia** Hereda la clase Checkout_Overview y Description de la cual se sobre escribe una clase.
+7. Completada (clase Checkout_Complete) **David - Silvia** Hereda la clase Checkout_Overview y Description de la cual se sobre escribe una clase. (Si Cart hereda de Description no hace falta que herede aca porque estaria en la linea)
 
 ## Sobre el archivo configconstan.py
 Contiene 3 clases 

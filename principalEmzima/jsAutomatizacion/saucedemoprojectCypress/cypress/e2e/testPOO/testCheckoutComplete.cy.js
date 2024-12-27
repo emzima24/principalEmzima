@@ -2,15 +2,6 @@
 
 const CheckoutComplete = require('../../pages/checkoutComplete');
 
-function obtenerAtributoProducto(productos, nombreProducto, atributo) {
-  if (productos[nombreProducto]) {
-    console.log(productos[nombreProducto][atributo]);
-    return productos[nombreProducto][atributo];
-  } else {
-    throw new Error(`Producto ${nombreProducto} no encontrado`);
-  };
-};
-
 describe('test', () => {
   const compl = new CheckoutComplete();
   let credentials;
@@ -30,7 +21,7 @@ describe('test', () => {
     compl.clickCart();
     compl.clickResetAppState();
     compl.clickContinueShoping();
-    addId = obtenerAtributoProducto(productos, 'Sauce Labs Bike Light', 'id_add_cart');
+    addId = compl.obtenerAtributoProducto(productos, 'Sauce Labs Bike Light', 'id_add_cart');
     compl.clickAddToCart(addId);
     compl.clickCart();
     compl.clickCheckout();

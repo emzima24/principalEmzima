@@ -28,3 +28,12 @@ const { obtenerAtributoProducto } = require('./functionProducts');
 Cypress.Commands.add('obtenerAtributoProducto', (productos, nombreProducto, atributo) => {
   return obtenerAtributoProducto(productos, nombreProducto, atributo);
 });
+
+// Cypress.Commands.add('loadFixtures', () => {
+//   cy.fixture('Users/standardUser').then((creds) => {
+//     Cypress.env('credentials', creds);  // Guardar en el entorno de Cypress
+//   });
+//   cy.fixture('Products/productos').then((data) => {
+//     Cypress.env('productos', data);  // Guardar en el entorno de Cypress
+//   });
+// });

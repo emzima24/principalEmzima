@@ -6,7 +6,12 @@ module.exports = defineConfig({
   watchForFileChanges: false,
   e2e: {
     baseUrl: 'https://www.saucedemo.com/',
-    specPattern: 'cypress/e2e/**/*.{js,jsx,ts,tsx}',
-    testIsolation: false
+    specPattern: 'cypress/e2e/**/*.{js,jsx,ts,tsx,feature}',
+    supportFile: 'cypress/support/index.js',
+    testIsolation: true,
+    setupNodeEvents(on, config) {
+      const cucumber = require('cypress-cucumber-preprocessor').default
+      on('file:preprocessor', cucumber())
     },
+  },
   });

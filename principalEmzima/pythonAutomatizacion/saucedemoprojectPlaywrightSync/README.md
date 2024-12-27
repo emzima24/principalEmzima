@@ -1,13 +1,13 @@
 # Proyecto Saucedemo (automatización python con Playwright de forma sincrónica)  
-Paginas de la web app fueron diseñadas como en el ejemplo [proyecto saucedemo](https://github.com/emzima24/principalEmzima/tree/main/principalEmzima/pythonAutomatizacion/saucedemoproject)  
+Los controladores de las páginas de la web app fueron diseñadas como en el ejemplo [proyecto saucedemo](https://github.com/emzima24/principalEmzima/tree/main/principalEmzima/pythonAutomatizacion/saucedemoproject)  
 
 1. Login (clase Login) 
 2. Catalogo (clase Catalogue) Hereda la clase Login.
-3. Descripcion (clase Description) Hereda la clase Catalogue, Cart.
-4. Carro (clase Cart) Hereda la clase Catalogue.
+3. Descripcion (clase Description) Hereda la clase Catalogue, Cart (Pudiera solo heredar la clase Catalogue).
+4. Carro (clase Cart) Hereda la clase Catalogue.  (Pudiera solo heredar la clase Description y asi hay una herencia continua).  
 5. Information (clase Checkout_Information) Hereda la clase Cart.
 6. Checkout (clase Checkout_Overview) Hereda la clase Checkout_Information.
-7. Completada (clase Checkout_Complete) Hereda la clase Checkout_Overview, Description de la cual sobre escribe una clase.
+7. Completada (clase Checkout_Complete) Hereda la clase Checkout_Overview, Description de la cual sobre escribe una clase. (Si Cart hereda de Description no hace falta que herede aca porque estaria en la linea).
 
 ## Sobre el archivo configconstan.py  
 Contiene 3 clases
