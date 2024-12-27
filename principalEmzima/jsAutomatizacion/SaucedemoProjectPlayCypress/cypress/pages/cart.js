@@ -9,13 +9,6 @@ class Cart extends descriptionClass  {
         this.checkout = () => cy.get('[data-test="checkout"]');
     }
 
-    verifyLogin() {
-        // console.log('Verificando si el usuario está logueado:', this.isLoggedIn);
-        if (!this.isLoggedIn) {
-            throw new Error('Debes iniciar sesión primero usando la función login() heredada de Login.');
-        }
-    }
-
     clickCheckout() {
         this.verifyLogin();
         this.checkout().click({force:true});

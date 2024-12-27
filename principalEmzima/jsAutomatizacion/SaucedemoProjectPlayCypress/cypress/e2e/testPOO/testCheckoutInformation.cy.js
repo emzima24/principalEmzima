@@ -37,7 +37,7 @@ describe('test', () => {
     inf.typeFirstName('Carlos');
     inf.typeLastName('Alonso');
     inf.typePostalCode('C1429SAV');  
-    inf.clickCancelButton();
+    inf.clickCancelInformation();
     cy.get('[data-test="title"]').should('be.visible').and('contain','Your Cart');
   });
 

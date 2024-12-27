@@ -8,8 +8,8 @@ class CheckoutInformation extends CartClass {
         this.firstName = () => cy.get('[data-test="firstName"]');
         this.lastName = () => cy.get('[data-test="lastName"]');
         this.postalCode = () => cy.get('[data-test="postalCode"]');
-        this.continueButton = () => cy.get('[data-test="continue"]');
-        this.cancelButton = () => cy.get('[name="cancel"]');
+        this.continueInformation = () => cy.get('[data-test="continue"]');
+        this.cancelInformation = () => cy.get('[data-test="cancel"]');
         
     }
 
@@ -28,21 +28,21 @@ class CheckoutInformation extends CartClass {
         this.postalCode().type(code);
     }
 
-    clickContinueButton() {
+    clickContinueInformation() {
         this.verifyLogin();
-        this.continueButton().click()
+        this.continueInformation().click()
         }
     
-    clickCancelButton() {
+    clickCancelInformation() {
         this.verifyLogin();
-        this.cancelButton().click()
+        this.cancelInformation().click()
     }
 
     continuePayment(nameFirst, nameLast, code) {
         this.typeFirstName(nameFirst);
         this.typeLastName(nameLast);
         this.typePostalCode(code);
-        this.clickContinueButton()
+        this.clickContinueInformation()
     }
 }
 

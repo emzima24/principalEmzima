@@ -1,6 +1,6 @@
 /// <reference types="cypress" />
 
-const CheckoutInformation = require('../../pages/checkoutInformation');
+const CheckoutOverview = require('../../pages/checkoutOverview');
 
 function obtenerAtributoProducto(productos, nombreProducto, atributo) {
   if (productos[nombreProducto]) {
@@ -12,7 +12,7 @@ function obtenerAtributoProducto(productos, nombreProducto, atributo) {
 };
 
 describe('test', () => {
-  const inf = new CheckoutInformation();
+  const over = new CheckoutOverview();
   let credentials;
   let productos;
   let addId;
@@ -25,32 +25,31 @@ describe('test', () => {
       productos = data;
     });
   });
-  it('should manage the checkout information page and cancel in app', () => {
-    inf.login(credentials.username, credentials.password);
-    inf.clickCart();
-    inf.clickResetAppState();
-    inf.clickContinueShoping();
+  it('should manage the checkout overview page and cancel in app', () => {
+    over.login(credentials.username, credentials.password);
+    over.clickCart();
+    over.clickResetAppState();
+    over.clickContinueShoping();
     addId = obtenerAtributoProducto(productos, 'Sauce Labs Bike Light', 'id_add_cart');
-    inf.clickAddToCart(addId);
-    inf.clickCart();
-    inf.clickCheckout();
-    inf.typeFirstName('Carlos');
-    inf.typeLastName('Alonso');
-    inf.typePostalCode('C1429SAV');  
-    inf.clickCancelButton();
-    cy.get('[data-test="title"]').should('be.visible').and('contain','Your Cart');
+    over.clickAddToCart(addId);
+    over.clickCart();
+    over.clickCheckout();
+    over.continuePayment('Carlos', 'Alonso', 'C1429SAV'); 
+    over.clickCancelOverview();
+    cy.get('[data-test="title"]').should('be.visible').and('contain','Products');
   });
 
-  it('should manage the checkout information page and continue in app', () => {
-    inf.login(credentials.username, credentials.password);
-    inf.clickCart();
-    inf.clickResetAppState();
-    inf.clickContinueShoping();
+  it('should manage the checkout overview page and finish in app', () => {
+    over.login(credentials.username, credentials.password);
+    over.clickCart();
+    over.clickResetAppState();
+    over.clickContinueShoping();
     addId = obtenerAtributoProducto(productos, 'Test.allTheThings() T-Shirt (Red)', 'id_add_cart');
-    inf.clickAddToCart(addId);
-    inf.clickCart();
-    inf.clickCheckout();
-    inf.continuePayment('Carlos', 'Alonso', 'C1429SAV'); 
-    cy.get('[data-test="title"]').should('be.visible').and('have.text','Checkout: Overview');
+    over.clickAddToCart(addId);
+    over.clickCart();
+    over.clickCheckout();
+    over.continuePayment('Carlos', 'Alonso', 'C1429SAV'); 
+    over.clickFinishOverview();
+    cy.get('[data-test="title"]').should('be.visible').and('have.text','Checkout: Complete!');
   });
 });

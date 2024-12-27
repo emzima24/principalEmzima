@@ -31,7 +31,7 @@ principalEmzima/pythonAutomatizacion/saucedemoproject/Features/pages/Not_Checkou
 principalEmzima/pythonAutomatizacion/saucedemoproject/Features/not_endToend.feature
 principalEmzima/java/QuintaClase/PracticaII.java
 # principalEmzima/javaAutomatizacion/
-principalEmzima/pythonAutomatizacion/SaucedemoProjectPlayAsync/
+principalEmzima/pythonAutomatizacion/SaucedemoProjectPlayAsync/features/steps/
 principalEmzima/jsAutomatizacion/SaucedemoProjectPlayCypress/cypress/e2e/testPOO/test
 principalEmzima/jsAutomatizacion/SaucedemoProjectPlayCypress/cypress/pages/pagesTest
 principalEmzima/jsAutomatizacion/SaucedemoProjectPlayCypress/package-lock.json
