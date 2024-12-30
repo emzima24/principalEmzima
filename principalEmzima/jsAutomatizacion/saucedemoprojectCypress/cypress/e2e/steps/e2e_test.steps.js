@@ -1,8 +1,7 @@
 /// <reference types="cypress" />
 
 const CheckoutComplete = require('../../pages/checkoutComplete');
-const { Given, When, Then } = require('cypress-cucumber-preprocessor/steps');
-
+const { Given, When, Then } = require('@badeball/cypress-cucumber-preprocessor');
 const compl = new CheckoutComplete();
 let addId;
 let credentials;

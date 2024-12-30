@@ -33,7 +33,7 @@ describe('test', () => {
     cat.clickResetAppState();
     cat.clickAllItems();
     // console.log(addId);
-    addId = cat.obtenerAtributoProducto(productos, 'Sauce Labs Oneise', 'id_add_cart');
+    addId = cat.obtenerAtributoProducto(productos, 'Sauce Labs Onesie', 'id_add_cart');
     cat.clickAddToCart(addId);
     cat.clickCart();
     cy.get('#checkout').should('be.visible');

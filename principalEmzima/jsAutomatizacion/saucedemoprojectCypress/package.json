@@ -11,9 +11,15 @@
     "license": "MIT",
     "devDependencies": {
         "@badeball/cypress-cucumber-preprocessor": "^21.0.3",
-        "cypress": "^13.17.0"
+        "@cucumber/cucumber": "^11.1.1",
+        "@cucumber/messages": "^27.0.2",
+        "allure-cucumberjs": "^3.0.7",
+        "allure-cypress": "^3.0.7",
+        "cypress": "^13.17.0",
+        "cypress-on-fix": "^1.0.3"
     },
     "dependencies": {
+        "@bahmutov/cypress-esbuild-preprocessor": "^2.2.4",
         "cypress-cucumber-preprocessor": "^4.3.1",
         "save-dev": "^0.0.1-security"
     },
