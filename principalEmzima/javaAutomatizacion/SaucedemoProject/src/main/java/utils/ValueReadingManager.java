@@ -7,7 +7,6 @@ import org.jetbrains.annotations.NotNull;
 import java.io.FileInputStream;
 import java.io.IOException;
 import java.util.Properties;
-import java.util.stream.IntStream;
 
 public class ValueReadingManager {
     private static String url, user, pass, jsonUsersString, jsonProductsString, jsonShippingInformationString, fsName, lsName,pstCode,xpathTitle, xpathImage, idAdd;

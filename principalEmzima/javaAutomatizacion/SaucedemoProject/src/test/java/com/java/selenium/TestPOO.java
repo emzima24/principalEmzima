@@ -1,20 +1,20 @@
 package com.java.selenium;
 
+import org.junit.jupiter.api.DisplayName;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.ExpectedConditions;
-import org.openqa.selenium.support.ui.WebDriverWait;
 import pages.*;
 import utils.ValueReadingManager;
-import org.junit.Test;
+import org.junit.jupiter.api.Test;
 import org.openqa.selenium.By;
 import java.time.Duration;
 
-import static org.junit.Assert.assertEquals;
-import static org.junit.Assert.assertTrue;
+import static org.junit.jupiter.api.Assertions. assertEquals;
+import static org.junit.jupiter.api.Assertions.assertTrue;
 
 public class TestPOO extends BeforeAfterTest {
 
-    // e2e sin objeto mostrado en la ultima reunion
+    @DisplayName("Prueba e2e como fue mostrado en la ultima reunion sin POO")
     @Test
     public void testE2e(){
         driver.findElement(By.id("user-name")).sendKeys(ValueReadingManager.getInstance().getUsername("prod"));
@@ -48,7 +48,7 @@ public class TestPOO extends BeforeAfterTest {
 
     }
 
-    // prueba 1 relacionada con la clase Login
+    @DisplayName("Prueba 1 relacionada con la clase Login con POO")
     @Test
     public void loginTest(){
         LoginPage loginPage = new LoginPage(driver);
@@ -57,7 +57,7 @@ public class TestPOO extends BeforeAfterTest {
         assertTrue(linkedinLink.isDisplayed());
     }
 
-    // prueba 1 relacionada con la clase Catalogue
+    @DisplayName("Prueba 1 relacionada con la clase Catalogue con POO")
     @Test
     public void catalogueWithLogoutTest(){
         CataloguePage cataloguePage = new CataloguePage(driver);
@@ -68,7 +68,7 @@ public class TestPOO extends BeforeAfterTest {
         assertTrue(loginButton.isDisplayed());
     }
 
-    // prueba 2 relacionada con la clase Catalogue
+    @DisplayName("Prueba 2 relacionada con la clase Catalogue con POO")
     @Test
     public void catalogueWithAddProductTest(){
         CataloguePage cataloguePage = new CataloguePage(driver);;
@@ -82,7 +82,7 @@ public class TestPOO extends BeforeAfterTest {
         assertEquals("Products",titleHeadBar.getText());
     }
 
-    // prueba 3 relacionada con la clase Catalogue
+    @DisplayName("Prueba 3 relacionada con la clase Catalogue con POO")
     @Test
     public void catalogueWithAddProductAndDescriptionTest(){
         CataloguePage cataloguePage = new CataloguePage(driver);;
@@ -95,7 +95,7 @@ public class TestPOO extends BeforeAfterTest {
         assertTrue(checkoutButton.isDisplayed());
     }
 
-    // prueba 1 relacionada con la clase Description
+    @DisplayName("Prueba 1 relacionada con la clase Description con POO")
     @Test
     public void descriptionWithAddProduct(){
         DescriptionPage descriptionPage = new DescriptionPage(driver);;
@@ -108,7 +108,7 @@ public class TestPOO extends BeforeAfterTest {
         assertTrue(checkoutButton.isDisplayed());
     }
 
-    // prueba 2 relacionada con la clase Description
+    @DisplayName("Prueba 2 relacionada con la clase Description con POO")
     @Test
     public void descriptionWithBackProducts(){
         DescriptionPage descriptionPage = new DescriptionPage(driver);;
@@ -120,7 +120,7 @@ public class TestPOO extends BeforeAfterTest {
         assertEquals("Products",titleHeadBar.getText());
     }
 
-    // prueba 1 relacionada con la clase Cart
+    @DisplayName("Prueba 1 relacionada con la clase Cart con POO")
     @Test
     public void cartWithAddProductWithContinueShopping() throws InterruptedException {
         CartPage cartPage = new CartPage(driver);;
@@ -138,7 +138,7 @@ public class TestPOO extends BeforeAfterTest {
         assertEquals("Products",titleHeadBar.getText());
     }
 
-    // prueba 2 relacionada con la clase Cart
+    @DisplayName("Prueba 2 relacionada con la clase Cart con POO")
     @Test
     public void cartWithAddProductWithCheckout(){
         CartPage cartPage = new CartPage(driver);;
@@ -156,7 +156,7 @@ public class TestPOO extends BeforeAfterTest {
         assertTrue(continueButton.isDisplayed());
     }
 
-    // prueba 1 relacionada con la clase Checkout Information
+    @DisplayName("Prueba 1 relacionada con la clase Checkout Information con POO")
     @Test
     public void checkoutInformationWithAddProductWithCancel(){
         CheckoutInformationPage checkoutInformation = new CheckoutInformationPage(driver);;
@@ -168,17 +168,17 @@ public class TestPOO extends BeforeAfterTest {
         checkoutInformation.typeFirstNameInput(ValueReadingManager.getInstance().getFirstName("1"));
         checkoutInformation.typeLastNameInput(ValueReadingManager.getInstance().getLastName("1"));
         checkoutInformation.typePostalCodeInput(ValueReadingManager.getInstance().getPostalCode("1"));
-        try {
-            Thread.sleep(3000);
-        } catch (InterruptedException e) {
-            throw new RuntimeException(e);
-        }
+//        try {
+//            Thread.sleep(3000);
+//        } catch (InterruptedException e) {
+//            throw new RuntimeException(e);
+//        }
         checkoutInformation.clickCancelInformation();
         WebElement titleHeadBar = wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//*[@id=\"header_container\"]/div[2]/span")));
         assertEquals("Your Cart",titleHeadBar.getText());
     }
 
-    // prueba 2 relacionada con la clase Checkout Information
+    @DisplayName("prueba 2 relacionada con la clase Checkout Informationcon  POO")
     @Test
     public void checkoutInformationWithAddProductWithContinue(){
         CheckoutInformationPage checkoutInformation = new CheckoutInformationPage(driver);;
@@ -188,16 +188,16 @@ public class TestPOO extends BeforeAfterTest {
         checkoutInformation.clickCart();
         checkoutInformation.clickCheckout();
         checkoutInformation.continuePaying(ValueReadingManager.getInstance().getFirstName("1"),ValueReadingManager.getInstance().getLastName("1"), ValueReadingManager.getInstance().getPostalCode("1"));
-        try {
-            Thread.sleep(3000);
-        } catch (InterruptedException e) {
-            throw new RuntimeException(e);
-        }
+//        try {
+//            Thread.sleep(3000);
+//        } catch (InterruptedException e) {
+//            throw new RuntimeException(e);
+//        }
         WebElement titleHeadBar = wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//*[@id=\"header_container\"]/div[2]/span")));
         assertEquals("Checkout: Overview",titleHeadBar.getText());
     }
 
-    // prueba 1 relacionada con la clase Checkout Overview
+    @DisplayName("prueba 1 relacionada con la clase Checkout Overview con POO")
     @Test
     public void checkoutOverviewWithAddProductWithCancel(){
         CheckoutOverviewPage checkoutOverviewPage = new CheckoutOverviewPage(driver);;
@@ -207,17 +207,17 @@ public class TestPOO extends BeforeAfterTest {
         checkoutOverviewPage.clickCart();
         checkoutOverviewPage.clickCheckout();
         checkoutOverviewPage.continuePaying(ValueReadingManager.getInstance().getFirstName("1"),ValueReadingManager.getInstance().getLastName("1"), ValueReadingManager.getInstance().getPostalCode("1"));
-        try {
-            Thread.sleep(3000);
-        } catch (InterruptedException e) {
-            throw new RuntimeException(e);
-        }
+//        try {
+//            Thread.sleep(3000);
+//        } catch (InterruptedException e) {
+//            throw new RuntimeException(e);
+//        }
         checkoutOverviewPage.clickCancelOverview();
         WebElement titleHeadBar = wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//*[@id=\"header_container\"]/div[2]/span")));
         assertEquals("Products",titleHeadBar.getText());
     }
 
-    // prueba 2 relacionada con la clase Checkout Overview
+    @DisplayName("prueba 2 relacionada con la clase Checkout Overview con POO")
     @Test
     public void checkoutOverviewWithAddProductWithFinish(){
         CheckoutOverviewPage checkoutOverviewPage = new CheckoutOverviewPage(driver);;
@@ -227,17 +227,17 @@ public class TestPOO extends BeforeAfterTest {
         checkoutOverviewPage.clickCart();
         checkoutOverviewPage.clickCheckout();
         checkoutOverviewPage.continuePaying(ValueReadingManager.getInstance().getFirstName("1"),ValueReadingManager.getInstance().getLastName("1"), ValueReadingManager.getInstance().getPostalCode("1"));
-        try {
-            Thread.sleep(3000);
-        } catch (InterruptedException e) {
-            throw new RuntimeException(e);
-        }
+//        try {
+//            Thread.sleep(3000);
+//        } catch (InterruptedException e) {
+//            throw new RuntimeException(e);
+//        }
         checkoutOverviewPage.clickFinish();
         WebElement titleHeadBar = wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//*[@id=\"header_container\"]/div[2]/span")));
         assertEquals("Checkout: Complete!",titleHeadBar.getText());
     }
 
-    // prueba 1 relacionada con la clase Checkout Complete
+    @DisplayName("prueba 1 relacionada con la clase Checkout Complete con POO")
     @Test
     public void checkoutCompleteWithAddProductWithBackHome(){
         CheckoutCompletePage checkoutComplete = new CheckoutCompletePage(driver);;
@@ -247,32 +247,32 @@ public class TestPOO extends BeforeAfterTest {
         checkoutComplete.clickCart();
         checkoutComplete.clickCheckout();
         checkoutComplete.continuePaying(ValueReadingManager.getInstance().getFirstName("1"),ValueReadingManager.getInstance().getLastName("1"), ValueReadingManager.getInstance().getPostalCode("1"));
-        try {
-            Thread.sleep(3000);
-        } catch (InterruptedException e) {
-            throw new RuntimeException(e);
-        }
+//        try {
+//            Thread.sleep(3000);
+//        } catch (InterruptedException e) {
+//            throw new RuntimeException(e);
+//        }
         checkoutComplete.clickFinish();
         checkoutComplete.clickBackHome();
         WebElement titleHeadBar = wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//*[@id=\"header_container\"]/div[2]/span")));
         assertEquals("Products",titleHeadBar.getText());
     }
 
-    // prueba e2e
+    @DisplayName("prueba e2e con POO")
     @Test
     public void checkoutCompleteWithAddProductWithLogout(){
-        CheckoutCompletePage checkoutComplete = new CheckoutCompletePage(driver);;
+        CheckoutCompletePage checkoutComplete = new CheckoutCompletePage(driver);
         checkoutComplete.loginAll(ValueReadingManager.getInstance().getUsername("prod"),ValueReadingManager.getInstance().getPassword("prod"));
         checkoutComplete.clickAddToCart(ValueReadingManager.getInstance().getAddId("Sauce Labs Bike Light"));
         checkoutComplete.clickAddToCart(ValueReadingManager.getInstance().getAddId("Test.allTheThings() T-Shirt (Red)"));
         checkoutComplete.clickCart();
         checkoutComplete.clickCheckout();
         checkoutComplete.continuePaying(ValueReadingManager.getInstance().getFirstName("1"),ValueReadingManager.getInstance().getLastName("1"), ValueReadingManager.getInstance().getPostalCode("1"));
-        try {
-            Thread.sleep(3000);
-        } catch (InterruptedException e) {
-            throw new RuntimeException(e);
-        }
+//        try {
+//            Thread.sleep(3000);
+//        } catch (InterruptedException e) {
+//            throw new RuntimeException(e);
+//        }
         checkoutComplete.clickFinish();
         checkoutComplete.clickBackHome();
         checkoutComplete.clickHamburgerMenu();
