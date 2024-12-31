@@ -7,9 +7,9 @@ Feature: Return to Login Page After Logout
     And I click on the Add to cart button for the "<product>"
     And I click on the cart icon
     And I click on the Checkout button
-    And I filled the field for the first_name with "<first_name>"
-    And I filled the field for the last_name with "<last_name>"
-    And I filled the field for the zip_code with "<zip_code>"
+    And I filled the field for the first_name with value first_name
+    And I filled the field for the last_name with value last_name
+    And I filled the field for the zip_code with value zip_code
     And I click on the Continue button
     And I click on the Finish button
     And I click on the Back Home button
@@ -18,10 +18,10 @@ Feature: Return to Login Page After Logout
     Then I want to go to the login page
 
     Examples:
-| product                           | first_name | last_name | zip_code |
-| Sauce Labs Backpack               | Carlos     | Alonso    | C1429SAV |
-#| Sauce Labs Bike Light             | Carlos     | Alonso    | C1428SAV |
-#| Sauce Labs Bolt T-Shirt           | Carlos     | Alonso    | C1427SAV |
-#| Sauce Labs Fleece Jacket          | Carlos     | Alonso    | C1426SAV |
-#| Sauce Labs Onesie                 | Carlos     | Alonso    | C1425SAV |
-#| Test.allTheThings() T-Shirt (Red) | Carlos     | Alonso    | C1424SAV |
+| product                           |
+| Sauce Labs Backpack               |
+| Sauce Labs Bike Light             |
+| Sauce Labs Bolt T-Shirt           |
+| Sauce Labs Fleece Jacket          |
+| Sauce Labs Onesie                 |
+| Test.allTheThings() T-Shirt (Red) |

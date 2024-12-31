@@ -57,19 +57,19 @@ public class E2ETest extends BrowserConfig {
         checkoutComplete.clickCheckout();
     }
 
-    @And("I filled the field for the first_name with {string}")
-    public void iFilledTheFieldForTheFirst_nameWith(String value) {
-        checkoutComplete.typeFirstNameInput(value=ValueReadingManager.getInstance().getFirstName("1"));
+    @And("I filled the field for the first_name with value first_name")
+    public void iFilledTheFieldForTheFirst_nameWith() {
+        checkoutComplete.typeFirstNameInput(ValueReadingManager.getInstance().getFirstName("1"));
     }
 
-    @And("I filled the field for the last_name with {string}")
-    public void iFilledTheFieldForTheLast_nameWith(String value) {
-        checkoutComplete.typeLastNameInput(value=ValueReadingManager.getInstance().getLastName("1"));
+    @And("I filled the field for the last_name with value last_name")
+    public void iFilledTheFieldForTheLast_nameWith() {
+        checkoutComplete.typeLastNameInput(ValueReadingManager.getInstance().getLastName("1"));
     }
 
-    @And("I filled the field for the zip_code with {string}")
-    public void iFilledTheFieldForTheZip_codeWith(String value) {
-        checkoutComplete.typePostalCodeInput(value=ValueReadingManager.getInstance().getPostalCode("1"));
+    @And("I filled the field for the zip_code with value zip_code")
+    public void iFilledTheFieldForTheZip_codeWith() {
+        checkoutComplete.typePostalCodeInput(ValueReadingManager.getInstance().getPostalCode("1"));
     }
 
     @And("I click on the Continue button")
