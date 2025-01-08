@@ -16,5 +16,6 @@
 // Import commands.js using ES2015 syntax:
 import './commands'
 import '@badeball/cypress-cucumber-preprocessor';
-import '@bahmutov/cypress-esbuild-preprocessor';
+
+// import '@bahmutov/cypress-esbuild-preprocessor';
 

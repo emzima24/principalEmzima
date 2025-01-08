@@ -8,6 +8,7 @@ import utils.ValueReadingManager;
 import org.junit.jupiter.api.Test;
 import org.openqa.selenium.By;
 import java.time.Duration;
+import java.util.Objects;
 
 import static org.junit.jupiter.api.Assertions. assertEquals;
 import static org.junit.jupiter.api.Assertions.assertTrue;
@@ -17,7 +18,7 @@ public class TestPOO extends BeforeAfterTest {
     @DisplayName("Prueba e2e como fue mostrado en la ultima reunion sin POO")
     @Test
     public void testE2e(){
-        driver.findElement(By.id("user-name")).sendKeys(ValueReadingManager.getInstance().getUsername("prod"));
+        driver.findElement(By.id("user-name")).sendKeys(Objects.requireNonNull(ValueReadingManager.getInstance()).getUsername("prod"));
         driver.findElement(By.id("password")).sendKeys(ValueReadingManager.getInstance().getPassword("prod"));
         driver.findElement(By.id("login-button")).submit();
         assertEquals("Swag Labs",driver.getTitle());
@@ -52,7 +53,7 @@ public class TestPOO extends BeforeAfterTest {
     @Test
     public void loginTest(){
         LoginPage loginPage = new LoginPage(driver);
-        loginPage.loginAll(ValueReadingManager.getInstance().getUsername("prod"),ValueReadingManager.getInstance().getPassword("prod"));
+        loginPage.loginAll(Objects.requireNonNull(ValueReadingManager.getInstance()).getUsername("prod"),ValueReadingManager.getInstance().getPassword("prod"));
         WebElement linkedinLink = wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//*[@id=\"page_wrapper\"]/footer/ul/li[3]/a")));
         assertTrue(linkedinLink.isDisplayed());
     }
@@ -61,7 +62,7 @@ public class TestPOO extends BeforeAfterTest {
     @Test
     public void catalogueWithLogoutTest(){
         CataloguePage cataloguePage = new CataloguePage(driver);
-        cataloguePage.loginAll(ValueReadingManager.getInstance().getUsername("prod"),ValueReadingManager.getInstance().getPassword("prod"));
+        cataloguePage.loginAll(Objects.requireNonNull(ValueReadingManager.getInstance()).getUsername("prod"),ValueReadingManager.getInstance().getPassword("prod"));
         cataloguePage.clickHamburgerMenu();
         cataloguePage.clickLogout();
         WebElement loginButton = wait.until(ExpectedConditions.visibilityOfElementLocated(By.id("login-button")));
@@ -72,7 +73,7 @@ public class TestPOO extends BeforeAfterTest {
     @Test
     public void catalogueWithAddProductTest(){
         CataloguePage cataloguePage = new CataloguePage(driver);;
-        cataloguePage.loginAll(ValueReadingManager.getInstance().getUsername("prod"),ValueReadingManager.getInstance().getPassword("prod"));
+        cataloguePage.loginAll(Objects.requireNonNull(ValueReadingManager.getInstance()).getUsername("prod"),ValueReadingManager.getInstance().getPassword("prod"));
         cataloguePage.clickAddToCart(ValueReadingManager.getInstance().getAddId("Sauce Labs Backpack"));
         cataloguePage.clickTitle(ValueReadingManager.getInstance().getTitleXpath("Sauce Labs Backpack"));
         cataloguePage.clickCart();
@@ -86,7 +87,7 @@ public class TestPOO extends BeforeAfterTest {
     @Test
     public void catalogueWithAddProductAndDescriptionTest(){
         CataloguePage cataloguePage = new CataloguePage(driver);;
-        cataloguePage.loginAll(ValueReadingManager.getInstance().getUsername("prod"),ValueReadingManager.getInstance().getPassword("prod"));
+        cataloguePage.loginAll(Objects.requireNonNull(ValueReadingManager.getInstance()).getUsername("prod"),ValueReadingManager.getInstance().getPassword("prod"));
         cataloguePage.clickAddToCart(ValueReadingManager.getInstance().getAddId("Sauce Labs Onesie"));
         cataloguePage.clickCart();
         cataloguePage.clickHamburgerMenu();
@@ -99,7 +100,7 @@ public class TestPOO extends BeforeAfterTest {
     @Test
     public void descriptionWithAddProduct(){
         DescriptionPage descriptionPage = new DescriptionPage(driver);;
-        descriptionPage.loginAll(ValueReadingManager.getInstance().getUsername("prod"),ValueReadingManager.getInstance().getPassword("prod"));
+        descriptionPage.loginAll(Objects.requireNonNull(ValueReadingManager.getInstance()).getUsername("prod"),ValueReadingManager.getInstance().getPassword("prod"));
         descriptionPage.clickImage(ValueReadingManager.getInstance().getImageXpath("Sauce Labs Onesie"));
         descriptionPage.clickAddToCartDescription();
         descriptionPage.clickCart();
@@ -112,7 +113,7 @@ public class TestPOO extends BeforeAfterTest {
     @Test
     public void descriptionWithBackProducts(){
         DescriptionPage descriptionPage = new DescriptionPage(driver);;
-        descriptionPage.loginAll(ValueReadingManager.getInstance().getUsername("prod"),ValueReadingManager.getInstance().getPassword("prod"));
+        descriptionPage.loginAll(Objects.requireNonNull(ValueReadingManager.getInstance()).getUsername("prod"),ValueReadingManager.getInstance().getPassword("prod"));
         descriptionPage.clickImage(ValueReadingManager.getInstance().getImageXpath("Sauce Labs Backpack"));
         descriptionPage.clickAddToCartDescription();
         descriptionPage.clickBackProducts();
@@ -124,7 +125,7 @@ public class TestPOO extends BeforeAfterTest {
     @Test
     public void cartWithAddProductWithContinueShopping() throws InterruptedException {
         CartPage cartPage = new CartPage(driver);;
-        cartPage.loginAll(ValueReadingManager.getInstance().getUsername("prod"),ValueReadingManager.getInstance().getPassword("prod"));
+        cartPage.loginAll(Objects.requireNonNull(ValueReadingManager.getInstance()).getUsername("prod"),ValueReadingManager.getInstance().getPassword("prod"));
         cartPage.clickAddToCart(ValueReadingManager.getInstance().getAddId("Sauce Labs Onesie"));
         cartPage.clickAddToCart(ValueReadingManager.getInstance().getAddId("Sauce Labs Bolt T-Shirt"));
         cartPage.clickCart();
@@ -142,7 +143,7 @@ public class TestPOO extends BeforeAfterTest {
     @Test
     public void cartWithAddProductWithCheckout(){
         CartPage cartPage = new CartPage(driver);;
-        cartPage.loginAll(ValueReadingManager.getInstance().getUsername("prod"),ValueReadingManager.getInstance().getPassword("prod"));
+        cartPage.loginAll(Objects.requireNonNull(ValueReadingManager.getInstance()).getUsername("prod"),ValueReadingManager.getInstance().getPassword("prod"));
         cartPage.clickAddToCart(ValueReadingManager.getInstance().getAddId("Sauce Labs Fleece Jacket"));
         cartPage.clickAddToCart(ValueReadingManager.getInstance().getAddId("Sauce Labs Bolt T-Shirt"));
         cartPage.clickCart();
@@ -160,7 +161,7 @@ public class TestPOO extends BeforeAfterTest {
     @Test
     public void checkoutInformationWithAddProductWithCancel(){
         CheckoutInformationPage checkoutInformation = new CheckoutInformationPage(driver);;
-        checkoutInformation.loginAll(ValueReadingManager.getInstance().getUsername("prod"),ValueReadingManager.getInstance().getPassword("prod"));
+        checkoutInformation.loginAll(Objects.requireNonNull(ValueReadingManager.getInstance()).getUsername("prod"),ValueReadingManager.getInstance().getPassword("prod"));
         checkoutInformation.clickAddToCart(ValueReadingManager.getInstance().getAddId("Sauce Labs Bike Light"));
         checkoutInformation.clickAddToCart(ValueReadingManager.getInstance().getAddId("Test.allTheThings() T-Shirt (Red)"));
         checkoutInformation.clickCart();
@@ -182,7 +183,7 @@ public class TestPOO extends BeforeAfterTest {
     @Test
     public void checkoutInformationWithAddProductWithContinue(){
         CheckoutInformationPage checkoutInformation = new CheckoutInformationPage(driver);;
-        checkoutInformation.loginAll(ValueReadingManager.getInstance().getUsername("prod"),ValueReadingManager.getInstance().getPassword("prod"));
+        checkoutInformation.loginAll(Objects.requireNonNull(ValueReadingManager.getInstance()).getUsername("prod"),ValueReadingManager.getInstance().getPassword("prod"));
         checkoutInformation.clickAddToCart(ValueReadingManager.getInstance().getAddId("Sauce Labs Bike Light"));
         checkoutInformation.clickAddToCart(ValueReadingManager.getInstance().getAddId("Test.allTheThings() T-Shirt (Red)"));
         checkoutInformation.clickCart();
@@ -201,7 +202,7 @@ public class TestPOO extends BeforeAfterTest {
     @Test
     public void checkoutOverviewWithAddProductWithCancel(){
         CheckoutOverviewPage checkoutOverviewPage = new CheckoutOverviewPage(driver);;
-        checkoutOverviewPage.loginAll(ValueReadingManager.getInstance().getUsername("prod"),ValueReadingManager.getInstance().getPassword("prod"));
+        checkoutOverviewPage.loginAll(Objects.requireNonNull(ValueReadingManager.getInstance()).getUsername("prod"),ValueReadingManager.getInstance().getPassword("prod"));
         checkoutOverviewPage.clickAddToCart(ValueReadingManager.getInstance().getAddId("Sauce Labs Bike Light"));
         checkoutOverviewPage.clickAddToCart(ValueReadingManager.getInstance().getAddId("Test.allTheThings() T-Shirt (Red)"));
         checkoutOverviewPage.clickCart();
@@ -221,7 +222,7 @@ public class TestPOO extends BeforeAfterTest {
     @Test
     public void checkoutOverviewWithAddProductWithFinish(){
         CheckoutOverviewPage checkoutOverviewPage = new CheckoutOverviewPage(driver);;
-        checkoutOverviewPage.loginAll(ValueReadingManager.getInstance().getUsername("prod"),ValueReadingManager.getInstance().getPassword("prod"));
+        checkoutOverviewPage.loginAll(Objects.requireNonNull(ValueReadingManager.getInstance()).getUsername("prod"),ValueReadingManager.getInstance().getPassword("prod"));
         checkoutOverviewPage.clickAddToCart(ValueReadingManager.getInstance().getAddId("Sauce Labs Onesie"));
         checkoutOverviewPage.clickAddToCart(ValueReadingManager.getInstance().getAddId("Sauce Labs Fleece Jacket"));
         checkoutOverviewPage.clickCart();
@@ -241,7 +242,7 @@ public class TestPOO extends BeforeAfterTest {
     @Test
     public void checkoutCompleteWithAddProductWithBackHome(){
         CheckoutCompletePage checkoutComplete = new CheckoutCompletePage(driver);;
-        checkoutComplete.loginAll(ValueReadingManager.getInstance().getUsername("prod"),ValueReadingManager.getInstance().getPassword("prod"));
+        checkoutComplete.loginAll(Objects.requireNonNull(ValueReadingManager.getInstance()).getUsername("prod"),ValueReadingManager.getInstance().getPassword("prod"));
         checkoutComplete.clickAddToCart(ValueReadingManager.getInstance().getAddId("Sauce Labs Bike Light"));
         checkoutComplete.clickAddToCart(ValueReadingManager.getInstance().getAddId("Test.allTheThings() T-Shirt (Red)"));
         checkoutComplete.clickCart();
@@ -262,7 +263,7 @@ public class TestPOO extends BeforeAfterTest {
     @Test
     public void checkoutCompleteWithAddProductWithLogout(){
         CheckoutCompletePage checkoutComplete = new CheckoutCompletePage(driver);
-        checkoutComplete.loginAll(ValueReadingManager.getInstance().getUsername("prod"),ValueReadingManager.getInstance().getPassword("prod"));
+        checkoutComplete.loginAll(Objects.requireNonNull(ValueReadingManager.getInstance()).getUsername("prod"),ValueReadingManager.getInstance().getPassword("prod"));
         checkoutComplete.clickAddToCart(ValueReadingManager.getInstance().getAddId("Sauce Labs Bike Light"));
         checkoutComplete.clickAddToCart(ValueReadingManager.getInstance().getAddId("Test.allTheThings() T-Shirt (Red)"));
         checkoutComplete.clickCart();

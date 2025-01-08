@@ -2,7 +2,6 @@ package utils;
 
 import com.google.gson.JsonObject;
 import com.google.gson.JsonParser;
-import org.jetbrains.annotations.NotNull;
 
 import java.io.FileInputStream;
 import java.io.IOException;
@@ -11,17 +10,22 @@ import java.util.Properties;
 public class ValueReadingManager {
     private static String url, user, pass, jsonUsersString, jsonProductsString, jsonShippingInformationString, fsName, lsName,pstCode,xpathTitle, xpathImage, idAdd;
     private JsonObject jsonUsers, jsonProducts, jsonShippingInformation, caseUser, casePassword, caseFsName, caseLsName, casePstCode, caseTitle, caseImage, caseIdAdd;
+    private boolean dataLoadedSuccessfully = false;
 
     Properties properties = new Properties();
-    public static @NotNull ValueReadingManager getInstance(){
+    public static ValueReadingManager getInstance(){
         ValueReadingManager instance = new ValueReadingManager();
         instance.loadData();
+        if (!instance.dataLoadedSuccessfully) {
+            return null;
+        }
         return instance;
     }
 
     private void loadData() {
         try(FileInputStream input = new FileInputStream("src/main/resources/values.properties")){
             properties.load(input);
+            dataLoadedSuccessfully = true;
         } catch (IOException e){
             e.printStackTrace();
         }

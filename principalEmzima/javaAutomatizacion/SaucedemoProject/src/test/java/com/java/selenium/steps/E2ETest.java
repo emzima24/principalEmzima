@@ -1,10 +1,12 @@
 package com.java.selenium.steps;
 
+import common.ScreenshotUtil;
 import common.BrowserConfig;
 import io.cucumber.java.en.And;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
+import io.qameta.allure.Allure;
 import org.junit.jupiter.api.DisplayName;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
@@ -14,6 +16,7 @@ import pages.CheckoutCompletePage;
 import utils.ValueReadingManager;
 
 import java.time.Duration;
+import java.util.Objects;
 
 import static org.junit.jupiter.api.Assertions.assertTrue;
 
@@ -26,15 +29,16 @@ public class E2ETest extends BrowserConfig {
     @Given("I go to the website as a registered user")
     public void iGoToTheWebsiteAsARegisteredUser() {
         startChrome();
-        driver.get(ValueReadingManager.getInstance().getUrl());
+        driver.get(Objects.requireNonNull(ValueReadingManager.getInstance()).getUrl());
         wait = new WebDriverWait(driver, Duration.ofSeconds(10));
         driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
         checkoutComplete = new CheckoutCompletePage(driver);
     }
     @When("I enter the username and password")
     public void iEnterTheUsernameAndPassword() {
-        checkoutComplete.typeUserName(ValueReadingManager.getInstance().getUsername("prod"));
+        checkoutComplete.typeUserName(Objects.requireNonNull(ValueReadingManager.getInstance()).getUsername("prod"));
         checkoutComplete.typePassword(ValueReadingManager.getInstance().getPassword("prod"));
+        ScreenshotUtil.captureAndAttachScreenshot(driver,"prueba");
     }
 
     @And("I click on Login button")
@@ -44,7 +48,8 @@ public class E2ETest extends BrowserConfig {
 
     @And("I click on the Add to cart button for the {string}")
     public void iClickOnTheAddToCartButtonForThe(String value) {
-        checkoutComplete.clickAddToCart(value=ValueReadingManager.getInstance().getAddId("Test.allTheThings() T-Shirt (Red)"));
+        checkoutComplete.clickAddToCart(value= Objects.requireNonNull(ValueReadingManager.getInstance()).getAddId("Test.allTheThings() T-Shirt (Red)"));
+        Allure.parameter("Product",value);
     }
 
     @And("I click on the cart icon")
@@ -59,17 +64,17 @@ public class E2ETest extends BrowserConfig {
 
     @And("I filled the field for the first_name with value first_name")
     public void iFilledTheFieldForTheFirst_nameWith() {
-        checkoutComplete.typeFirstNameInput(ValueReadingManager.getInstance().getFirstName("1"));
+        checkoutComplete.typeFirstNameInput(Objects.requireNonNull(ValueReadingManager.getInstance()).getFirstName("1"));
     }
 
     @And("I filled the field for the last_name with value last_name")
     public void iFilledTheFieldForTheLast_nameWith() {
-        checkoutComplete.typeLastNameInput(ValueReadingManager.getInstance().getLastName("1"));
+        checkoutComplete.typeLastNameInput(Objects.requireNonNull(ValueReadingManager.getInstance()).getLastName("1"));
     }
 
     @And("I filled the field for the zip_code with value zip_code")
     public void iFilledTheFieldForTheZip_codeWith() {
-        checkoutComplete.typePostalCodeInput(ValueReadingManager.getInstance().getPostalCode("1"));
+        checkoutComplete.typePostalCodeInput(Objects.requireNonNull(ValueReadingManager.getInstance()).getPostalCode("1"));
     }
 
     @And("I click on the Continue button")

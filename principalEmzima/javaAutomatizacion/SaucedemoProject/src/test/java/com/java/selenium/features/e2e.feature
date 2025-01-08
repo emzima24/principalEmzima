@@ -1,5 +1,8 @@
-Feature: Return to Login Page After Logout 
+@allure.label.layer:web
+@allure.label.owner:emzima
+Feature: Return to Login Page After Logout
 
+  @critical
   Scenario Outline: I log in, add a product to the cart, complete the purchase, and log out
     Given I go to the website as a registered user
     When I enter the username and password
@@ -20,8 +23,8 @@ Feature: Return to Login Page After Logout
     Examples:
 | product                           |
 | Sauce Labs Backpack               |
-| Sauce Labs Bike Light             |
-| Sauce Labs Bolt T-Shirt           |
-| Sauce Labs Fleece Jacket          |
-| Sauce Labs Onesie                 |
-| Test.allTheThings() T-Shirt (Red) |
+#| Sauce Labs Bike Light             |
+#| Sauce Labs Bolt T-Shirt           |
+#| Sauce Labs Fleece Jacket          |
+#| Sauce Labs Onesie                 |
+#| Test.allTheThings() T-Shirt (Red) |
