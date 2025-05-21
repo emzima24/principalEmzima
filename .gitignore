@@ -48,3 +48,15 @@ principalEmzima/javaAutomatizacion/SaucedemoProject/target
 *.iws
 *.iml
 *.ipr
+node_modules/
+cypress12/
+java/jmeter/
+*.desktop
+otroborrar.txt
+classes.txt
+codigos.txt
+prueba.txt
+clases.txt
+Postman
+2-advanced-examples/
+1-getting-started/
