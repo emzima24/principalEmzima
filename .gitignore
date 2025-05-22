@@ -60,3 +60,8 @@ clases.txt
 Postman
 2-advanced-examples/
 1-getting-started/
+target/
+serenity-reports/
+bin/
+../*.txt
+
