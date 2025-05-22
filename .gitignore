@@ -63,5 +63,4 @@ Postman
 target/
 serenity-reports/
 bin/
-../*.txt
-
+../texto.txt

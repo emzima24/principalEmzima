@@ -1,0 +1,25 @@
+{
+    "imagenPhonFile": "Samsung1.jpg",
+    "imagenNotebookFile": "iphone1.jpg",
+    "imagenPhon2File": "nexus1.jpg",
+    "homeButtonText": "Home",
+    "cartButtonText": "Cart",
+    "contactButtonText": "Contact",
+    "logInButtonText": "Log in",
+    "signUpButtonText": "Sign up",
+    "aboutUsButtonText": "About us",
+    "elementHeaderArray": ["Home", "Contact", "About us", "Cart", "Log in", "Sign up"],
+    "elementCategory": ["Phones", "Laptops", "Monitors"],
+    "subtitleHomeText": "PRODUCT STORE",
+    "contactName": "example",
+    "aboutUsName": "video",
+    "logInName": "logIn",
+    "signUpName": "signIn",
+    "contactTitleText": "New message",
+    "aboutUsTitleText": "About us",
+    "logInTitleText": "Log in",
+    "signUpTitleText": "Sign up",
+    "addToCartText": "Add to cart",
+    "urlCartText": "https://www.demoblaze.com/cart.html"
+    
+}

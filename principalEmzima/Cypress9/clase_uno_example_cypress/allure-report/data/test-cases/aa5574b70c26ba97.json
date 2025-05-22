@@ -1,0 +1,46 @@
+{
+  "uid" : "aa5574b70c26ba97",
+  "name" : "Test #3: Select using CSS selectors ",
+  "fullName" : "Example 01.Test #3: Select using CSS selectors ",
+  "historyId" : "41d25cb25c6060fd97eed598d00467b8",
+  "time" : {
+    "start" : 1747232892837,
+    "stop" : 1747232895981,
+    "duration" : 3144
+  },
+  "description" : "",
+  "descriptionHtml" : "",
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "suite",
+    "value" : "Example 01"
+  }, {
+    "name" : "testClass",
+    "value" : "Example 01"
+  }, {
+    "name" : "testMethod",
+    "value" : "Test #3: Select using CSS selectors "
+  }, {
+    "name" : "package",
+    "value" : "Example 01"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure1"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "aa5574b70c26ba97.json",
+  "parameterValues" : [ ]
+}

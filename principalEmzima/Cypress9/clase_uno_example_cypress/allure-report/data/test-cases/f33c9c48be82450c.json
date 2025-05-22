@@ -1,0 +1,52 @@
+{
+  "uid" : "f33c9c48be82450c",
+  "name" : "Test #5: Reversing the Default Assertions",
+  "fullName" : "Example 01.Test #5: Reversing the Default Assertions",
+  "historyId" : "aa142f7d907940b02fc7d77e74b3878b",
+  "time" : {
+    "start" : 1747232897389,
+    "stop" : 1747232902245,
+    "duration" : 4856
+  },
+  "description" : "",
+  "descriptionHtml" : "",
+  "status" : "failed",
+  "statusMessage" : "Timed out retrying after 4000ms: Expected to find element: `.button-clase`, but never found it.",
+  "statusTrace" : "AssertionError: Timed out retrying after 4000ms: Expected to find element: `.button-clase`, but never found it.\n                    at Context.eval (https://example.cypress.io/__cypress/tests?p=cypress/integration/tutorial/example02clase2.spec.js:130:8)",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "suite",
+    "value" : "Example 01"
+  }, {
+    "name" : "testClass",
+    "value" : "Example 01"
+  }, {
+    "name" : "testMethod",
+    "value" : "Test #5: Reversing the Default Assertions"
+  }, {
+    "name" : "package",
+    "value" : "Example 01"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure1"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ {
+      "name" : "Product defects",
+      "matchedStatuses" : [ ],
+      "flaky" : false
+    } ],
+    "tags" : [ ]
+  },
+  "source" : "f33c9c48be82450c.json",
+  "parameterValues" : [ ]
+}

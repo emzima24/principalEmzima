@@ -1,0 +1,46 @@
+{
+  "uid" : "242d9c4f83d31ce6",
+  "name" : "Test #2",
+  "fullName" : "Example 01.Test #2",
+  "historyId" : "2b3d11b6f5cca23d7d92a43e94b049ab",
+  "time" : {
+    "start" : 1747232861589,
+    "stop" : 1747232862677,
+    "duration" : 1088
+  },
+  "description" : "",
+  "descriptionHtml" : "",
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "suite",
+    "value" : "Example 01"
+  }, {
+    "name" : "testClass",
+    "value" : "Example 01"
+  }, {
+    "name" : "testMethod",
+    "value" : "Test #2"
+  }, {
+    "name" : "package",
+    "value" : "Example 01"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure1"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "242d9c4f83d31ce6.json",
+  "parameterValues" : [ ]
+}

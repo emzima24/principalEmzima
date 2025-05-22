@@ -1,0 +1,46 @@
+{
+  "uid" : "6155de0686fbf80a",
+  "name" : "Test #2 con selectores XPath ",
+  "fullName" : "Example 01.Test #2 con selectores XPath ",
+  "historyId" : "991d98eea16cdca152475917567297e5",
+  "time" : {
+    "start" : 1747232890354,
+    "stop" : 1747232892835,
+    "duration" : 2481
+  },
+  "description" : "",
+  "descriptionHtml" : "",
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "suite",
+    "value" : "Example 01"
+  }, {
+    "name" : "testClass",
+    "value" : "Example 01"
+  }, {
+    "name" : "testMethod",
+    "value" : "Test #2 con selectores XPath "
+  }, {
+    "name" : "package",
+    "value" : "Example 01"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure1"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "6155de0686fbf80a.json",
+  "parameterValues" : [ ]
+}

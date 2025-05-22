@@ -1,0 +1,9 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="jmeter-coso:jar">
+    <output-path>$PROJECT_DIR$/out/artifacts/jmeter_coso_jar</output-path>
+    <root id="archive" name="jmeter.jar">
+      <element id="module-output" name="jmeter" />
+      <element id="file-copy" path="$PROJECT_DIR$/target/classes/com/example/MercadoLibreSearchSampler.class" />
+    </root>
+  </artifact>
+</component>

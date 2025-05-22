@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="jmeter:jar">
+    <output-path>$PROJECT_DIR$/out/artifacts/jmeter_jar</output-path>
+    <root id="archive" name="jmeter.jar">
+      <element id="module-output" name="jmeter" />
+    </root>
+  </artifact>
+</component>
