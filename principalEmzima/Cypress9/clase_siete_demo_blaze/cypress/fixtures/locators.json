@@ -11,9 +11,16 @@
     "productNameSel": ".name",
     "productPriceSel": ".price-container",
     "productDescriptionSel": "#more-information > p",
-    "alertWindow":"window:alert",
-    "cardsSel":".card-title a",
-    "productRow":"#tbodyid tr",
-    "productNameCart":"tr.success > :nth-child(2)",
-    "productPriceCart":"tr.success > :nth-child(3)"
+    "alertWindowSel": "window:alert",
+    "cardsSel": ".card-title a",
+    "productRowSel": "#tbodyid td:nth-child(2)",
+    "productNameCartSel": "tr.success > :nth-child(2)",
+    "productPriceCartSel": "tr.success > :nth-child(3)",
+    "placeHolderButtonSel": ".col-lg-1 > .btn",
+    "placeHolderInputNameId": "#name",
+    "placeHolderInputCountryId": "#country",
+    "placeHolderInputCityId": "#city",
+    "placeHolderInputCreditCardId": "#card",
+    "placeHolderInputMonthId": "#month",
+    "placeHolderInputYearId": "#year"
 }

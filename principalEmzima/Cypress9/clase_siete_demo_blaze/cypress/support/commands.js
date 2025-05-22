@@ -164,8 +164,8 @@ Cypress.Commands.add('addRandomDistinctProducts', (min = 2, max = 15) => {
     });
 
     cy.contains('Add to cart').click();
-
-    Cypress.env('addedProductNames').push(name);
+    
+    Cypress.env('addedProductNames').push(PRODUCT_NAME);
 
     cy.visit('/');
 
@@ -272,4 +272,12 @@ Cypress.Commands.add('saveCategoryPRODUCTS', (categoryName) => {
 
       return cy.wrap(PRODUCTS);
     });
+});
+
+Cypress.Commands.add('typeSlowly', (selector, text, delay = 100) => {
+  cy.get(selector).clear();
+
+  [...text].forEach((char, index) => {
+    cy.get(selector).type(char, { delay }).should('have.value', text.slice(0, index + 1));
+  });
 });
