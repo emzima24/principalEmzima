@@ -1,0 +1,19 @@
+{
+    "carouselControlPrevClass": ".carousel-control-prev",
+    "carouselControlNextClass": ".carousel-control-next",
+    "imagenActiveSel": ".active > .d-block",
+    "itemActiveCarouselSel": ".carousel-item.active img",
+    "subtitleHomeId": "#nava",
+    "firstCarouselProductNameClass": ".carousel-item",
+    "carouselSlideSel": ".carousel-item.active:not(.carousel-item-left):not(.carousel-item-right)",
+    "categoryListClass": ".list-group-item",
+    "navegationBarSelText": "ul.navbar-nav > li.nav-item a.nav-link",
+    "productNameSel": ".name",
+    "productPriceSel": ".price-container",
+    "productDescriptionSel": "#more-information > p",
+    "alertWindow":"window:alert",
+    "cardsSel":".card-title a",
+    "productRow":"#tbodyid tr",
+    "productNameCart":"tr.success > :nth-child(2)",
+    "productPriceCart":"tr.success > :nth-child(3)"
+}

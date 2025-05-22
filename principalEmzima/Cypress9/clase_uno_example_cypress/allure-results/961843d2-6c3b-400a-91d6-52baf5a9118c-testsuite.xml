@@ -1,0 +1,23 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1747232953378' stop='1747232957030'>
+    <name>Hooks #2</name>
+    <title>Hooks #2</title>
+    <test-cases>
+        <test-case start='1747232953381' status='passed' stop='1747232954698'>
+            <name>Test 01</name>
+            <title>Test 01</title>
+            <labels/>
+            <parameters/>
+            <steps/>
+            <attachments/>
+        </test-case>
+        <test-case start='1747232954715' status='passed' stop='1747232957029'>
+            <name>Test 02</name>
+            <title>Test 02</title>
+            <labels/>
+            <parameters/>
+            <steps/>
+            <attachments/>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>

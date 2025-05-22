@@ -1,0 +1,46 @@
+{
+  "uid" : "5dc96ac773cbbb77",
+  "name" : "Test 02",
+  "fullName" : "Hooks #2.Test 02",
+  "historyId" : "9929318e50143638976c98bb0e5760c9",
+  "time" : {
+    "start" : 1747232954715,
+    "stop" : 1747232957029,
+    "duration" : 2314
+  },
+  "description" : "",
+  "descriptionHtml" : "",
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "suite",
+    "value" : "Hooks #2"
+  }, {
+    "name" : "testClass",
+    "value" : "Hooks #2"
+  }, {
+    "name" : "testMethod",
+    "value" : "Test 02"
+  }, {
+    "name" : "package",
+    "value" : "Hooks #2"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure1"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "5dc96ac773cbbb77.json",
+  "parameterValues" : [ ]
+}

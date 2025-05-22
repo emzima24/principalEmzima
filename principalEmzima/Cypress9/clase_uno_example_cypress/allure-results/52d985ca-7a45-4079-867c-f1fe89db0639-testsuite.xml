@@ -1,0 +1,68 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1747232885571' stop='1747232907140'>
+    <name>Example 01</name>
+    <title>Example 01</title>
+    <test-cases>
+        <test-case start='1747232885585' status='passed' stop='1747232890312'>
+            <name>Test #1</name>
+            <title>Test #1</title>
+            <labels/>
+            <parameters/>
+            <steps/>
+            <attachments/>
+        </test-case>
+        <test-case start='1747232890354' status='passed' stop='1747232892835'>
+            <name>Test #2 con selectores XPath </name>
+            <title>Test #2 con selectores XPath </title>
+            <labels/>
+            <parameters/>
+            <steps/>
+            <attachments/>
+        </test-case>
+        <test-case start='1747232892837' status='passed' stop='1747232895981'>
+            <name>Test #3: Select using CSS selectors </name>
+            <title>Test #3: Select using CSS selectors </title>
+            <labels/>
+            <parameters/>
+            <steps/>
+            <attachments/>
+        </test-case>
+        <test-case start='1747232896021' status='passed' stop='1747232897353'>
+            <name>Test #4: Select using CSS selectors  y otros cambios</name>
+            <title>Test #4: Select using CSS selectors  y otros cambios</title>
+            <labels/>
+            <parameters/>
+            <steps/>
+            <attachments/>
+        </test-case>
+        <test-case start='1747232897389' status='failed' stop='1747232902245'>
+            <name>Test #5: Reversing the Default Assertions</name>
+            <title>Test #5: Reversing the Default Assertions</title>
+            <labels/>
+            <parameters/>
+            <steps/>
+            <attachments/>
+            <failure>
+                <message>Timed out retrying after 4000ms: Expected to find element: `.button-clase`, but never found it.</message>
+                <stack-trace>AssertionError: Timed out retrying after 4000ms: Expected to find element: `.button-clase`, but never found it.
+                    at Context.eval (https://example.cypress.io/__cypress/tests?p=cypress/integration/tutorial/example02clase2.spec.js:130:8)</stack-trace>
+            </failure>
+        </test-case>
+        <test-case start='1747232902430' status='passed' stop='1747232904268'>
+            <name>Test 02</name>
+            <title>Test 02</title>
+            <labels/>
+            <parameters/>
+            <steps/>
+            <attachments/>
+        </test-case>
+        <test-case start='1747232904309' status='passed' stop='1747232907095'>
+            <name>Test #4refac: Select using CSS selectors  y otros cambios</name>
+            <title>Test #4refac: Select using CSS selectors  y otros cambios</title>
+            <labels/>
+            <parameters/>
+            <steps/>
+            <attachments/>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>

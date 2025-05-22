@@ -1,0 +1,5 @@
+[
+  { "input": "Texto 1", "output": "Texto 1" },
+  { "input": "12345", "output": "12345" },
+  { "input": "ad ga 23", "output": "ad ga 23" }
+]

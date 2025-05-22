@@ -1,0 +1,141 @@
+[ {
+  "uid" : "3e59a3a952b0e07f",
+  "name" : "Test 01",
+  "time" : {
+    "start" : 1747232953381,
+    "stop" : 1747232954698,
+    "duration" : 1317
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "ff92dd79613383ad",
+  "name" : "Test 01",
+  "time" : {
+    "start" : 1747232926960,
+    "stop" : 1747232933562,
+    "duration" : 6602
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "e860a270e9586eab",
+  "name" : "Test 02",
+  "time" : {
+    "start" : 1747232951452,
+    "stop" : 1747232953301,
+    "duration" : 1849
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "d32945761d261aa4",
+  "name" : "Test 02",
+  "time" : {
+    "start" : 1747232902430,
+    "stop" : 1747232904268,
+    "duration" : 1838
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "f33c9c48be82450c",
+  "name" : "Test #5: Reversing the Default Assertions",
+  "time" : {
+    "start" : 1747232897389,
+    "stop" : 1747232902245,
+    "duration" : 4856
+  },
+  "status" : "failed",
+  "severity" : "normal"
+}, {
+  "uid" : "b4a33c3449142561",
+  "name" : "Test #1",
+  "time" : {
+    "start" : 1747232970836,
+    "stop" : 1747232975666,
+    "duration" : 4830
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "aa5574b70c26ba97",
+  "name" : "Test #3: Select using CSS selectors ",
+  "time" : {
+    "start" : 1747232892837,
+    "stop" : 1747232895981,
+    "duration" : 3144
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "3a150bb97125146e",
+  "name" : "Test 01",
+  "time" : {
+    "start" : 1747232945916,
+    "stop" : 1747232951439,
+    "duration" : 5523
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "5dc96ac773cbbb77",
+  "name" : "Test 02",
+  "time" : {
+    "start" : 1747232954715,
+    "stop" : 1747232957029,
+    "duration" : 2314
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "2486a3159f0db6d5",
+  "name" : "Test #4refac: Select using CSS selectors  y otros cambios",
+  "time" : {
+    "start" : 1747232904309,
+    "stop" : 1747232907095,
+    "duration" : 2786
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "501c042532b589b5",
+  "name" : "Test #3",
+  "time" : {
+    "start" : 1747232862707,
+    "stop" : 1747232866159,
+    "duration" : 3452
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "6155de0686fbf80a",
+  "name" : "Test #2 con selectores XPath ",
+  "time" : {
+    "start" : 1747232890354,
+    "stop" : 1747232892835,
+    "duration" : 2481
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "242d9c4f83d31ce6",
+  "name" : "Test #2",
+  "time" : {
+    "start" : 1747232861589,
+    "stop" : 1747232862677,
+    "duration" : 1088
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "5a45eddfefb6d133",
+  "name" : "Test #4: Select using CSS selectors  y otros cambios",
+  "time" : {
+    "start" : 1747232896021,
+    "stop" : 1747232897353,
+    "duration" : 1332
+  },
+  "status" : "passed",
+  "severity" : "normal"
+} ]

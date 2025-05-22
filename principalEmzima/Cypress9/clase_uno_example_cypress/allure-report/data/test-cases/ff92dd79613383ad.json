@@ -1,0 +1,46 @@
+{
+  "uid" : "ff92dd79613383ad",
+  "name" : "Test 01",
+  "fullName" : "Alias y variables.Test 01",
+  "historyId" : "c0e7b3e0e3926ce4365bcc651a4c8c7",
+  "time" : {
+    "start" : 1747232926960,
+    "stop" : 1747232933562,
+    "duration" : 6602
+  },
+  "description" : "",
+  "descriptionHtml" : "",
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "suite",
+    "value" : "Alias y variables"
+  }, {
+    "name" : "testClass",
+    "value" : "Alias y variables"
+  }, {
+    "name" : "testMethod",
+    "value" : "Test 01"
+  }, {
+    "name" : "package",
+    "value" : "Alias y variables"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure1"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "ff92dd79613383ad.json",
+  "parameterValues" : [ ]
+}

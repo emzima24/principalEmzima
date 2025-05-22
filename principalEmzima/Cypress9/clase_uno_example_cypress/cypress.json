@@ -1,0 +1,7 @@
+{
+    "baseUrl": "https://example.cypress.io/todo#",
+    "reporter": "mocha-allure-reporter",
+    "reporterOptions": {
+        "resultsDir": "allure-results"
+    }
+}

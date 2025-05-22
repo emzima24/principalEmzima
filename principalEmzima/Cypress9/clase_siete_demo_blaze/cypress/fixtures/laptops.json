@@ -1,0 +1,38 @@
+[
+  {
+    "category": "Laptops",
+    "name": "Sony vaio i5",
+    "price": "$790",
+    "description": "Sony is so confident that the VAIO S is a superior ultraportable laptop \nthat the company proudly compares the notebook to Apple's 13-inch \nMacBook Pro. And in a lot of ways this notebook is better, thanks to a \nlighter weight."
+  },
+  {
+    "category": "Laptops",
+    "name": "Sony vaio i7",
+    "price": "$790",
+    "description": "REVIEW\n \nSony is so confident that the VAIO S is a superior \nultraportable laptop that the company proudly compares the notebook to \nApple's 13-inch MacBook Pro. And in a lot of ways this notebook is \nbetter, thanks to a lighter weight, higher-resolution display, more \nstorage space, and a Blu-ray drive."
+  },
+  {
+    "category": "Laptops",
+    "name": "MacBook air",
+    "price": "$700",
+    "description": "1.6GHz dual-core Intel Core i5 (Turbo Boost up to 2.7GHz) with 3MB \nshared L3 cache\nConfigurable to 2.2GHz dual-core Intel Core i7 (Turbo \nBoost up to 3.2GHz) with 4MB shared L3 cache."
+  },
+  {
+    "category": "Laptops",
+    "name": "Dell i7 8gb",
+    "price": "$700",
+    "description": "6th Generation Intel Core i7-6500U Dual-Core Processor 2.5 GHz (max \nboost speed up to 3.1GHz) 4MB L3 Cache, 8GB DDR4 1600 MHz, 1TB 5400 RPM \nHDD15.6 in Full HD LED-backlit touchscreen with Truelife (1920 x 1080), \n10-finger multi-touch support, Intel HD Graphics 520 with shared \ngraphics memory"
+  },
+  {
+    "category": "Laptops",
+    "name": "2017 Dell 15.6 Inch",
+    "price": "$700",
+    "description": "7th Gen Intel Core i7-7500U mobile processor 2.70 GHz with Turbo Boost \nTechnology up to 3.50 GHz, Intel HD Graphics 62015.6 inch Full HD IPS \nTrueLife LED-backlit touchscreen (1920 x 1080), 10-finger multi-touch \nsupport, 360° flip-and-fold design,8GB DDR4 2400 MHz Memory, 1TB 5400 \nRPM HDD, No optical drive, 3 in 1 card reader (SD SDHC SDXC)"
+  },
+  {
+    "category": "Laptops",
+    "name": "MacBook Pro",
+    "price": "$1100",
+    "description": "Apple has introduced three new versions of its MacBook Pro line, \nincluding a 13-inch and 15-inch model with the Touch Bar, a thin, \nmulti-touch strip display that sits above the MacBook Pro's keyboard."
+  }
+]
