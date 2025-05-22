@@ -2,120 +2,77 @@ import ProductPage from './ProductPage';
 
 
 class CartPage extends ProductPage {
+
+    get namePurchaseExpected() {
+        return Cypress.env('expectedData').nameText;
+    }
+
+    get countryPurchaseExpected() {
+        return Cypress.env('expectedData').countryText;
+    }
+    get cityPurchaseExpected() {
+        return Cypress.env('expectedData').cityText;
+    }
+
+    get creditCardPurchaseExpected() {
+        return Cypress.env('expectedData').creditCardText;
+    }
+    get monthPurchaseExpected() {
+        return Cypress.env('expectedData').monthText;
+    }
+
+    get yearPurchaseExpected() {
+        return Cypress.env('expectedData').yearText;
+    }
+
     getProductName() {
-        return cy.get(Cypress.env('pageLocators').productNameCart, {
+        return cy.get(Cypress.env('pageLocators').productNameCartSel, {
                 timeout: 7000
             })
             .invoke('text')
             .then(text => text.trim());
     }
     getProductPrice() {
-        return cy.get(Cypress.env('pageLocators').productPriceCart, {
+        return cy.get(Cypress.env('pageLocators').productPriceCartSel, {
                 timeout: 7000
             })
             .invoke('text')
             .then(text => text.trim());
     }
     getProductRowByName(name) {
-        return cy.get(Cypress.env('pageLocators').productRow).filter(`:contains(${name})`);
+        return cy.contains(Cypress.env('pageLocators').productRowSel, name, {
+                timeout: 10000
+            })
+            .parent('tr')
     }
     getPriceCellFromRow(row) {
         return cy.wrap(row).find('td').eq(2);
     }
-
-    //     get headerArray() {
-    //         return data.elementHeaderArray;
-    //     }
-    //     get contactTitleExpected() {
-    //         return data.contactTitleText;
-    //     }
-    //     get aboutUsTitleExpected() {
-    //         return data.aboutUsTitleText;
-    //     }
-    //     get logInTitleExpected() {
-    //         return data.logInTitleText;
-    //     }
-    //     get signUpTitleExpected() {
-    //         return data.signUpTitleText;
-    //     }
-    //     get nameContact() {
-    //         return data.contactName;
-    //     }
-    //     get nameAboutUs() {
-    //         return data.aboutUsName;
-    //     }
-    //     get nameLogIn() {
-    //         return data.logInName;
-    //     }
-    //     get nameSignUp() {
-    //         return data.signUpName;
-    //     }
-    //     get complementSel() {
-    //         return data.otherExceptAboutUs;
-    //     }
-
-    //     getNavegationBar() {
-    //         return cy.get(data.navegationBarSelText + ' a.nav-link');
-    //     }
-    //     getNavItemByIndex(index) {
-    //         return cy.get(pageLocators.elementHeaderSel(index));
-    //     }
-    //     getTitleModal(name) {
-    //         return cy.get(pageLocators.titleModal(name));
-    //     }
-
-    //     buttonCloseModalClick(name, other) {
-    //         return cy.get(pageLocators.buttonCloseModal(name, other))
-    //             .click();
-    //     }
-    //     buttonCloseXsupModalClick(name) {
-    //         return cy.get(pageLocators.buttonCloseXsupModal(name))
-    //             .click();
-    //     }
-    //     navegationBarClick(element) {
-    //         return this.getNavegationBar()
-    //             .contains(element)
-    //             .click();
-    //     }
-
-    //     validateAllHeaderButtonsVisible() {
-    //         this.headerArray.forEach((text) => {
-    //             this.getNavegationBar().contains(text).should('be.visible');
-    //         });
-    //     }
-
-    //     waitExplicit(time) {
-    //         cy.wait(time);
-    //     }
-
-    //     waitForModalShown(name) {
-    //         return cy.window().then({
-    //             timeout: 10000
-    //         }, (win) => {
-    //             return new Cypress.Promise((resolve) => {
-    //                 const $MODAL = win.$(pageLocators.modalHidden(name));
-    //                 if ($MODAL.hasClass('show') && !$MODAL.data('_isTransitioning')) {
-    //                     resolve();
-    //                 } else {
-    //                     $MODAL.on('shown.bs.modal', () => resolve());
-    //                 }
-    //             });
-    //         });
-    //     }
-
-    //     waitForModalHidden(name) {
-    //         return cy.window().then({
-    //             timeout: 10000
-    //         }, (win) => {
-    //             return new Cypress.Promise((resolve) => {
-    //                 const $MODAL = win.$(pageLocators.modalHidden(name));
-    //                 if (!$MODAL.hasClass('show')) {
-    //                     resolve();
-    //                 } else {
-    //                     $MODAL.on('hidden.bs.modal', () => resolve());
-    //                 }
-    //             });
-    //         });
-    //     }
+    placeHolderButtonClick() {
+        return cy.get(Cypress.env('pageLocators').placeHolderButtonSel)
+            .click();
+    }
+    purchaseButtonClick() {
+        return cy.get(Cypress.env('expectedData').purchaseText)
+            .click();
+    }
+    typeNameInput(name = this.namePurchaseExpected) {
+        return cy.typeSlowly(Cypress.env('pageLocators').placeHolderInputNameId,name);
+    }
+    typeCountryInput(country = this.countryPurchaseExpected) {
+        return cy.typeSlowly(Cypress.env('pageLocators').placeHolderInputCountryId,country);
+    }
+    typeCityInput(city = this.cityPurchaseExpected) {
+        return cy.typeSlowly(Cypress.env('pageLocators').placeHolderInputCityId,city);
+    }
+    typeCreditCardInput(creditCard = this.creditCardPurchaseExpected) {
+        return cy.typeSlowly(Cypress.env('pageLocators').placeHolderInputCreditCardId,creditCard);
+    }
+    typeMonthInput(month = this.monthPurchaseExpected) {
+        return cy.typeSlowly(Cypress.env('pageLocators').placeHolderInputMonthId,month);
+    }
+    typeYearInput(year = this.yearPurchaseExpected) {
+        return cy.type(Cypress.env('pageLocators').placeHolderInputYearId,year);
+    }
 }
 export default CartPage;

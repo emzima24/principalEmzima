@@ -66,7 +66,9 @@ Given('I have products in my {string}', (page) => {
 
         cy.CartPage.navegationBarClick(page);
         cy.wrap(NAMES).each((name) => {
+            cy.log('Nombre:', name);
             const EXPECTED = cy.CartPage.getProductDataFromFixtures(name);
+            cy.log('Fixture data for product:', EXPECTED.price);
 
             cy.CartPage.getProductRowByName(name).then((row) => {
                 cy.CartPage.getPriceCellFromRow(row)
@@ -77,22 +79,29 @@ Given('I have products in my {string}', (page) => {
     });
 });
 
-When('I proceed to checkout', () => {});
+When('I proceed to checkout', () => {
+    cy.CartPage.placeHolderButtonClick();
+    let name = cy.CartPage.nameContact;
+    //cy.CartPage.waitForModalShown(name);
+    cy.CartPage.typeNameInput();
+    cy.CartPage.typeCountryInput();
 
-Then('I should be able to complete the purchase', () => {});
+});
+
+And('I complete the purchase', () => {});
+
+Then('I receive the electronic invoice for the purchase', () => {
+}); 
+
+
 /* // Scenario: Add product to cart
 Given('I am on a product page', () => {
 });
 
 
-
-// Scenario: Purchase product from cart
-
-
-
-// Scenario: Remove a product from the cart
 When('I remove a product', () => {
 });
 
 Then('it should no longer appear in the cart', () => {
-}); */
+}); 
+I receive the electronic invoice for the purchase*/

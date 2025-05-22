@@ -15,11 +15,19 @@
     "aboutUsName": "video",
     "logInName": "logIn",
     "signUpName": "signIn",
+    "orderName": "order",
     "contactTitleText": "New message",
     "aboutUsTitleText": "About us",
     "logInTitleText": "Log in",
     "signUpTitleText": "Sign up",
     "addToCartText": "Add to cart",
-    "urlCartText": "https://www.demoblaze.com/cart.html"
+    "urlCartText": "https://www.demoblaze.com/cart.html",
+    "purchaseText":"Purchase",
+    "nameText":"Emiliano Zapata Machin Ortega",
+    "countryText":"Estados Unidos Venezolanos, Argentinos y Mexicanos",
+    "cityText":"San Juan de los Morros",
+    "creditCardText":"1000 1000 1000 1000",
+    "monthText":"01",
+    "yearText":"2028"
     
 }
