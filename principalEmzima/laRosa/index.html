@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Playa La Rosa" />
+    <title>Playa La Rosa</title>
+    <!-- Incluimos Tailwind CSS para un estilo básico y limpio -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+      /* Estilos para el body con la imagen de fondo */
+      body {
+        font-family: "Inter", sans-serif;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        padding-top: 2rem;
+        /* Estilos para la imagen de fondo */
+        background-image: url("img/larosa.jpg");
+        background-size: cover; /* Cubre toda la pantalla */
+        background-position: center; /* Centra la imagen */
+        background-attachment: fixed; /* Mantiene la imagen fija al hacer scroll */
+        background-repeat: no-repeat; /* Evita que la imagen se repita */
+      }
+
+      /* Contenedor del iframe para un mejor control del diseño */
+      .iframe-wrapper {
+        width: 100%;
+        max-width: 600px; /* Limita el ancho en pantallas grandes */
+        background-color: rgba(
+          255,
+          255,
+          255,
+          0.5
+        ); /* Fondo blanco semi-transparente */
+        padding: 1.5rem;
+        border-radius: 0.75rem;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        /* Aquí añadimos el margen superior para bajar el contenedor */
+        margin-top: 2rem;
+      }
+
+      /* Estilos para el iframe que incrusta Google Sheets */
+      .google-sheets-iframe {
+        width: 100%;
+        height: 160px; /* Ajusta esta altura según el tamaño de tu tabla */
+        border: 0;
+        overflow: hidden; /* Oculta cualquier barra de desplazamiento */
+      }
+    </style>
+  </head>
+  <body>
+    <!-- 
+      Usamos clases de Tailwind CSS directamente en el h1.
+      "text-4xl" es el tamaño de la fuente. Puedes cambiarlo a "text-5xl", "text-6xl", etc.
+      "font-bold" hace que el texto sea negrita.
+      "text-white" cambia el color del texto a blanco.
+      "drop-shadow-lg" agrega una sombra para mejorar la visibilidad.
+    -->
+    <h1 class="text-4xl font-bold mb-8 text-white drop-shadow-lg">
+      Playa La Rosa
+    </h1>
+
+    <div class="iframe-wrapper">
+      <p class="font-bold text-lg mb-2">Datos de Contacto</p>
+      <iframe
+        class="google-sheets-iframe"
+        src="https://docs.google.com/spreadsheets/d/e/2PACX-1vT1-z4uXno2vDzjDG8c5uZPzexJQs9RzooInzHQNJzZqESDAVJ1bS3AZSm0D7G_2uA_v_uhiqzBSfPX/pub?gid=265715720&single=true"
+      ></iframe>
+    </div>
+  </body>
+</html>
